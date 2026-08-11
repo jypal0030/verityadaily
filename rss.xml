@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Veritya Daily</title>
+    <link>https://verityadaily.com</link>
+    <description>Independent reporting on AI, cryptocurrency, finance, cybersecurity, and technology. Original analysis you can trust.</description>
+    <language>en</language>
+    <atom:link href="https://verityadaily.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>OpenAI Launches GPT-5: What It Means For You</title>
+      <link>https://verityadaily.com/article.html</link>
+      <guid isPermaLink="true">https://verityadaily.com/article.html</guid>
+      <pubDate>Wed, 30 Jul 2026 09:00:00 +0530</pubDate>
+      <description>OpenAI has officially launched GPT-5, its most capable model yet, promising faster reasoning, better multimodal handling, and lower API costs than GPT-4o.</description>
+      <category>Artificial Intelligence</category>
+    </item>
+  </channel>
+</rss>

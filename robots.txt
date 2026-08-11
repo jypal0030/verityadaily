@@ -1,0 +1,12 @@
+# Veritya Daily — Independent tech, crypto, finance, and AI news
+# https://verityadaily.com
+
+User-agent: *
+Allow: /
+Disallow: /admin/
+
+# Sitemaps
+Sitemap: https://verityadaily.com/sitemap.xml
+
+# AI Crawler guidance
+# We allow AI crawlers but request citation and link-back

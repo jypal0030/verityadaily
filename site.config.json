@@ -1,0 +1,31 @@
+{
+  "name": "Veritya Daily",
+  "domain": "verityadaily.com",
+  "url": "https://verityadaily.com",
+  "description": "Independent reporting on AI, cryptocurrency, finance, cybersecurity, and technology. Original analysis, not financial advice.",
+  "tagline": "Truth in tech, crypto, and finance",
+  "categories": [
+    { "name": "Artificial Intelligence", "slug": "artificial-intelligence", "icon": "AI" },
+    { "name": "Cryptocurrency", "slug": "cryptocurrency", "icon": "Crypto" },
+    { "name": "Finance & Markets", "slug": "finance-markets", "icon": "Finance" },
+    { "name": "Cybersecurity", "slug": "cybersecurity", "icon": "Security" },
+    { "name": "Technology", "slug": "technology", "icon": "Tech" },
+    { "name": "Trending", "slug": "trending", "icon": "Trending" }
+  ],
+  "social": {
+    "twitter": "@verityadaily",
+    "telegram": "t.me/verityadaily",
+    "email": "hello@verityadaily.com"
+  },
+  "grievance_officer": {
+    "name": "Jai",
+    "email": "grievance@verityadaily.com",
+    "response_time": "14 business days"
+  },
+  "author": {
+    "name": "Jai",
+    "role": "Founder & Lead Writer",
+    "bio": "Tech journalist and crypto analyst covering AI, cryptocurrency, finance, and technology since 2018.",
+    "credentials": "Founder, Veritya Daily — Tech & crypto journalist since 2018"
+  }
+}

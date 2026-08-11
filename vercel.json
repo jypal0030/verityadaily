@@ -1,0 +1,33 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
+        { "key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=()" }
+      ]
+    },
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+      ]
+    }
+  ],
+  "redirects": [
+    { "source": "/about", "destination": "/about.html", "permanent": true },
+    { "source": "/contact", "destination": "/contact.html", "permanent": true },
+    { "source": "/author", "destination": "/author.html", "permanent": true },
+    { "source": "/privacy-policy", "destination": "/privacy-policy.html", "permanent": true },
+    { "source": "/terms", "destination": "/terms.html", "permanent": true },
+    { "source": "/disclaimer", "destination": "/disclaimer.html", "permanent": true },
+    { "source": "/affiliate-disclosure", "destination": "/affiliate-disclosure.html", "permanent": true },
+    { "source": "/cookie-policy", "destination": "/cookie-policy.html", "permanent": true },
+    { "source": "/editorial-policy", "destination": "/editorial-policy.html", "permanent": true },
+    { "source": "/corrections", "destination": "/corrections.html", "permanent": true }
+  ]
+}

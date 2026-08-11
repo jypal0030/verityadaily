@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 48" fill="none">
+  <!-- Monogram: rounded square with "V" -->
+  <rect x="2" y="2" width="44" height="44" rx="10" fill="#4F46E5"/>
+  <path d="M14 14 L24 34 L34 14" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <!-- Wordmark -->
+  <text x="56" y="33" font-family="Inter, -apple-system, sans-serif" font-size="22" font-weight="700" fill="#1A1A1A" letter-spacing="-0.5">Veritya</text>
+  <text x="167" y="33" font-family="Inter, -apple-system, sans-serif" font-size="22" font-weight="400" fill="#6B7280" letter-spacing="-0.5">Daily</text>
+</svg>

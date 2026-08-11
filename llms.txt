@@ -1,0 +1,29 @@
+# Veritya Daily
+
+> Independent technology, cryptocurrency, finance, and artificial intelligence news publication. We publish original analysis — not aggregated or scraped content — covering AI tools, crypto markets, finance, and cybersecurity. Our content is for information and education only and is not financial advice.
+
+## About
+
+- [About Us](https://verityadaily.com/about.html): Who we are, our mission, and our editorial standards
+- [Editorial Policy](https://verityadaily.com/editorial-policy.html): How we select topics, fact-check, and handle AI assistance
+- [Corrections Policy](https://verityadaily.com/corrections.html): How we handle errors and corrections
+- [Contact](https://verityadaily.com/contact.html): Email, address, and how to reach us
+
+## Authors
+
+- [Author: Jai](https://verityadaily.com/author.html): Founder & lead writer covering AI, crypto, finance, and technology since 2018
+
+## Key Topic Guides
+
+- [Best Crypto Exchanges Compared (2026)](https://verityadaily.com/article.html): Side-by-side fees, coins, security, and ease of use
+- [AI Tools Compared: Claude vs GPT-5 vs Gemini](https://verityadaily.com/article.html): Capabilities, pricing, and best use cases
+- [Bitcoin ETF Guide (2026)](https://verityadaily.com/article.html): How Bitcoin ETFs work and how to invest
+
+## Optional
+
+- [Privacy Policy](https://verityadaily.com/privacy-policy.html)
+- [Financial Disclaimer](https://verityadaily.com/disclaimer.html)
+- [Affiliate Disclosure](https://verityadaily.com/affiliate-disclosure.html)
+- [Cookie Policy](https://verityadaily.com/cookie-policy.html)
+- [Terms of Service](https://verityadaily.com/terms.html)
+- [XML Sitemap](https://verityadaily.com/sitemap.xml)

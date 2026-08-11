@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Admin Dashboard — Veritya Daily</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #0D1117; --surface: #161B22; --surface-2: #1C2128;
+  --border: #2A2F3A; --text: #E6EDF3; --muted: #8B949E;
+  --brand: #4F46E5; --brand-hover: #4338CA; --brand-soft: #1E1B4B;
+  --green: #10B981; --red: #EF4444; --amber: #F59E0B;
+  --radius: 12px; --radius-sm: 8px;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: var(--bg); color: var(--text); font-family: 'Inter', sans-serif; font-size: 15px; line-height: 1.5; }
+a { color: var(--brand); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* Layout */
+.sidebar { position: fixed; left: 0; top: 0; bottom: 0; width: 240px; background: var(--surface); border-right: 1px solid var(--border); padding: 24px 16px; overflow-y: auto; }
+.main { margin-left: 240px; padding: 32px; min-height: 100vh; }
+@media (max-width: 768px) { .sidebar { display: none; } .main { margin-left: 0; padding: 16px; } }
+
+/* Sidebar */
+.logo { display: flex; align-items: center; gap: 10px; font-size: 18px; font-weight: 700; color: var(--text); margin-bottom: 32px; }
+.logo .dot { width: 28px; height: 28px; background: var(--brand); border-radius: 8px; display: flex; align-items: center; justify-content: center; }
+.logo .dot svg { width: 16px; height: 16px; }
+.nav-item { display: flex; align-items: center; gap: 10px; padding: 10px 12px; border-radius: var(--radius-sm); color: var(--muted); cursor: pointer; margin-bottom: 4px; transition: all 150ms; font-size: 14px; }
+.nav-item:hover { background: var(--surface-2); color: var(--text); }
+.nav-item.active { background: var(--brand-soft); color: var(--brand); }
+
+/* Header */
+.page-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 32px; }
+.page-title { font-size: 28px; font-weight: 700; }
+.btn { display: inline-flex; align-items: center; gap: 8px; padding: 10px 20px; border: none; border-radius: var(--radius-sm); font-size: 14px; font-weight: 500; cursor: pointer; transition: all 150ms; }
+.btn-primary { background: var(--brand); color: #fff; }
+.btn-primary:hover { background: var(--brand-hover); }
+.btn-ghost { background: transparent; color: var(--muted); border: 1px solid var(--border); }
+.btn-ghost:hover { border-color: var(--brand); color: var(--brand); }
+
+/* Stats Grid */
+.stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-bottom: 32px; }
+.stat-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; }
+.stat-label { font-size: 13px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px; }
+.stat-value { font-size: 32px; font-weight: 700; }
+.stat-change { font-size: 13px; margin-top: 4px; }
+.stat-change.up { color: var(--green); }
+.stat-change.down { color: var(--red); }
+
+/* Table */
+.table-wrap { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
+table { width: 100%; border-collapse: collapse; }
+th { text-align: left; padding: 12px 16px; background: var(--surface-2); font-size: 13px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; border-bottom: 1px solid var(--border); }
+td { padding: 14px 16px; border-bottom: 1px solid var(--border); font-size: 14px; }
+tr:last-child td { border-bottom: none; }
+tr:hover td { background: var(--surface-2); }
+
+/* Badges */
+.badge { display: inline-flex; padding: 3px 10px; border-radius: 999px; font-size: 12px; font-weight: 500; }
+.badge-ai { background: rgba(79,70,229,0.15); color: #818CF8; }
+.badge-crypto { background: rgba(245,158,11,0.15); color: var(--amber); }
+.badge-finance { background: rgba(16,185,129,0.15); color: var(--green); }
+.badge-cyber { background: rgba(239,68,68,0.15); color: var(--red); }
+.badge-tech { background: rgba(59,130,246,0.15); color: #60A5FA; }
+.badge-trending { background: rgba(236,72,153,0.15); color: #F472B6; }
+.badge-published { background: rgba(16,185,129,0.15); color: var(--green); }
+.badge-draft { background: rgba(139,148,158,0.15); color: var(--muted); }
+
+/* New Post Form */
+.form-group { margin-bottom: 20px; }
+.form-label { display: block; font-size: 14px; font-weight: 500; margin-bottom: 6px; color: var(--text); }
+.form-input, .form-select, .form-textarea { width: 100%; padding: 10px 14px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-sm); color: var(--text); font-size: 14px; font-family: inherit; }
+.form-input:focus, .form-select:focus, .form-textarea:focus { outline: none; border-color: var(--brand); box-shadow: 0 0 0 3px var(--brand-soft); }
+.form-textarea { min-height: 120px; resize: vertical; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+@media (max-width: 640px) { .form-row { grid-template-columns: 1fr; } }
+
+/* Sections */
+.section { display: none; }
+.section.active { display: block; }
+
+/* Checklist */
+.checklist-item { display: flex; align-items: center; gap: 10px; padding: 10px 0; border-bottom: 1px solid var(--border); }
+.checklist-item:last-child { border-bottom: none; }
+.checklist-icon { width: 20px; height: 20px; border-radius: 50%; border: 2px solid var(--border); flex-shrink: 0; }
+.checklist-icon.done { background: var(--green); border-color: var(--green); }
+.checklist-icon.done::after { content: "✓"; color: #fff; font-size: 12px; display: flex; align-items: center; justify-content: center; height: 100%; }
+
+/* Mobile nav toggle */
+.mobile-toggle { display: none; }
+@media (max-width: 768px) { .mobile-toggle { display: flex; } }
+</style>
+</head>
+<body>
+
+<!-- SIDEBAR -->
+<aside class="sidebar">
+  <div class="logo">
+    <span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6 L12 18 L18 6"/></svg></span>
+    Veritya Daily
+  </div>
+  <div class="nav-item active" onclick="showSection('dashboard')">📊 Dashboard</div>
+  <div class="nav-item" onclick="showSection('posts')">📝 Posts</div>
+  <div class="nav-item" onclick="showSection('new-post')">➕ New Post</div>
+  <div class="nav-item" onclick="showSection('categories')">📁 Categories</div>
+  <div class="nav-item" onclick="showSection('seo')">🔍 SEO Checklist</div>
+  <div class="nav-item" onclick="showSection('adsense')">💰 AdSense</div>
+  <div class="nav-item" onclick="showSection('settings')">⚙️ Settings</div>
+  <div style="margin-top: 32px; padding-top: 16px; border-top: 1px solid var(--border);">
+    <div class="nav-item" onclick="window.open('index.html','_blank')">🌐 View Site</div>
+    <div class="nav-item" style="color: var(--muted); font-size: 12px; margin-top: 16px;">Admin v1.0 · Local</div>
+  </div>
+</aside>
+
+<!-- MAIN -->
+<div class="main">
+
+  <!-- DASHBOARD -->
+  <div class="section active" id="dashboard">
+    <div class="page-header">
+      <h1 class="page-title">Dashboard</h1>
+      <button class="btn btn-primary" onclick="showSection('new-post')">+ New Post</button>
+    </div>
+    <div class="stats-grid">
+      <div class="stat-card"><div class="stat-label">Total Posts</div><div class="stat-value">7</div><div class="stat-change up">+2 this week</div></div>
+      <div class="stat-card"><div class="stat-label">Published</div><div class="stat-value">7</div><div class="stat-change up">100%</div></div>
+      <div class="stat-card"><div class="stat-label">Categories</div><div class="stat-value">6</div><div class="stat-change">All active</div></div>
+      <div class="stat-card"><div class="stat-label">Pending Review</div><div class="stat-value">0</div><div class="stat-change">All clear</div></div>
+    </div>
+    <h2 style="font-size: 18px; margin-bottom: 16px;">Recent Posts</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Title</th><th>Category</th><th>Date</th><th>Status</th><th>Action</th></tr></thead>
+        <tbody>
+          <tr><td><a href="trending-daily-wrap.html">Today's Top 5 Trending Stories — Aug 1, 2026</a></td><td><span class="badge badge-trending">Trending</span></td><td>Aug 1, 2026</td><td><span class="badge badge-published">Published</span></td><td><a href="trending-daily-wrap.html" target="_blank">View</a></td></tr>
+          <tr><td><a href="iphone-17-launch.html">iPhone 17 Launch: Top Features, Pricing</a></td><td><span class="badge badge-tech">Technology</span></td><td>Jul 30, 2026</td><td><span class="badge badge-published">Published</span></td><td><a href="iphone-17-launch.html" target="_blank">View</a></td></tr>
+          <tr><td><a href="data-breach.html">Major Data Breach Hits 50M Users</a></td><td><span class="badge badge-cyber">Cybersecurity</span></td><td>Jul 29, 2026</td><td><span class="badge badge-published">Published</span></td><td><a href="data-breach.html" target="_blank">View</a></td></tr>
+          <tr><td><a href="nvidia-earnings.html">Nvidia Earnings Beat Again</a></td><td><span class="badge badge-finance">Finance</span></td><td>Jul 28, 2026</td><td><span class="badge badge-published">Published</span></td><td><a href="nvidia-earnings.html" target="_blank">View</a></td></tr>
+          <tr><td><a href="bitcoin-etf.html">Bitcoin Crosses $70K: ETF Inflows Hit Record</a></td><td><span class="badge badge-crypto">Crypto</span></td><td>Jul 27, 2026</td><td><span class="badge badge-published">Published</span></td><td><a href="bitcoin-etf.html" target="_blank">View</a></td></tr>
+          <tr><td><a href="gpt5-launch.html">OpenAI Launches GPT-5</a></td><td><span class="badge badge-ai">AI</span></td><td>Jul 30, 2026</td><td><span class="badge badge-published">Published</span></td><td><a href="gpt5-launch.html" target="_blank">View</a></td></tr>
+          <tr><td><a href="article.html">OpenAI Launches GPT-5 (Original Demo)</a></td><td><span class="badge badge-ai">AI</span></td><td>Jul 30, 2026</td><td><span class="badge badge-published">Published</span></td><td><a href="article.html" target="_blank">View</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- POSTS -->
+  <div class="section" id="posts">
+    <div class="page-header"><h1 class="page-title">All Posts</h1><button class="btn btn-primary" onclick="showSection('new-post')">+ New Post</button></div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Title</th><th>Category</th><th>Slug</th><th>Date</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr><td>OpenAI Launches GPT-5</td><td>AI</td><td>gpt5-launch.html</td><td>Jul 30</td><td><span class="badge badge-published">Published</span></td></tr>
+          <tr><td>Bitcoin Crosses $70K</td><td>Crypto</td><td>bitcoin-etf.html</td><td>Jul 27</td><td><span class="badge badge-published">Published</span></td></tr>
+          <tr><td>Nvidia Earnings Beat</td><td>Finance</td><td>nvidia-earnings.html</td><td>Jul 28</td><td><span class="badge badge-published">Published</span></td></tr>
+          <tr><td>Major Data Breach Hits 50M Users</td><td>Cybersecurity</td><td>data-breach.html</td><td>Jul 29</td><td><span class="badge badge-published">Published</span></td></tr>
+          <tr><td>iPhone 17 Launch</td><td>Technology</td><td>iphone-17-launch.html</td><td>Jul 30</td><td><span class="badge badge-published">Published</span></td></tr>
+          <tr><td>Today's Top 5 Trending Stories</td><td>Trending</td><td>trending-daily-wrap.html</td><td>Aug 1</td><td><span class="badge badge-published">Published</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- NEW POST -->
+  <div class="section" id="new-post">
+    <div class="page-header"><h1 class="page-title">New Post</h1></div>
+    <div style="max-width: 720px;">
+      <div class="form-group"><label class="form-label">Title</label><input class="form-input" id="postTitle" placeholder="Enter article title..."></div>
+      <div class="form-row">
+        <div class="form-group"><label class="form-label">Category</label>
+          <select class="form-select" id="postCategory">
+            <option>Artificial Intelligence</option><option>Cryptocurrency</option><option>Finance & Markets</option><option>Cybersecurity</option><option>Technology</option><option>Trending</option>
+          </select>
+        </div>
+        <div class="form-group"><label class="form-label">URL Slug</label><input class="form-input" id="postSlug" placeholder="my-article.html"></div>
+      </div>
+      <div class="form-group"><label class="form-label">Meta Description</label><input class="form-input" id="postMeta" placeholder="155 chars max..." maxlength="155"></div>
+      <div class="form-group"><label class="form-label">Focus Keyword</label><input class="form-input" id="postKeyword" placeholder="e.g. GPT-5 launch"></div>
+      <div class="form-group"><label class="form-label">Tags (comma separated)</label><input class="form-input" id="postTags" placeholder="OpenAI, GPT-5, AI"></div>
+      <div class="form-group"><label class="form-label">Article Body (Markdown)</label><textarea class="form-textarea" id="postBody" placeholder="Write your article in Markdown..."></textarea></div>
+
+      <h3 style="font-size: 16px; margin: 24px 0 12px;">How to publish:</h3>
+      <div style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; font-size: 14px; line-height: 1.7;">
+        <strong>1.</strong> Fill in the form above and click "Generate HTML"<br>
+        <strong>2.</strong> Copy the generated HTML code<br>
+        <strong>3.</strong> Save it as a new .html file in your project folder<br>
+        <strong>4.</strong> Add a card link on index.html and the category page<br>
+        <strong>5.</strong> Add the URL to sitemap.xml<br>
+        <strong>6.</strong> Git push → Vercel auto-deploys → Live!
+      </div>
+      <div style="margin-top: 20px; display: flex; gap: 12px;">
+        <button class="btn btn-primary" onclick="generatePost()">Generate HTML</button>
+        <button class="btn btn-ghost" onclick="clearForm()">Clear</button>
+      </div>
+      <div id="output" style="margin-top: 20px; display: none;">
+        <label class="form-label">Generated HTML (copy this):</label>
+        <textarea class="form-textarea" id="htmlOutput" style="min-height: 300px; font-family: 'JetBrains Mono', monospace; font-size: 12px;"></textarea>
+      </div>
+    </div>
+  </div>
+
+  <!-- CATEGORIES -->
+  <div class="section" id="categories">
+    <div class="page-header"><h1 class="page-title">Categories</h1></div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Category</th><th>Slug</th><th>Posts</th><th>Page</th></tr></thead>
+        <tbody>
+          <tr><td>🤖 Artificial Intelligence</td><td>artificial-intelligence</td><td>4</td><td><a href="category-ai.html">View</a></td></tr>
+          <tr><td>💰 Cryptocurrency</td><td>cryptocurrency</td><td>4</td><td><a href="category-crypto.html">View</a></td></tr>
+          <tr><td>📈 Finance & Markets</td><td>finance-markets</td><td>4</td><td><a href="category-finance.html">View</a></td></tr>
+          <tr><td>🔒 Cybersecurity</td><td>cybersecurity</td><td>4</td><td><a href="category-cybersecurity.html">View</a></td></tr>
+          <tr><td>📱 Technology</td><td>technology</td><td>4</td><td><a href="category-technology.html">View</a></td></tr>
+          <tr><td>🔥 Trending</td><td>trending</td><td>4</td><td><a href="category-trending.html">View</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- SEO CHECKLIST -->
+  <div class="section" id="seo">
+    <div class="page-header"><h1 class="page-title">SEO Checklist</h1></div>
+    <div style="max-width: 720px;">
+      <div class="checklist-item"><div class="checklist-icon done"></div>robots.txt uploaded</div>
+      <div class="checklist-item"><div class="checklist-icon done"></div>sitemap.xml created</div>
+      <div class="checklist-item"><div class="checklist-icon done"></div>llms.txt uploaded (AI crawler guide)</div>
+      <div class="checklist-item"><div class="checklist-icon done"></div>rss.xml feed created</div>
+      <div class="checklist-item"><div class="checklist-icon done"></div>Open Graph + Twitter Card meta on all pages</div>
+      <div class="checklist-item"><div class="checklist-icon done"></div>JSON-LD structured data (NewsArticle, FAQ, Organization)</div>
+      <div class="checklist-item"><div class="checklist-icon done"></div>Canonical URLs set</div>
+      <div class="checklist-item"><div class="checklist-icon done"></div>max-image-preview:large robots meta</div>
+      <div class="checklist-item"><div class="checklist-icon done"></div>E-E-A-T pages (About, Author, Editorial, Corrections)</div>
+      <div class="checklist-item"><div class="checklist-icon done"></div>Legal pages (Privacy, Terms, Disclaimer, Affiliate, Cookie)</div>
+      <div class="checklist-item"><div class="checklist-icon"></div>Google Search Console — verify site (after deploy)</div>
+      <div class="checklist-item"><div class="checklist-icon"></div>Bing Webmaster Tools — submit sitemap (after deploy)</div>
+      <div class="checklist-item"><div class="checklist-icon"></div>Google Analytics 4 — install tracking (after deploy)</div>
+      <div class="checklist-item"><div class="checklist-icon"></div>Google News — apply via Publisher Center (after 30+ posts)</div>
+      <div class="checklist-item"><div class="checklist-icon"></div>Google Discover — monitor in GSC (after indexing)</div>
+    </div>
+  </div>
+
+  <!-- ADSENSE -->
+  <div class="section" id="adsense">
+    <div class="page-header"><h1 class="page-title">AdSense & Monetization</h1></div>
+    <div style="max-width: 720px;">
+      <div class="stat-card" style="margin-bottom: 20px;">
+        <div class="stat-label">AdSense Status</div>
+        <div class="stat-value" style="font-size: 18px; color: var(--amber);">⏳ Not Connected</div>
+        <p style="color: var(--muted); margin-top: 8px; font-size: 14px;">Apply after site is live and has 15-20 quality posts.</p>
+      </div>
+      <h3 style="font-size: 16px; margin-bottom: 12px;">Ad Zones (already built into article pages):</h3>
+      <div class="table-wrap" style="margin-bottom: 20px;">
+        <table>
+          <thead><tr><th>Zone</th><th>Location</th><th>Size</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr><td>Ad Zone 1</td><td>After intro paragraph</td><td>728×90</td><td>Placeholder ready</td></tr>
+            <tr><td>Ad Zone 2</td><td>Mid-content (long reads)</td><td>300×250</td><td>Placeholder ready</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <h3 style="font-size: 16px; margin-bottom: 12px;">To activate AdSense:</h3>
+      <div style="background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; font-size: 14px; line-height: 1.7;">
+        <strong>1.</strong> Deploy site on Vercel with verityadaily.com<br>
+        <strong>2.</strong> Publish 15-20 original quality posts (manual, not AI-spam)<br>
+        <strong>3.</strong> Apply at <a href="https://adsense.google.com" target="_blank">adsense.google.com</a><br>
+        <strong>4.</strong> Add AdSense code snippet to &lt;head&gt; of all pages<br>
+        <strong>5.</strong> Replace ad-zone placeholders with AdSense auto-ad code<br>
+        <strong>6.</strong> Wait 1-14 days for approval<br>
+        <strong>7.</strong> Start earning 💰
+      </div>
+    </div>
+  </div>
+
+  <!-- SETTINGS -->
+  <div class="section" id="settings">
+    <div class="page-header"><h1 class="page-title">Settings</h1></div>
+    <div style="max-width: 720px;">
+      <div class="form-group"><label class="form-label">Site Name</label><input class="form-input" value="Veritya Daily" readonly></div>
+      <div class="form-group"><label class="form-label">Domain</label><input class="form-input" value="verityadaily.com" readonly></div>
+      <div class="form-group"><label class="form-label">Author Name</label><input class="form-input" value="Jai" readonly></div>
+      <div class="form-group"><label class="form-label">Author Email</label><input class="form-input" value="hello@verityadaily.com" readonly></div>
+      <div class="form-group"><label class="form-label">Grievance Officer Email</label><input class="form-input" value="grievance@verityadaily.com" readonly></div>
+      <div class="form-group"><label class="form-label">Twitter</label><input class="form-input" value="@verityadaily" readonly></div>
+      <div class="form-group"><label class="form-label">Telegram</label><input class="form-input" value="t.me/verityadaily" readonly></div>
+      <p style="color: var(--muted); font-size: 14px; margin-top: 16px;">To change these, edit <code>site.config.json</code> and regenerate pages.</p>
+    </div>
+  </div>
+
+</div>
+
+<script>
+function showSection(id) {
+  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+  event.target.closest('.nav-item').classList.add('active');
+}
+
+function generatePost() {
+  var title = document.getElementById('postTitle').value;
+  var category = document.getElementById('postCategory').value;
+  var slug = document.getElementById('postSlug').value || 'post.html';
+  var meta = document.getElementById('postMeta').value;
+  var keyword = document.getElementById('postKeyword').value;
+  var tags = document.getElementById('postTags').value;
+  var body = document.getElementById('postBody').value;
+
+  if (!title || !body) { alert('Title and body are required!'); return; }
+
+  var tagArr = tags.split(',').map(function(t){ return t.trim(); }).filter(Boolean);
+  var tagHTML = tagArr.map(function(t){ return '<a class="tag" href="#">#'+t+'</a>'; }).join('');
+  var catSlug = { 'Artificial Intelligence':'badge-ai','Cryptocurrency':'badge-crypto','Finance & Markets':'badge-finance','Cybersecurity':'badge-cyber','Technology':'badge-tech','Trending':'badge-trending' }[category] || 'badge-ai';
+
+  // Simple markdown to HTML conversion
+  var html = body
+    .replace(/^## (.+)$/gm, '<h2>$1</h2>')
+    .replace(/^### (.+)$/gm, '<h3>$1</h3>')
+    .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+    .replace(/\*(.+?)\*/g, '<em>$1</em>')
+    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>')
+    .replace(/\n\n/g, '</p><p>')
+    .replace(/^/,'<p>').replace(/$/,'</p>')
+    .replace(/<h2>/g,'</p><h2>').replace(/<\/h2>/g,'</h2><p>')
+    .replace(/<h3>/g,'</p><h3>').replace(/<\/h3>/g,'</h3><p>')
+    .replace(/<p><\/p>/g,'');
+
+  var fullHTML = '<!DOCTYPE html>\n<html lang="en">\n<head>\n';
+  fullHTML += '<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">\n';
+  fullHTML += '<title>'+title+' — Veritya Daily</title>\n';
+  fullHTML += '<meta name="description" content="'+meta+'">\n';
+  fullHTML += '<meta name="keywords" content="'+tags+'">\n';
+  fullHTML += '<meta name="author" content="Jai">\n';
+  fullHTML += '<meta name="robots" content="index, follow, max-image-preview:large">\n';
+  fullHTML += '<link rel="canonical" href="https://verityadaily.com/'+slug+'">\n';
+  fullHTML += '<meta property="og:type" content="article"><meta property="og:title" content="'+title+'"><meta property="og:description" content="'+meta+'">\n';
+  fullHTML += '<meta property="og:url" content="https://verityadaily.com/'+slug+'"><meta property="og:site_name" content="Veritya Daily">\n';
+  fullHTML += '<meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@verityadaily"><meta name="twitter:title" content="'+title+'">\n';
+  fullHTML += '<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n';
+  fullHTML += '<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Source+Serif+4:wght@600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">\n';
+  fullHTML += '<link rel="stylesheet" href="assets/css/tokens.css"><link rel="stylesheet" href="assets/css/custom-style.css">\n';
+  fullHTML += '<script type="application/ld+json">{"@context":"https://schema.org","@type":"NewsArticle","headline":"'+title+'","author":{"@type":"Person","name":"Jai"},"publisher":{"@type":"Organization","name":"Veritya Daily"}}<\/script>\n';
+  fullHTML += '</head>\n<body>\n';
+  fullHTML += '<a class="skip-link sr-only" href="#main">Skip to content</a>\n';
+  fullHTML += '<div class="reading-progress" id="readingProgress"></div>\n';
+  fullHTML += '<header class="site-header"><div class="container"><a href="index.html" class="site-logo"><span class="dot"></span>Veritya Daily</a><nav class="nav-desktop"><a href="index.html">AI</a><a href="index.html">Crypto</a><a href="index.html">Finance</a><a href="index.html">Cybersecurity</a><a href="index.html">Technology</a><a href="index.html">Trending</a></nav><div class="header-actions"><button class="icon-button" id="themeToggle"></button></div></div></header>\n';
+  fullHTML += '<main id="main"><article class="article-container"><header class="article-header">\n';
+  fullHTML += '<nav class="breadcrumbs"><a href="index.html">Home</a><span class="sep">›</span><a href="#">'+category+'</a></nav>\n';
+  fullHTML += '<div class="article-meta"><span class="kicker">'+category+'</span><span>· '+new Date().toLocaleDateString('en-US',{year:'numeric',month:'short',day:'numeric'})+'</span><span>· 5 min read</span></div>\n';
+  fullHTML += '<h1 class="article-title">'+title+'</h1></header>\n';
+  fullHTML += '<div class="article-body">'+html+'\n';
+  fullHTML += '<div class="post-footer"><div class="tag-list">'+tagHTML+'</div></div>\n';
+  fullHTML += '<div class="author-box"><div class="placeholder" style="width:64px;height:64px;border-radius:50%;flex-shrink:0;">[photo]</div><div class="author-box__info"><div class="author-box__role">Written by</div><h3 class="author-box__name">Jai</h3><p class="author-box__bio">Founder, Veritya Daily · Tech &amp; crypto journalist since 2018</p></div></div>\n';
+  fullHTML += '<div class="disclosure"><strong>Affiliate disclosure:</strong> This article may contain affiliate links. See our <a href="affiliate-disclosure.html">Affiliate Disclosure</a>.</div>\n';
+  fullHTML += '</div></article></main>\n';
+  fullHTML += '<footer class="site-footer"><div class="container"><div class="footer-grid"><div><a href="index.html" class="site-logo"><span class="dot"></span>Veritya Daily</a><p class="text-muted" style="margin-top:8px;">Original analysis on AI, crypto, finance &amp; tech.</p></div><div><h4>Sections</h4><ul class="footer-links"><li><a href="index.html">AI</a></li><li><a href="index.html">Crypto</a></li><li><a href="index.html">Finance</a></li><li><a href="index.html">Cybersecurity</a></li></ul></div><div><h4>Company</h4><ul class="footer-links"><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li><li><a href="author.html">Author</a></li></ul></div><div><h4>Legal</h4><ul class="footer-links"><li><a href="privacy-policy.html">Privacy</a></li><li><a href="disclaimer.html">Disclaimer</a></li><li><a href="terms.html">Terms</a></li></ul></div></div><div class="footer-bottom">© 2026 Veritya Daily</div></div></footer>\n';
+  fullHTML += '<nav class="bottom-nav"><a class="bottom-nav__item" href="index.html"><span>Home</span></a><a class="bottom-nav__item active" href="#"><span>Article</span></a><a class="bottom-nav__item" href="index.html"><span>More</span></a></nav>\n';
+  fullHTML += '<script src="assets/js/dark-mode.js"><\/script><script src="assets/js/reading-progress.js"><\/script>\n';
+  fullHTML += '</body>\n</html>';
+
+  document.getElementById('htmlOutput').value = fullHTML;
+  document.getElementById('output').style.display = 'block';
+  document.getElementById('htmlOutput').select();
+}
+
+function clearForm() {
+  ['postTitle','postSlug','postMeta','postKeyword','postTags','postBody'].forEach(function(id){ document.getElementById(id).value=''; });
+  document.getElementById('output').style.display = 'none';
+}
+</script>
+</body>
+</html>
