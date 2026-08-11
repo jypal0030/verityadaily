@@ -1,9 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 52" fill="none">
-  <!-- Monogram: rounded square with "V" -->
-  <rect x="2" y="6" width="40" height="40" rx="10" fill="#4F46E5"/>
-  <path d="M14 14 L22 34 L30 14" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-  <!-- Wordmark: Veritya -->
+  <!-- Monogram indigo text only -->
+  <path d="M14 14 L22 34 L30 14" stroke="#4F46E5" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <!-- Wordmark -->
   <text x="52" y="36" font-family="Inter, -apple-system, 'Segoe UI', sans-serif" font-size="24" font-weight="700" fill="#0F172A" letter-spacing="-0.5">Veritya</text>
-  <!-- Daily in lighter weight -->
   <text x="172" y="36" font-family="Inter, -apple-system, 'Segoe UI', sans-serif" font-size="24" font-weight="400" fill="#64748B" letter-spacing="-0.5">Daily</text>
 </svg>
