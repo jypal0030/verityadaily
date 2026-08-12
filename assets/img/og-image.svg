@@ -1,20 +1,26 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
-  <!-- Background -->
+  <!-- OG Image: Veritya Daily social card -->
+  <defs>
+    <linearGradient id="og" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4F46E5"/>
+      <stop offset="100%" stop-color="#7C3AED"/>
+    </linearGradient>
+  </defs>
   <rect width="1200" height="630" fill="#0F172A"/>
-  <!-- Accent bar -->
-  <rect x="0" y="0" width="1200" height="6" fill="#4F46E5"/>
-  <!-- Monogram -->
-  <rect x="80" y="220" width="120" height="120" rx="24" fill="#4F46E5"/>
-  <path d="M110 244 L140 316 L170 244" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <rect x="0" y="0" width="1200" height="6" fill="url(#og)"/>
+  <!-- Large chevron V -->
+  <path d="M80 200 L160 400 L240 200" stroke="url(#og)" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <path d="M130 200 L160 280 L190 200" stroke="#4F46E5" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.5"/>
   <!-- Wordmark -->
-  <text x="230" y="310" font-family="Inter, -apple-system, sans-serif" font-size="72" font-weight="700" fill="#FFFFFF" letter-spacing="-1.5">Veritya</text>
-  <text x="230" y="375" font-family="Inter, -apple-system, sans-serif" font-size="72" font-weight="400" fill="#64748B" letter-spacing="-1.5">Daily</text>
+  <text x="280" y="320" font-family="Inter, -apple-system, sans-serif" font-size="80" font-weight="800" fill="#FFFFFF" letter-spacing="-2">Veritya</text>
+  <text x="280" y="395" font-family="Inter, -apple-system, sans-serif" font-size="80" font-weight="400" fill="#64748B" letter-spacing="-2">Daily</text>
   <!-- Tagline -->
-  <text x="80" y="460" font-family="Inter, -apple-system, sans-serif" font-size="24" font-weight="500" fill="#94A3B8" letter-spacing="0">Independent reporting on AI, Crypto, Finance &amp; Tech</text>
+  <text x="80" y="480" font-family="Inter, -apple-system, sans-serif" font-size="26" font-weight="500" fill="#94A3B8">Independent reporting on AI, Crypto, Finance &amp; Tech</text>
   <!-- URL -->
-  <text x="80" y="520" font-family="Inter, -apple-system, sans-serif" font-size="20" font-weight="400" fill="#4F46E5" letter-spacing="0.5">verityadaily.com</text>
-  <!-- Decorative dots -->
-  <circle cx="1100" cy="280" r="60" fill="#4F46E5" opacity="0.15"/>
-  <circle cx="1050" cy="380" r="40" fill="#4F46E5" opacity="0.1"/>
-  <circle cx="1150" cy="450" r="25" fill="#4F46E5" opacity="0.08"/>
+  <text x="80" y="535" font-family="Inter, -apple-system, sans-serif" font-size="22" font-weight="400" fill="#4F46E5" letter-spacing="0.5">verityadaily.com</text>
+  <!-- Trust dot -->
+  <circle cx="1100" cy="300" r="8" fill="#10B981"/>
+  <!-- Decorative -->
+  <circle cx="1080" cy="250" r="50" fill="#4F46E5" opacity="0.12"/>
+  <circle cx="1140" cy="380" r="35" fill="#7C3AED" opacity="0.08"/>
 </svg>
