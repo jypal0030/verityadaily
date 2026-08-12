@@ -1,5 +1,5 @@
-/* ============================================================
-   CUSTOM STYLE — "Minimal Editorial (Trust)" — Veritya Daily
+﻿/* ============================================================
+   CUSTOM STYLE â€” "Minimal Editorial (Trust)" â€” Veritya Daily
    Consumes tokens from tokens.css (load tokens FIRST).
    Mobile-first, desktop via @media (min-width: 768px).
    ============================================================ */
@@ -59,6 +59,8 @@ img { max-width: 100%; height: auto; display: block; }
 }
 .site-logo:hover { text-decoration: none; color: var(--text-primary); }
 .site-logo .dot { width: 14px; height: 14px; background: var(--brand-blue); border-radius: 4px; flex-shrink: 0; }
+.site-logo img { height: 28px; width: auto; }
+[data-theme="dark"] .site-logo img { content: url("../img/logo-dark.svg"); }
 .nav-desktop { display: none; gap: var(--space-4); align-items: center; }
 .nav-desktop a { color: var(--text-primary); font-size: 15px; font-weight: 500; }
 .nav-desktop a:hover { color: var(--brand-blue); text-decoration: none; }
@@ -330,3 +332,4 @@ img { max-width: 100%; height: auto; display: block; }
 .skip-link { position: absolute; left: -999px; top: 0; z-index: 999; background: var(--brand-blue); color: #FFFFFF; padding: var(--space-2) var(--space-3); border-radius: var(--radius-sm); }
 .skip-link:focus { left: var(--space-2); top: var(--space-2); }
 .placeholder { background: linear-gradient(135deg, var(--brand-blue-soft) 0%, var(--bg-soft) 100%); display: flex; align-items: center; justify-content: center; color: var(--brand-blue); font-family: var(--font-mono); font-size: 13px; letter-spacing: 0.05em; }
+
