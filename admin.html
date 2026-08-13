@@ -99,6 +99,14 @@ tr:hover td { background: var(--surface-2); }
 .mobile-toggle { display: none; }
 @media (max-width: 768px) { .mobile-toggle { display: flex; } }
 </style>
+<!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-P6F8LX2DWH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", "G-P6F8LX2DWH");
+  </script>
 </head>
 <body>
 
@@ -178,7 +186,7 @@ tr:hover td { background: var(--surface-2); }
 
   <!-- POSTS -->
   <div class="section" id="posts">
-    <div class="page-header"><h1 class="page-title">All Posts</h1><button class="btn btn-primary" onclick="showSection('new-post')">+ New Post</button></div>
+    <div class="page-header"><h2 class="page-title">All Posts</h2><button class="btn btn-primary" onclick="showSection('new-post')">+ New Post</button></div>
     <div class="table-wrap">
       <table>
         <thead><tr><th>Title</th><th>Category</th><th>Slug</th><th>Date</th><th>Status</th></tr></thead>
@@ -220,7 +228,7 @@ tr:hover td { background: var(--surface-2); }
 
   <!-- NEW POST -->
   <div class="section" id="new-post">
-    <div class="page-header"><h1 class="page-title">New Post</h1></div>
+    <div class="page-header"><h2 class="page-title">New Post</h2></div>
     <div style="max-width: 720px;">
       <div class="form-group"><label class="form-label">Title</label><input class="form-input" id="postTitle" placeholder="Enter article title..."></div>
       <div class="form-row">
@@ -258,7 +266,7 @@ tr:hover td { background: var(--surface-2); }
 
   <!-- CATEGORIES -->
   <div class="section" id="categories">
-    <div class="page-header"><h1 class="page-title">Categories</h1></div>
+    <div class="page-header"><h2 class="page-title">Categories</h2></div>
     <div class="table-wrap">
       <table>
         <thead><tr><th>Category</th><th>Slug</th><th>Posts</th><th>Page</th></tr></thead>
@@ -276,7 +284,7 @@ tr:hover td { background: var(--surface-2); }
 
   <!-- SEO CHECKLIST -->
   <div class="section" id="seo">
-    <div class="page-header"><h1 class="page-title">SEO Checklist</h1></div>
+    <div class="page-header"><h2 class="page-title">SEO Checklist</h2></div>
     <div style="max-width: 720px;">
       <div class="checklist-item"><div class="checklist-icon done"></div>robots.txt uploaded</div>
       <div class="checklist-item"><div class="checklist-icon done"></div>sitemap.xml created</div>
@@ -298,7 +306,7 @@ tr:hover td { background: var(--surface-2); }
 
   <!-- ADSENSE -->
   <div class="section" id="adsense">
-    <div class="page-header"><h1 class="page-title">AdSense & Monetization</h1></div>
+    <div class="page-header"><h2 class="page-title">AdSense & Monetization</h2></div>
     <div style="max-width: 720px;">
       <div class="stat-card" style="margin-bottom: 20px;">
         <div class="stat-label">AdSense Status</div>
@@ -330,7 +338,7 @@ tr:hover td { background: var(--surface-2); }
 
   <!-- SETTINGS -->
   <div class="section" id="settings">
-    <div class="page-header"><h1 class="page-title">Settings</h1></div>
+    <div class="page-header"><h2 class="page-title">Settings</h2></div>
     <div style="max-width: 720px;">
       <div class="form-group"><label class="form-label">Site Name</label><input class="form-input" value="Veritya Daily" readonly></div>
       <div class="form-group"><label class="form-label">Domain</label><input class="form-input" value="verityadaily.com" readonly></div>
@@ -388,7 +396,7 @@ function generatePost() {
 <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
 <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">\n';
   fullHTML += '<title>'+title+' — Veritya Daily</title>\n';
-  fullHTML += '<meta name="description" content="'+meta+'">\n';
+  fullHTML += '<meta name="description" content="Veritya Daily admin dashboard — manage posts, track analytics, and monitor site performance.">>\n';
   fullHTML += '<meta name="keywords" content="'+tags+'">\n';
   fullHTML += '<meta name="author" content="Jai">\n';
   fullHTML += '<meta name="robots" content="index, follow, max-image-preview:large">\n';
@@ -406,7 +414,7 @@ function generatePost() {
   fullHTML += '<header class="site-header">
   <div class="header-inner">
     <a href="index.html" class="logo">Veritya<span class="logo-accent">Daily</span></a>
-    <nav class="main-nav">
+    <nav class="main-nav" aria-label="Main navigation">
       <a href="category-ai.html">AI</a>
       <a href="category-crypto.html">Crypto</a>
       <a href="category-finance.html">Finance</a>
@@ -418,17 +426,17 @@ function generatePost() {
   </div>
 </header>\n';
   fullHTML += '<main id="main"><article class="article-container"><header class="article-header">\n';
-  fullHTML += '<nav class="breadcrumbs"><a href="index.html">Home</a><span class="sep">›</span><a href="#">'+category+'</a></nav>\n';
+  fullHTML += '<nav class="breadcrumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span class="sep">›</span><a href="#">'+category+'</a></nav>\n';
   fullHTML += '<div class="article-meta"><span class="kicker">'+category+'</span><span>· '+new Date().toLocaleDateString('en-US',{year:'numeric',month:'short',day:'numeric'})+'</span><span>· 5 min read</span></div>\n';
-  fullHTML += '<h1 class="article-title">'+title+'</h1></header>\n';
+  fullHTML += '<h2 class="article-title">'+title+'</h2></header>\n';
   fullHTML += '<div class="article-body">'+html+'\n';
   fullHTML += '<div class="post-footer"><div class="tag-list">'+tagHTML+'</div></div>\n';
   fullHTML += '<div class="author-box"><div class="placeholder" style="width:64px;height:64px;border-radius:50%;flex-shrink:0;">[photo]</div><div class="author-box__info"><div class="author-box__role">Written by</div><h3 class="author-box__name">Jai</h3><p class="author-box__bio">Founder, Veritya Daily · Tech &amp; crypto journalist since 2018</p></div></div>\n';
   fullHTML += '<div class="disclosure"><strong>Affiliate disclosure:</strong> This article may contain affiliate links. See our <a href="affiliate-disclosure.html">Affiliate Disclosure</a>.</div>\n';
   fullHTML += '</div></article></main>\n';
   fullHTML += '<footer class="site-footer"><div class="container"><div class="footer-grid"><div><a href="index.html" class="site-logo"><img src="assets/img/logo.svg" alt="Veritya Daily" width="140" height="26"></a><p class="text-muted" style="margin-top:8px;">Original analysis on AI, crypto, finance &amp; tech.</p></div><div><h4>Sections</h4><ul class="footer-links"><li><a href="index.html">AI</a></li><li><a href="index.html">Crypto</a></li><li><a href="index.html">Finance</a></li><li><a href="index.html">Cybersecurity</a></li></ul></div><div><h4>Company</h4><ul class="footer-links"><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li><li><a href="author.html">Author</a></li></ul></div><div><h4>Legal</h4><ul class="footer-links"><li><a href="privacy-policy.html">Privacy</a></li><li><a href="disclaimer.html">Disclaimer</a></li><li><a href="terms.html">Terms</a></li></ul></div></div><div class="footer-bottom">© 2026 Veritya Daily</div></div></footer>\n';
-  fullHTML += '<nav class="bottom-nav"><a class="bottom-nav__item" href="index.html"><span>Home</span></a><a class="bottom-nav__item active" href="#"><span>Article</span></a><a class="bottom-nav__item" href="index.html"><span>More</span></a></nav>\n';
-  fullHTML += '<script src="assets/js/dark-mode.js"><\/script><script src="assets/js/reading-progress.js"><\/script>\n';
+  fullHTML += '<nav class="bottom-nav" aria-label="Primary mobile navigation"><a class="bottom-nav__item" href="index.html"><span>Home</span></a><a class="bottom-nav__item active" href="#"><span>Article</span></a><a class="bottom-nav__item" href="index.html"><span>More</span></a></nav>\n';
+  fullHTML += '<script src="assets/js/dark-mode.js" defer><\/script><script src="assets/js/reading-progress.js" defer><\/script>\n';
   fullHTML += '</body>\n</html>';
 
   document.getElementById('htmlOutput').value = fullHTML;
