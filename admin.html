@@ -327,7 +327,7 @@ function generatePost() {
     .replace(/^### (.+)$/gm, '<h3>$1</h3>')
     .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
     .replace(/\*(.+?)\*/g, '<em>$1</em>')
-    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>')
+    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="index.html">$1</a>')
     .replace(/\n\n/g, '</p><p>')
     .replace(/^/,'<p>').replace(/$/,'</p>')
     .replace(/<h2>/g,'</p><h2>').replace(/<\/h2>/g,'</h2><p>')
