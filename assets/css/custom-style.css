@@ -1077,3 +1077,27 @@ nav.bottom-nav,
   border: 0 !important;
 }
 /* === END OMEGA X: Missing component styles === */
+/* === OMEGA X: Table responsive overflow === */
+.article-content table,
+.article-body table,
+.article-container table,
+.article-page table {
+  display: block;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  max-width: 100%;
+  border-collapse: collapse;
+}
+.article-content th,
+.article-content td,
+.article-body th,
+.article-body td,
+.article-container th,
+.article-container td,
+.article-page th,
+.article-page td {
+  min-width: 80px;
+  white-space: normal;
+  word-break: break-word;
+}
+/* === END OMEGA X: Table responsive === */
