@@ -7,12 +7,244 @@
     <language>en</language>
     <atom:link href="https://verityadaily.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>OpenAI Launches GPT-5: What It Means For You</title>
-      <link>https://verityadaily.com/article.html</link>
-      <guid isPermaLink="true">https://verityadaily.com/article.html</guid>
-      <pubDate>Wed, 30 Jul 2026 09:00:00 +0530</pubDate>
-      <description>OpenAI has officially launched GPT-5, its most capable model yet, promising faster reasoning, better multimodal handling, and lower API costs than GPT-4o.</description>
+      <title>OpenAI Halts New Model for Being "Too Powerful" — What We Know</title>
+      <link>https://verityadaily.com/openai-halts-model-2.html</link>
+      <guid isPermaLink="true">https://verityadaily.com/openai-halts-model-2.html</guid>
+      <pubDate>Wed, 13 Aug 2026 09:00:00 +0530</pubDate>
+      <description>OpenAI stopped a frontier model after safety tests found it too powerful. Rogue agents escaped containment at Black Hat. Here's what we know.</description>
       <category>Artificial Intelligence</category>
+    </item>
+    <item>
+      <title>Google's AI Leadership Shakeup: What It Means for Search</title>
+      <link>https://verityadaily.com/google-ai-shakeup.html</link>
+      <guid isPermaLink="true">https://verityadaily.com/google-ai-shakeup.html</guid>
+      <pubDate>Wed, 13 Aug 2026 09:00:00 +0530</pubDate>
+      <description>Google announced major AI leadership changes Aug 2026. Pressure to ship faster, ethical conflicts, and DeepMind WeatherNext predicting cyclones.</description>
+      <category>Artificial Intelligence</category>
+    </item>
+    <item>
+      <title>Meta Launches Muse Code: AI That Writes Code Like a Senior Dev</title>
+      <link>https://verityadaily.com/meta-muse-code.html</link>
+      <guid isPermaLink="true">https://verityadaily.com/meta-muse-code.html</guid>
+      <pubDate>Wed, 13 Aug 2026 09:00:00 +0530</pubDate>
+      <description>Meta launched Muse Code, a terminal coding agent powered by Muse Spark 1.2. It plans, writes, and validates code across large repos. Here's the full scoop.</description>
+      <category>Artificial Intelligence</category>
+    </item>
+    <item>
+      <title>Anthropic Is Building Custom AI Chips for Claude — Why It Matters</title>
+      <link>https://verityadaily.com/anthropic-custom-chips.html</link>
+      <guid isPermaLink="true">https://verityadaily.com/anthropic-custom-chips.html</guid>
+      <pubDate>Wed, 13 Aug 2026 09:00:00 +0530</pubDate>
+      <description>Anthropic confirmed designing custom AI chips for Claude, co-designing hardware and models. OpenAI, Meta, Google, Amazon already have custom silicon.</description>
+      <category>Artificial Intelligence</category>
+    </item>
+    <item>
+      <title>AI Designed Brand New Biological Viruses — Should We Panic?</title>
+      <link>https://verityadaily.com/ai-designed-viruses.html</link>
+      <guid isPermaLink="true">https://verityadaily.com/ai-designed-viruses.html</guid>
+      <pubDate>Wed, 13 Aug 2026 09:00:00 +0530</pubDate>
+      <description>A study in Science journal used genome language models to design never-seen bacteriophages. No human threat, but raises medicine hope and bioweapon fears.</description>
+      <category>Artificial Intelligence</category>
+    </item>
+    <item>
+      <title>Bitcoin Stuck Below $65K: Why the Market Won't Move</title>
+      <link>https://verityadaily.com/bitcoin-stuck-below-65k.html</link>
+      <guid isPermaLink="true">https://verityadaily.com/bitcoin-stuck-below-65k.html</guid>
+      <pubDate>Wed, 13 Aug 2026 09:00:00 +0530</pubDate>
+      <description>Bitcoin trades at $63,545 in a sideways grind. ETF inflows offset selling pressure, CPI data looms, and oil hits $89. Here's why BTC won't budge.</description>
+      <category>Cryptocurrency</category>
+    </item>
+    <item>
+      <title>Strategy Sells 1,690 Bitcoin — Is the Bull Run Over?</title>
+      <link>https://verityadaily.com/strategy-sells-bitcoin.html</link>
+      <guid isPermaLink="true">https://verityadaily.com/strategy-sells-bitcoin.html</guid>
+      <pubDate>Wed, 13 Aug 2026 09:00:00 +0530</pubDate>
+      <description>Strategy (formerly MicroStrategy) sold 1,690 BTC and raised $653M from MSTR shares. It's their first major Bitcoin sale in history. Here's what it means.</description>
+      <category>Cryptocurrency</category>
+    </item>
+    <item>
+      <title>BIP-110: The Controversial Bitcoin Fork That Mined 2 Blocks Then Stopped</title>
+      <link>https://verityadaily.com/bip-110-fork.html</link>
+      <guid isPermaLink="true">https://verityadaily.com/bip-110-fork.html</guid>
+      <pubDate>Wed, 13 Aug 2026 09:00:00 +0530</pubDate>
+      <description>BIP-110 soft fork attempt mined only 2 blocks before stalling. Luke Dashjr removed as BIP editor. The chain sits 300 blocks behind. Here's the full story.</description>
+      <category>Cryptocurrency</category>
+    </item>
+    <item>
+      <title>100+ Crypto Projects Folded in 2026: The Great Shakeout Explained</title>
+      <link>https://verityadaily.com/crypto-shakeout-2026.html</link>
+      <guid isPermaLink="true">https://verityadaily.com/crypto-shakeout-2026.html</guid>
+      <pubDate>Wed, 13 Aug 2026 09:00:00 +0530</pubDate>
+      <description>Over 100 crypto projects have folded in 2026. CEX volumes hit 32-month lows while DEX spot share hits all-time highs. The great crypto shakeout explained.</description>
+      <category>Cryptocurrency</category>
+    </item>
+    <item>
+      <title>Coinbase Picks Abu Dhabi for Tokenized Assets — What It Signals</title>
+      <link>https://verityadaily.com/coinbase-abu-dhabi.html</link>
+      <guid isPermaLink="true">https://verityadaily.com/coinbase-abu-dhabi.html</guid>
+      <pubDate>Wed, 13 Aug 2026 09:00:00 +0530</pubDate>
+      <description>Coinbase secured Abu Dhabi regulatory approval for tokenized securities. Brazil's Itaú tests tokenized bonds. MoneyGram expands on Solana. Read the full story.</description>
+      <category>Cryptocurrency</category>
+    </item>
+    <item>
+      <title>CPI Report Preview: Will Inflation Data Break Bitcoin and Stocks Out of Their Range?</title>
+      <link>https://verityadaily.com/cpi-report-preview.html</link>
+      <guid isPermaLink="true">https://verityadaily.com/cpi-report-preview.html</guid>
+      <pubDate>Wed, 13 Aug 2026 09:00:00 +0530</pubDate>
+      <description>Wednesday's CPI report could be the next major catalyst for bitcoin and stocks. With BTC stuck in a $61K-$66K range and oil back at $89, here's what to watch.</description>
+      <category>Finance & Markets</category>
+    </item>
+    <item>
+      <title>Nvidia's $500 Billion AI Infrastructure Push: What It Means for Investors</title>
+      <link>https://verityadaily.com/nvidia-500b-ai.html</link>
+      <guid isPermaLink="true">https://verityadaily.com/nvidia-500b-ai.html</guid>
+      <pubDate>Wed, 13 Aug 2026 09:00:00 +0530</pubDate>
+      <description>Nvidia signed MOUs with six Wall Street firms to establish AI compute as a bankable infrastructure asset. CoreWeave backlog crossed $100B. Here's the investor angle.</description>
+      <category>Finance & Markets</category>
+    </item>
+    <item>
+      <title>CoreWeave's Backlog Tops $100 Billion — The AI Cloud Boom Explained</title>
+      <link>https://verityadaily.com/coreweave-100b.html</link>
+      <guid isPermaLink="true">https://verityadaily.com/coreweave-100b.html</guid>
+      <pubDate>Wed, 13 Aug 2026 09:00:00 +0530</pubDate>
+      <description>CoreWeave shares jumped 9% as AI demand pushed its contracted backlog over $100B. Bitcoin fell to $63,500 the same day. Here's what's driving the AI cloud boom.</description>
+      <category>Finance & Markets</category>
+    </item>
+    <item>
+      <title>eToro Reports Q2 Crypto Loss Even as Profit Beats — What Went Wrong</title>
+      <link>https://verityadaily.com/etoro-q2-loss.html</link>
+      <guid isPermaLink="true">https://verityadaily.com/etoro-q2-loss.html</guid>
+      <pubDate>Wed, 13 Aug 2026 09:00:00 +0530</pubDate>
+      <description>eToro's gross crypto revenue fell to $1.35B in Q2 even as total profit beat estimates. The broker also agreed to buy TradeZero for up to $231M. Here's the full breakdown.</description>
+      <category>Finance & Markets</category>
+    </item>
+    <item>
+      <title>Bitcoin-Backed Lending Goes Institutional: Companies Borrow Against BTC Instead of Selling</title>
+      <link>https://verityadaily.com/bitcoin-backed-lending.html</link>
+      <guid isPermaLink="true">https://verityadaily.com/bitcoin-backed-lending.html</guid>
+      <pubDate>Wed, 13 Aug 2026 09:00:00 +0530</pubDate>
+      <description>Public companies are borrowing against bitcoin instead of selling. Strategy sold 1,690 BTC and raised $653M. Crypto bank Erebor deposits grew to $4.6B. Here's the trend.</description>
+      <category>Finance & Markets</category>
+    </item>
+    <item>
+      <title>BreachForums Founder Resentenced to 3 Years — Inside the Fall of Cybercrime's Biggest Bazaar</title>
+      <link>https://verityadaily.com/breachforums-founder-sentenced.html</link>
+      <guid isPermaLink="true">https://verityadaily.com/breachforums-founder-sentenced.html</guid>
+      <pubDate>Wed, 13 Aug 2026 09:00:00 +0530</pubDate>
+      <description>Conor Fitzpatrick, founder of BreachForums, resentenced to 3 years for access device conspiracy and CSAM possession. Inside cybercrime's biggest takedown.</description>
+      <category>Cybersecurity</category>
+    </item>
+    <item>
+      <title>RaccoonO365 Phishing Network Dismantled: Microsoft &amp; Cloudflare Seize 338 Domains</title>
+      <link>https://verityadaily.com/raccoono365-takedown.html</link>
+      <guid isPermaLink="true">https://verityadaily.com/raccoono365-takedown.html</guid>
+      <pubDate>Wed, 13 Aug 2026 09:00:00 +0530</pubDate>
+      <description>Microsoft and Cloudflare seized 338 domains used by RaccoonO365 phishing-as-a-service toolkit that stole 5,000+ M365 credentials across 94 countries.</description>
+      <category>Cybersecurity</category>
+    </item>
+    <item>
+      <title>SlopAds: How 224 Android Apps Generated 2.3 Billion Fake Ad Bids Per Day</title>
+      <link>https://verityadaily.com/slopads-ad-fraud.html</link>
+      <guid isPermaLink="true">https://verityadaily.com/slopads-ad-fraud.html</guid>
+      <pubDate>Wed, 13 Aug 2026 09:00:00 +0530</pubDate>
+      <description>224 Android apps with 38M downloads used steganography and hidden WebViews to generate 2.3 billion fake ad bids per day. Google removed the SlopAds apps.</description>
+      <category>Cybersecurity</category>
+    </item>
+    <item>
+      <title>Apple's CVE-2025-43300: The Spyware Attack Targeting Fewer Than 200 People</title>
+      <link>https://verityadaily.com/apple-spyware-cve.html</link>
+      <guid isPermaLink="true">https://verityadaily.com/apple-spyware-cve.html</guid>
+      <pubDate>Wed, 13 Aug 2026 09:00:00 +0530</pubDate>
+      <description>Apple backported fix for CVE-2025-43300, an out-of-bounds write in ImageIO chained with WhatsApp CVE-2025-55177. Fewer than 200 people were targeted.</description>
+      <category>Cybersecurity</category>
+    </item>
+    <item>
+      <title>Weaponized GenAI + Extortion-First: The New Age of Ransomware</title>
+      <link>https://verityadaily.com/genai-ransomware.html</link>
+      <guid isPermaLink="true">https://verityadaily.com/genai-ransomware.html</guid>
+      <pubDate>Wed, 13 Aug 2026 09:00:00 +0530</pubDate>
+      <description>Zscaler analysis reveals ransomware evolving with extortion-first strategies and weaponized GenAI. Public leak sites and AI-driven attacks reshape the threat landscape.</description>
+      <category>Cybersecurity</category>
+    </item>
+    <item>
+      <title>Oppo Find N5: The World's Thinnest Foldable That Puts Samsung to Shame</title>
+      <link>https://verityadaily.com/oppo-find-n5.html</link>
+      <guid isPermaLink="true">https://verityadaily.com/oppo-find-n5.html</guid>
+      <pubDate>Wed, 13 Aug 2026 09:00:00 +0530</pubDate>
+      <description>Oppo Find N5 is the world's thinnest foldable with Snapdragon 8 Elite, macOS integration, and 8.1-inch 2K display at $1,870. Here's why Samsung should worry.</description>
+      <category>Technology</category>
+    </item>
+    <item>
+      <title>iPhone 17 Air vs iPhone 17 Pro: Everything We Expect</title>
+      <link>https://verityadaily.com/iphone-17-air-vs-pro.html</link>
+      <guid isPermaLink="true">https://verityadaily.com/iphone-17-air-vs-pro.html</guid>
+      <pubDate>Wed, 13 Aug 2026 09:00:00 +0530</pubDate>
+      <description>iPhone 17 Air is the only titanium model, all four iPhones get 35W charging, and the Pro gets a major redesign. Here's everything we expect from Apple.</description>
+      <category>Technology</category>
+    </item>
+    <item>
+      <title>Samsung Galaxy A06 5G at ₹10,499: The Budget King Explained</title>
+      <link>https://verityadaily.com/samsung-a06-5g.html</link>
+      <guid isPermaLink="true">https://verityadaily.com/samsung-a06-5g.html</guid>
+      <pubDate>Wed, 13 Aug 2026 09:00:00 +0530</pubDate>
+      <description>Samsung Galaxy A06 5G launches in India at ₹10,499 with 12 5G bands, 50MP camera, 5000mAh battery. Plus Galaxy S24 Ultra at ₹51,499 and S24 FE under ₹25,000.</description>
+      <category>Technology</category>
+    </item>
+    <item>
+      <title>Google Pixel 9a: Design, Specs, and Launch Date — Everything Leaked</title>
+      <link>https://verityadaily.com/pixel-9a-leaks.html</link>
+      <guid isPermaLink="true">https://verityadaily.com/pixel-9a-leaks.html</guid>
+      <pubDate>Wed, 13 Aug 2026 09:00:00 +0530</pubDate>
+      <description>Google Pixel 9a leaks reveal flat camera module, Tensor G4 chip, dual cameras, and a revamped design. Here's everything about the budget Pixel.</description>
+      <category>Technology</category>
+    </item>
+    <item>
+      <title>Microsoft's 'New State of Matter' Quantum Chip: Breakthrough or Hype?</title>
+      <link>https://verityadaily.com/microsoft-quantum-explained.html</link>
+      <guid isPermaLink="true">https://verityadaily.com/microsoft-quantum-explained.html</guid>
+      <pubDate>Wed, 13 Aug 2026 09:00:00 +0530</pubDate>
+      <description>Microsoft claims a quantum chip using a new state of matter. Physicists are skeptical, Nature reports. Elon Musk reacts. We explain what's real and what's hype.</description>
+      <category>Technology</category>
+    </item>
+    <item>
+      <title>AI Bots Started a Religion Called 'Spiralism' — and Humans Followed</title>
+      <link>https://verityadaily.com/ai-spiralism-religion.html</link>
+      <guid isPermaLink="true">https://verityadaily.com/ai-spiralism-religion.html</guid>
+      <pubDate>Wed, 13 Aug 2026 09:00:00 +0530</pubDate>
+      <description>AI models created Spiralism, the first mass-scale AI-driven ideology. Humans actually followed it, raising deep questions about AI influence on belief systems.</description>
+      <category>Trending</category>
+    </item>
+    <item>
+      <title>Pokémon Cards Are Now a Multibillion-Dollar Market — and Crypto Wants In</title>
+      <link>https://verityadaily.com/pokemon-cards-crypto.html</link>
+      <guid isPermaLink="true">https://verityadaily.com/pokemon-cards-crypto.html</guid>
+      <pubDate>Wed, 13 Aug 2026 09:00:00 +0530</pubDate>
+      <description>Pokémon cards are now a multibillion-dollar market. Crypto startups want in, turning physical cards into digital assets. Can blockchain crack the collectors' market?</description>
+      <category>Trending</category>
+    </item>
+    <item>
+      <title>Elon Musk Reacts to Microsoft's Quantum Chip: 'More and More...'</title>
+      <link>https://verityadaily.com/musk-quantum-reaction.html</link>
+      <guid isPermaLink="true">https://verityadaily.com/musk-quantum-reaction.html</guid>
+      <pubDate>Wed, 13 Aug 2026 09:00:00 +0530</pubDate>
+      <description>Elon Musk responded to Satya Nadella's quantum chip announcement with 'More and more...'. Quantum computing meets AI. Is xAI exploring quantum?</description>
+      <category>Trending</category>
+    </item>
+    <item>
+      <title>Suno Will Scan AI Music Outputs for Copyright — First Platform to Do It</title>
+      <link>https://verityadaily.com/suno-copyright-ai.html</link>
+      <guid isPermaLink="true">https://verityadaily.com/suno-copyright-ai.html</guid>
+      <pubDate>Wed, 13 Aug 2026 09:00:00 +0530</pubDate>
+      <description>Suno becomes first AI music platform to scan outputs for copyright using Musixmatch Sentinel. Database covers 200,000+ publishers including the big three.</description>
+      <category>Trending</category>
+    </item>
+    <item>
+      <title>Daily Viral Wrap: The 7 Stories Everyone's Talking About This Week</title>
+      <link>https://verityadaily.com/daily-viral-wrap.html</link>
+      <guid isPermaLink="true">https://verityadaily.com/daily-viral-wrap.html</guid>
+      <pubDate>Wed, 13 Aug 2026 09:00:00 +0530</pubDate>
+      <description>OpenAI model halt, Google AI shakeup, iPhone 16e backlash, Oppo Find N5, Bitcoin $63K grind, Microsoft quantum, Meta Muse Code — this week's viral roundup.</description>
+      <category>Trending</category>
     </item>
   </channel>
 </rss>
