@@ -491,13 +491,36 @@ a.site-logo {
 /* Hide main-nav on mobile only */
 @media (max-width: 767px) {
   .main-nav {
-    display: none !important;
-    visibility: hidden !important;
-    position: absolute !important;
-    left: -9999px !important;
-    width: 0 !important;
-    height: 0 !important;
-    overflow: hidden !important;
+    display: flex !important;
+    visibility: visible !important;
+    position: static !important;
+    left: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    overflow: visible !important;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4px 10px;
+    padding: 4px 0;
+    order: 3; /* After logo and toggle */
+  }
+  .main-nav a {
+    font-size: 12px;
+    padding: 4px 8px;
+    white-space: nowrap;
+  }
+  /* Header: stack logo+toggle on first row, nav on second row centered */
+  .header-inner,
+  .site-header .container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 6px 16px;
+  }
+  .logo, .logo-link, a.logo {
+    order: 1;
+  }
+  .theme-toggle, #themeToggle, #theme-toggle {
+    order: 2;
   }
   
   /* Mobile-only: prevent horizontal overflow */
