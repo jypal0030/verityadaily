@@ -825,3 +825,32 @@ nav.bottom-nav,
 /* Mobile-only utility */
 .mobile-only { display: block; }
 @media (min-width: 768px) { .mobile-only { display: none; } }
+
+/* === OMEGA X FIX: Compound selector for Template C & D === */
+/* Problem: .container (max-width:1200px) overrides .article-container (max-width:680px)
+   when both classes are on the same element (Template C & D).
+   Fix: .container.article-container has specificity 0,2,0 — beats both single-class rules. */
+
+/* Base: article width wins */
+.container.article-container {
+  max-width: var(--article-max, 680px);
+}
+
+/* Desktop: centered reading column */
+@media (min-width: 768px) {
+  .container.article-container {
+    max-width: var(--article-max, 680px);
+    margin-inline: auto;
+    padding-inline: var(--desktop-margin, 32px);
+  }
+}
+
+/* Mobile: full width */
+@media (max-width: 767px) {
+  .container.article-container {
+    max-width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+}
+/* === END OMEGA X FIX === */
