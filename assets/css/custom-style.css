@@ -459,12 +459,14 @@ img { max-width: 100%; height: auto; display: block; }
 .author-social a.reddit:hover { color: #FF4500; }
 .author-social a.telegram:hover { color: #229ED9; }
 
-/* === MOBILE UX FIX v2 === */
+
+/* === MOBILE UX FIX v3 === */
 
 /* Logo: ensure img.logo (class ON the img tag, not parent) is constrained */
 img.logo,
 .logo-link img,
-a.logo img {
+a.logo img,
+.site-logo img {
   height: 28px !important;
   width: auto !important;
   max-width: 160px;
@@ -472,7 +474,8 @@ a.logo img {
 }
 
 /* Text logo fallback */
-a.logo {
+a.logo,
+a.site-logo {
   font-family: var(--font-display);
   font-weight: 700;
   font-size: 20px;
@@ -485,30 +488,58 @@ a.logo {
   white-space: nowrap;
 }
 
-/* Hide main-nav on mobile — safety override */
+/* CRITICAL: Hide main-nav on mobile — use multiple approaches for safety */
 .main-nav {
   display: none !important;
+  visibility: hidden !important;
+  position: absolute !important;
+  left: -9999px !important;
+  width: 0 !important;
+  height: 0 !important;
+  overflow: hidden !important;
 }
 @media (min-width: 768px) {
   .main-nav {
+    display: flex !important;
+    visibility: visible !important;
+    position: static !important;
+    left: auto !important;
+    width: auto !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+}
+
+/* Also hide nav-desktop on mobile (homepage uses this class) */
+.nav-desktop {
+  display: none !important;
+}
+@media (min-width: 768px) {
+  .nav-desktop {
     display: flex !important;
   }
 }
 
 /* Header: ensure proper height and layout */
 .site-header {
-  height: auto;
-  min-height: 56px;
+  height: auto !important;
+  min-height: 52px;
   padding: 8px 0;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: var(--bg-primary);
+  border-bottom: 1px solid var(--border);
 }
 .header-inner,
 .site-header .container {
-  display: flex;
+  display: flex !important;
   align-items: center;
   justify-content: space-between;
   gap: 8px;
-  height: auto;
+  height: auto !important;
   min-height: 40px;
+  padding: 0 16px;
 }
 
 /* Theme toggle: ensure visible and clickable on mobile */
@@ -542,15 +573,22 @@ a.logo {
   white-space: nowrap;
   -webkit-overflow-scrolling: touch;
   font-size: 13px;
+  background: var(--bg-soft);
+  border-bottom: 1px solid var(--border);
+  padding: 6px 0;
 }
-.ticker-inner {
+.ticker-inner,
+.price-ticker .container {
   display: inline-flex;
   gap: 16px;
-  padding: 6px 16px;
+  padding: 4px 16px;
+  white-space: nowrap;
 }
-.ticker-item {
+.ticker-item,
+.price-ticker span {
   font-size: 13px;
   white-space: nowrap;
+  flex-shrink: 0;
 }
 
 /* Bottom nav: professional look with text labels */
@@ -741,3 +779,7 @@ body {
   overflow: hidden;
   box-sizing: border-box;
 }
+
+/* Mobile-only utility */
+.mobile-only { display: block; }
+@media (min-width: 768px) { .mobile-only { display: none; } }
