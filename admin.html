@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16.png">
 <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
@@ -403,7 +403,20 @@ function generatePost() {
   fullHTML += '</head>\n<body>\n';
   fullHTML += '<a class="skip-link sr-only" href="#main">Skip to content</a>\n';
   fullHTML += '<div class="reading-progress" id="readingProgress"></div>\n';
-  fullHTML += '<header class="site-header"><div class="container"><a href="index.html" class="site-logo"><img src="assets/img/logo.svg" alt="Veritya Daily" width="140" height="26"></a><nav class="nav-desktop"><a href="index.html">AI</a><a href="index.html">Crypto</a><a href="index.html">Finance</a><a href="index.html">Cybersecurity</a><a href="index.html">Technology</a><a href="index.html">Trending</a></nav><div class="header-actions"><button class="icon-button" id="themeToggle"></button></div></div></header>\n';
+  fullHTML += '<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">Veritya<span class="logo-accent">Daily</span></a>
+    <nav class="main-nav">
+      <a href="category-ai.html">AI</a>
+      <a href="category-crypto.html">Crypto</a>
+      <a href="category-finance.html">Finance</a>
+      <a href="category-cybersecurity.html">Cybersecurity</a>
+      <a href="category-technology.html">Technology</a>
+      <a href="category-trending.html">Trending</a>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+  </div>
+</header>\n';
   fullHTML += '<main id="main"><article class="article-container"><header class="article-header">\n';
   fullHTML += '<nav class="breadcrumbs"><a href="index.html">Home</a><span class="sep">›</span><a href="#">'+category+'</a></nav>\n';
   fullHTML += '<div class="article-meta"><span class="kicker">'+category+'</span><span>· '+new Date().toLocaleDateString('en-US',{year:'numeric',month:'short',day:'numeric'})+'</span><span>· 5 min read</span></div>\n';

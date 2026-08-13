@@ -58,18 +58,18 @@ window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);
 <body>
 <div id="reading-progress-bar"></div>
 <header class="site-header">
-<div class="header-inner">
-<a href="index.html" class="logo">Veritya Daily</a>
-<nav class="main-nav">
-<a href="category-ai.html">AI</a>
-<a href="category-crypto.html">Crypto</a>
-<a href="category-finance.html">Finance</a>
-<a href="category-cybersecurity.html" class="active">Cybersecurity</a>
-<a href="category-technology.html">Technology</a>
-<a href="category-trending.html">Trending</a>
-</nav>
-<button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
-</div>
+  <div class="header-inner">
+    <a href="index.html" class="logo">Veritya<span class="logo-accent">Daily</span></a>
+    <nav class="main-nav">
+      <a href="category-ai.html">AI</a>
+      <a href="category-crypto.html">Crypto</a>
+      <a href="category-finance.html">Finance</a>
+      <a href="category-cybersecurity.html">Cybersecurity</a>
+      <a href="category-technology.html">Technology</a>
+      <a href="category-trending.html">Trending</a>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+  </div>
 </header>
 <div class="price-ticker">
 <div class="ticker-track">
@@ -250,10 +250,12 @@ window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);
     <div class="footer-bottom">© 2026 Veritya Daily · Independent tech, crypto & finance news · Not financial advice</div>
   </div>
 </footer>
-<nav class="bottom-nav">
-<a href="category-cybersecurity.html">Cybersecurity</a>
-<a href="category-trending.html">Trending</a>
-<a href="index.html">Home</a>
+<nav class="bottom-nav mobile-only">
+  <a href="index.html"><span>🏠</span><span>Home</span></a>
+  <a href="category-ai.html"><span>🤖</span><span>AI</span></a>
+  <a href="category-crypto.html"><span>₿</span><span>Crypto</span></a>
+  <a href="category-finance.html"><span>📊</span><span>Finance</span></a>
+  <a href="category-trending.html"><span>🔥</span><span>Trending</span></a>
 </nav>
 <script src="assets/js/dark-mode.js"></script>
 <script src="assets/js/reading-progress.js"></script>

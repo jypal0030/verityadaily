@@ -102,24 +102,19 @@
 <body>
     <!-- Header -->
     <header class="site-header">
-        <div class="container header-inner">
-            <a href="index.html" class="logo">
-                <img src="assets/img/logo.png" alt="Veritya Daily" width="180" height="40">
-            </a>
-            <nav class="main-nav" aria-label="Main navigation">
-                <a href="category-ai.html">AI</a>
-                <a href="category-crypto.html">Crypto</a>
-                <a href="category-finance.html">Finance</a>
-                <a href="category-cybersecurity.html">Cybersecurity</a>
-                <a href="category-technology.html" class="active">Technology</a>
-                <a href="category-trending.html">Trending</a>
-            </nav>
-            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
-                <span class="icon-sun">☀</span>
-                <span class="icon-moon">☾</span>
-            </button>
-        </div>
-    </header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">Veritya<span class="logo-accent">Daily</span></a>
+    <nav class="main-nav">
+      <a href="category-ai.html">AI</a>
+      <a href="category-crypto.html">Crypto</a>
+      <a href="category-finance.html">Finance</a>
+      <a href="category-cybersecurity.html">Cybersecurity</a>
+      <a href="category-technology.html">Technology</a>
+      <a href="category-trending.html">Trending</a>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+  </div>
+</header>
 
     <!-- Price Ticker -->
     <div class="price-ticker" id="priceTicker">
@@ -381,13 +376,13 @@
 </footer>
 
     <!-- Bottom Nav -->
-    <nav class="bottom-nav" aria-label="Bottom navigation">
-        <a href="index.html">Home</a>
-        <a href="category-technology.html" class="active">Tech</a>
-        <a href="category-ai.html">AI</a>
-        <a href="category-crypto.html">Crypto</a>
-        <a href="category-trending.html">Trending</a>
-    </nav>
+    <nav class="bottom-nav mobile-only">
+  <a href="index.html"><span>🏠</span><span>Home</span></a>
+  <a href="category-ai.html"><span>🤖</span><span>AI</span></a>
+  <a href="category-crypto.html"><span>₿</span><span>Crypto</span></a>
+  <a href="category-finance.html"><span>📊</span><span>Finance</span></a>
+  <a href="category-trending.html"><span>🔥</span><span>Trending</span></a>
+</nav>
 
     <!-- Scripts -->
     <script src="assets/js/dark-mode.js"></script>
