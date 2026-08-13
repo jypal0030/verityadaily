@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://verityadaily.com/</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
   <url><loc>https://verityadaily.com/openai-halts-model.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://verityadaily.com/bitcoin-stuck-63k.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://verityadaily.com/iphone-16e-launch.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://verityadaily.com/microsoft-quantum-breakthrough.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://verityadaily.com/article.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://verityadaily.com/gpt5-launch.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://verityadaily.com/bitcoin-etf.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
