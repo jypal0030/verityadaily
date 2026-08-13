@@ -460,9 +460,9 @@ img { max-width: 100%; height: auto; display: block; }
 .author-social a.telegram:hover { color: #229ED9; }
 
 
-/* === MOBILE UX FIX v3 === */
+/* === MOBILE UX FIX v4 (scoped to mobile only) === */
 
-/* Logo: ensure img.logo (class ON the img tag, not parent) is constrained */
+/* Logo: ensure img.logo is constrained on all viewports */
 img.logo,
 .logo-link img,
 a.logo img,
@@ -473,7 +473,7 @@ a.logo img,
   object-fit: contain;
 }
 
-/* Text logo fallback */
+/* Text logo */
 a.logo,
 a.site-logo {
   font-family: var(--font-display);
@@ -488,16 +488,109 @@ a.site-logo {
   white-space: nowrap;
 }
 
-/* CRITICAL: Hide main-nav on mobile — use multiple approaches for safety */
-.main-nav {
-  display: none !important;
-  visibility: hidden !important;
-  position: absolute !important;
-  left: -9999px !important;
-  width: 0 !important;
-  height: 0 !important;
-  overflow: hidden !important;
+/* Hide main-nav on mobile only */
+@media (max-width: 767px) {
+  .main-nav {
+    display: none !important;
+    visibility: hidden !important;
+    position: absolute !important;
+    left: -9999px !important;
+    width: 0 !important;
+    height: 0 !important;
+    overflow: hidden !important;
+  }
+  
+  /* Mobile-only: prevent horizontal overflow */
+  body {
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+  
+  .container,
+  .article-container,
+  .article-page {
+    max-width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  
+  /* Mobile-only: article content wrapping */
+  .article-content p,
+  .article-body p,
+  .article-content li,
+  .article-body li,
+  .article-content h2,
+  .article-body h2,
+  .article-content h3,
+  .article-body h3,
+  .legal-content p,
+  .legal-content li {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    hyphens: auto;
+    max-width: 100%;
+  }
+  
+  .article-content,
+  .article-body {
+    max-width: 100%;
+    overflow: hidden;
+  }
+  
+  /* Mobile-only: table scroll */
+  .table-wrap,
+  .spec-table-wrapper,
+  .table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    max-width: 100%;
+  }
+  
+  .article-content table,
+  .article-body table {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    overflow-x: auto;
+  }
+  
+  /* Mobile-only: box-sizing safety */
+  .key-takeaways,
+  .article-toc,
+  .toc,
+  .author-box,
+  .author-info,
+  .author-bio,
+  .footer-grid,
+  .ad-zone,
+  .ad-placeholder,
+  [class*="ad-zone"],
+  [class*="ad_zone"] {
+    box-sizing: border-box;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  
+  /* Mobile-only: share buttons wrap */
+  .share-section,
+  .share-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    max-width: 100%;
+  }
+  
+  /* Mobile-only: read-next single column */
+  .read-next-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    max-width: 100%;
+  }
 }
+
+/* Desktop: show main-nav */
 @media (min-width: 768px) {
   .main-nav {
     display: flex !important;
@@ -508,19 +601,67 @@ a.site-logo {
     height: auto !important;
     overflow: visible !important;
   }
-}
-
-/* Also hide nav-desktop on mobile (homepage uses this class) */
-.nav-desktop {
-  display: none !important;
-}
-@media (min-width: 768px) {
+  
   .nav-desktop {
     display: flex !important;
   }
+  
+  .mobile-only {
+    display: none;
+  }
 }
 
-/* Header: ensure proper height and layout */
+/* === DESKTOP ARTICLE LAYOUT === */
+/* Restore reading-width constraint on desktop */
+@media (min-width: 768px) {
+  /* Article page: centered reading column */
+  .article-page {
+    max-width: var(--article-max, 720px);
+    margin-inline: auto;
+    padding-inline: var(--desktop-margin, 32px);
+  }
+  
+  /* Container inside article-page: inherit parent width */
+  .article-page .container {
+    max-width: 100%;
+    padding-inline: 0;
+  }
+  
+  /* Article container (Template C): centered reading column */
+  .article-container {
+    max-width: var(--article-max, 720px);
+    margin-inline: auto;
+    padding-inline: var(--desktop-margin, 32px);
+  }
+  
+  /* Container: restore 1200px max on desktop */
+  .container {
+    max-width: var(--container-max, 1200px);
+    padding-inline: var(--desktop-margin, 32px);
+  }
+  
+  /* Article body: comfortable reading typography */
+  .article-body {
+    font-size: 18px;
+    line-height: var(--lh-relaxed, 1.6);
+  }
+  
+  /* Bottom nav: hidden on desktop */
+  .bottom-nav,
+  nav.bottom-nav,
+  .bottom-nav.mobile-only {
+    display: none !important;
+  }
+  
+  /* Body: no bottom padding needed */
+  body {
+    padding-bottom: 0;
+  }
+}
+
+/* === SHARED (all viewports) — non-layout mobile fixes === */
+
+/* Header: sticky, proper height */
 .site-header {
   height: auto !important;
   min-height: 52px;
@@ -531,6 +672,7 @@ a.site-logo {
   background: var(--bg-primary);
   border-bottom: 1px solid var(--border);
 }
+
 .header-inner,
 .site-header .container {
   display: flex !important;
@@ -542,7 +684,7 @@ a.site-logo {
   padding: 0 16px;
 }
 
-/* Theme toggle: ensure visible and clickable on mobile */
+/* Theme toggle */
 .theme-toggle,
 #themeToggle,
 #theme-toggle {
@@ -559,13 +701,14 @@ a.site-logo {
   border-radius: 8px;
   flex-shrink: 0;
 }
+
 .theme-toggle:hover,
 #themeToggle:hover,
 #theme-toggle:hover {
   background: var(--bg-soft);
 }
 
-/* Price ticker: ensure proper scrolling on mobile */
+/* Price ticker */
 .price-ticker,
 .ticker-wrap {
   overflow-x: auto;
@@ -577,6 +720,7 @@ a.site-logo {
   border-bottom: 1px solid var(--border);
   padding: 6px 0;
 }
+
 .ticker-inner,
 .price-ticker .container {
   display: inline-flex;
@@ -584,6 +728,7 @@ a.site-logo {
   padding: 4px 16px;
   white-space: nowrap;
 }
+
 .ticker-item,
 .price-ticker span {
   font-size: 13px;
@@ -591,7 +736,7 @@ a.site-logo {
   flex-shrink: 0;
 }
 
-/* Bottom nav: professional look with text labels */
+/* Bottom nav (mobile only) */
 .bottom-nav,
 nav.bottom-nav,
 .bottom-nav.mobile-only {
@@ -610,6 +755,7 @@ nav.bottom-nav,
   min-height: 52px;
   box-shadow: 0 -2px 8px rgba(0,0,0,0.06);
 }
+
 .bottom-nav a,
 .bottom-nav__item {
   display: flex;
@@ -625,67 +771,14 @@ nav.bottom-nav,
   transition: color var(--transition-fast);
   min-width: 44px;
 }
-.bottom-nav a:hover,
-.bottom-nav a.active,
-.bottom-nav__item:hover,
-.bottom-nav__item.active {
-  color: var(--brand-blue);
-}
+
 .bottom-nav a svg,
 .bottom-nav__item svg {
   width: 20px;
   height: 20px;
 }
-@media (min-width: 768px) {
-  .bottom-nav,
-  nav.bottom-nav,
-  .bottom-nav.mobile-only {
-    display: none !important;
-  }
-}
 
-/* Article content: ensure text wraps properly on mobile */
-.article-content p,
-.article-body p,
-.article-content li,
-.article-body li,
-.article-content h2,
-.article-body h2,
-.article-content h3,
-.article-body h3,
-.legal-content p,
-.legal-content li {
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-  word-break: break-word;
-  hyphens: auto;
-  max-width: 100%;
-}
-
-/* Article content: ensure proper width on mobile */
-.article-content,
-.article-body {
-  max-width: 100%;
-  overflow: hidden;
-}
-
-/* Tables: ensure horizontal scroll on mobile */
-.table-wrap,
-.spec-table-wrapper,
-.table-responsive {
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  max-width: 100%;
-}
-.article-content table,
-.article-body table {
-  width: 100%;
-  max-width: 100%;
-  display: block;
-  overflow-x: auto;
-}
-
-/* Hero image: ensure responsive */
+/* Hero image responsive */
 .article-hero-image img,
 .article-hero img {
   max-width: 100%;
@@ -693,91 +786,17 @@ nav.bottom-nav,
   border-radius: 12px;
 }
 
-/* Key takeaways: ensure proper box on mobile */
-.key-takeaways {
-  box-sizing: border-box;
-  max-width: 100%;
-  overflow: hidden;
-}
-
-/* TOC: ensure proper box on mobile */
-.article-toc,
-.toc {
-  box-sizing: border-box;
-  max-width: 100%;
-  overflow: hidden;
-}
+/* TOC list style */
 .article-toc ul,
 .toc ul {
   list-style: disc;
   padding-left: 20px;
 }
+
 .article-toc li,
 .toc li {
   overflow-wrap: break-word;
   word-wrap: break-word;
-}
-
-/* Share buttons: ensure proper layout on mobile */
-.share-section,
-.share-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  max-width: 100%;
-}
-.share-btn {
-  min-width: 36px;
-  min-height: 36px;
-}
-
-/* Author box: responsive */
-.author-box,
-.author-info,
-.author-bio {
-  box-sizing: border-box;
-  max-width: 100%;
-  overflow: hidden;
-}
-
-/* Read next grid: responsive */
-.read-next-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 12px;
-  max-width: 100%;
-}
-
-/* Footer: ensure proper layout */
-.footer-grid {
-  box-sizing: border-box;
-  max-width: 100%;
-  overflow: hidden;
-}
-
-/* Body: ensure no horizontal scroll on mobile */
-body {
-  overflow-x: hidden;
-  max-width: 100vw;
-}
-
-/* Container: ensure no overflow */
-.container,
-.article-container,
-.article-page {
-  box-sizing: border-box;
-  max-width: 100%;
-  overflow: hidden;
-}
-
-/* Ad zones: responsive */
-.ad-zone,
-.ad-placeholder,
-[class*="ad-zone"],
-[class*="ad_zone"] {
-  max-width: 100%;
-  overflow: hidden;
-  box-sizing: border-box;
 }
 
 /* Mobile-only utility */
