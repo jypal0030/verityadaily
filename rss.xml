@@ -5,8 +5,88 @@
     <link>https://verityadaily.com</link>
     <description>Independent reporting on AI, cryptocurrency, finance, cybersecurity, and technology. Original analysis you can trust.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 14 Aug 2026 09:00:00 +0530</lastBuildDate>
+    <lastBuildDate>Sat, 15 Aug 2026 01:00:00 +0530</lastBuildDate>
     <atom:link href="https://verityadaily.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>ChatGPT Free Users Get Unlimited Text Chats with GPT-5.6 Luna</title>
+      <link>https://verityadaily.com/chatgpt-unlimited-free</link>
+      <guid isPermaLink="true">https://verityadaily.com/chatgpt-unlimited-free</guid>
+      <pubDate>Fri, 14 Aug 2026 15:00:00 +0530</pubDate>
+      <description>OpenAI removes text chat limits for all ChatGPT users, makes GPT-5.6 Luna the free default, and upgrades Sol for Plus/Pro.</description>
+      <category>Artificial Intelligence</category>
+    </item>
+    <item>
+      <title>Cerebras Powers GPT-5.6 Sol &quot;Ultrafast&quot; at 750 Tokens Per Second</title>
+      <link>https://verityadaily.com/cerebras-ultrafast</link>
+      <guid isPermaLink="true">https://verityadaily.com/cerebras-ultrafast</guid>
+      <pubDate>Fri, 14 Aug 2026 13:30:00 +0530</pubDate>
+      <description>OpenAI's GPT-5.6 Sol Ultrafast, powered by Cerebras, hits up to 750 tokens/sec — 14x faster than Standard — in limited API preview.</description>
+      <category>Artificial Intelligence</category>
+    </item>
+    <item>
+      <title>Grok 4.6 Matches GPT-5.6 Sol at 61, Costs 60% Less</title>
+      <link>https://verityadaily.com/grok-4-6</link>
+      <guid isPermaLink="true">https://verityadaily.com/grok-4-6</guid>
+      <pubDate>Fri, 14 Aug 2026 12:15:00 +0530</pubDate>
+      <description>SpaceXAI's Grok 4.6 ties GPT-5.6 Sol on Artificial Analysis, arrives 35 days after 4.5, and undercuts rivals by 60%+.</description>
+      <category>Artificial Intelligence</category>
+    </item>
+    <item>
+      <title>Gemini 3.7 Flash Cuts Prices in Half, Beats Sonnet 5 on Coding</title>
+      <link>https://verityadaily.com/gemini-3-7-flash</link>
+      <guid isPermaLink="true">https://verityadaily.com/gemini-3-7-flash</guid>
+      <pubDate>Fri, 14 Aug 2026 10:45:00 +0530</pubDate>
+      <description>Google's Gemini 3.7 Flash: $0.75/$3.75 intro pricing, FrontierCode 43.6%, DeepSWE 65.3%, and it now powers the Spark agent.</description>
+      <category>Artificial Intelligence</category>
+    </item>
+    <item>
+      <title>Apple's All-Glass iPhone: Canceled or Alive? Two Reports Clash</title>
+      <link>https://verityadaily.com/apple-glass-iphone</link>
+      <guid isPermaLink="true">https://verityadaily.com/apple-glass-iphone</guid>
+      <pubDate>Fri, 14 Aug 2026 09:30:00 +0530</pubDate>
+      <description>Jefferies says Apple killed its all-glass 2027 iPhone; Bloomberg's Gurman says the glass-centric redesign is on track. What's real?</description>
+      <category>Technology</category>
+    </item>
+    <item>
+      <title>Samsung Galaxy Z Fold8 Sets Pre-Order Records in Korea &amp; Europe</title>
+      <link>https://verityadaily.com/samsung-fold8-preorders</link>
+      <guid isPermaLink="true">https://verityadaily.com/samsung-fold8-preorders</guid>
+      <pubDate>Fri, 14 Aug 2026 08:00:00 +0530</pubDate>
+      <description>Fold8, Flip8 and Fold8 Ultra hit 1.44M Korean pre-orders — a Galaxy record — while Europe orders jump 20%. Samsung boosts production by 1M.</description>
+      <category>Technology</category>
+    </item>
+    <item>
+      <title>FCC Bans Foreign Robot Vacuums &amp; Chinese Robots: What Changes</title>
+      <link>https://verityadaily.com/fcc-robot-vacuum-ban</link>
+      <guid isPermaLink="true">https://verityadaily.com/fcc-robot-vacuum-ban</guid>
+      <pubDate>Fri, 14 Aug 2026 06:30:00 +0530</pubDate>
+      <description>From July 28, 2026, new foreign-made robot vacuums, humanoids and power inverters can't be sold in US. How it hits Roborock, Dreame, prices and the grid.</description>
+      <category>Technology</category>
+    </item>
+    <item>
+      <title>Litigant Hid AI Prompt Injection in Filing — Judge Bans E-Filing</title>
+      <link>https://verityadaily.com/prompt-injection-court</link>
+      <guid isPermaLink="true">https://verityadaily.com/prompt-injection-court</guid>
+      <pubDate>Fri, 14 Aug 2026 19:00:00 +0530</pubDate>
+      <description>A Connecticut judge banned a pro se plaintiff from e-filing for hiding white 3pt-font AI prompt-injection text in court documents — a US first.</description>
+      <category>Cybersecurity</category>
+    </item>
+    <item>
+      <title>Energy Vault's $600M Texas AI Data Center Power Deal, Explained</title>
+      <link>https://verityadaily.com/energy-vault-texas</link>
+      <guid isPermaLink="true">https://verityadaily.com/energy-vault-texas</guid>
+      <pubDate>Fri, 14 Aug 2026 05:00:00 +0530</pubDate>
+      <description>Energy Vault signs its largest contract: 1.25 GW of off-grid power for a Texas AI data center, worth $500–600M. First deployments land in 4–12 months.</description>
+      <category>Finance & Markets</category>
+    </item>
+    <item>
+      <title>Senate Probes Roblox Over Child Safety, CSAM Reports</title>
+      <link>https://verityadaily.com/roblox-senate-probe</link>
+      <guid isPermaLink="true">https://verityadaily.com/roblox-senate-probe</guid>
+      <pubDate>Fri, 14 Aug 2026 19:30:00 +0530</pubDate>
+      <description>Hawley and Durbin open a bipartisan Senate probe into Roblox child safety after 65,381 suspected CSAM reports to NCMEC in 2025. Documents due Aug 31.</description>
+      <category>Trending</category>
+    </item>
     <item>
       <title>OpenAI Halts New Model for Being "Too Powerful" — What We Know</title>
       <link>https://verityadaily.com/openai-halts-model-2</link>
