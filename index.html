@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script>try{if(localStorage.getItem('veritya-theme')==='dark'||(!localStorage.getItem('veritya-theme')&&window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches)){document.documentElement.setAttribute('data-theme','dark')}}catch(e){}</script><!-- NEXUS-FOUC -->
 <meta charset="UTF-8">
 <!-- Google Search Console verification — replace CONTENT with your code -->
 <meta name="google-site-verification" content="XdK31a28Im_VDYclEp842TawqSyEyH-9coRatlEKe_w">
@@ -72,12 +73,7 @@
   "@type": "WebSite",
   "name": "Veritya Daily",
   "url": "https://verityadaily.com/",
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": "https://verityadaily.com/?q={search_term_string}",
-    "query-input": "required name=search_term_string"
-  }
-}
+  "potentialAction": 
 </script>
 </head>
 <body>
@@ -140,11 +136,11 @@
       <div class="trending-bar">
         <span class="trending-label">🔥 Trending</span>
         <div class="trending-chips">
-          <a class="trending-chip" href="#">Bitcoin ETF</a>
-          <a class="trending-chip" href="#">GPT-5</a>
-          <a class="trending-chip" href="#">iPhone 17 leak</a>
-          <a class="trending-chip" href="#">Solana outage</a>
-          <a class="trending-chip" href="#">Nvidia earnings</a>
+          <a class="trending-chip" href="strategy-sells-bitcoin">Bitcoin ETF</a>
+          <a class="trending-chip" href="openai-halts-model-2">GPT-5</a>
+          <a class="trending-chip" href="iphone-17-air-vs-pro">iPhone 17 leak</a>
+          <a class="trending-chip" href="crypto-shakeout-2026">Solana outage</a>
+          <a class="trending-chip" href="nvidia-500b-ai">Nvidia earnings</a>
         </div>
       </div>
     </div>
@@ -311,7 +307,7 @@
           <div class="post-card__body">
             <span class="kicker">Trending</span>
             <h3 class="post-card__title"><a href="ai-spiralism-religion">AI Bots Started a Religion Called 'Spiralism' — and Humans Followed</a></h3>
-            <div class="post-card__meta">Jai · undefinedh ago · 6 min read</div>
+            <div class="post-card__meta">Jai · 3h ago · 6 min read</div>
           </div>
         </article>
       </div>
@@ -319,7 +315,8 @@
   </section>
 
   <!-- NEWSLETTER CTA -->
-  <section class="section">
+  <section class="section" id="newsletter">
+<section class="section">
     <div class="container">
       <div class="newsletter-cta">
         <h3>📰 The Daily Brief</h3>

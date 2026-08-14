@@ -760,6 +760,7 @@ a.site-logo {
 }
 
 /* Bottom nav (mobile only) */
+@media (max-width: 767px) {
 .bottom-nav,
 nav.bottom-nav,
 .bottom-nav.mobile-only {
@@ -777,6 +778,7 @@ nav.bottom-nav,
   padding-bottom: calc(6px + env(safe-area-inset-bottom));
   min-height: 52px;
   box-shadow: 0 -2px 8px rgba(0,0,0,0.06);
+}
 }
 
 .bottom-nav a,
@@ -1149,3 +1151,15 @@ nav.bottom-nav,
   gap: var(--space-3);
 }
 /* === END OMEGA X: Footer social === */
+
+/* === NEXUS ABSOLUTE: dark-mode contrast fixes (S03-06) — dark text on lightened accents === */
+[data-theme="dark"] .read-next { color: #1E1B4B; }
+[data-theme="dark"] .btn--primary { color: #1E1B4B; }
+[data-theme="dark"] .btn--primary:hover { color: #1E1B4B; }
+[data-theme="dark"] .checklist-icon { color: #052E16; }
+[data-theme="dark"] .skip-link { color: #1E1B4B; }
+[data-theme="dark"] .read-next a, [data-theme="dark"] .read-next * { color: inherit; }
+
+/* === NEXUS ABSOLUTE: legal-page table overflow protection (S03-08) === */
+.legal-content table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; max-width: 100%; }
+@media (max-width: 767px) { .legal-content { overflow-x: hidden; } }

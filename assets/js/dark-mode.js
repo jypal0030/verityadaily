@@ -15,7 +15,7 @@
 	function applyTheme(theme) {
 		if (theme === 'dark') { root.setAttribute('data-theme', 'dark'); }
 		else { root.removeAttribute('data-theme'); }
-		var btn = document.getElementById('themeToggle');
+		var btn = document.getElementById('themeToggle') || document.getElementById('theme-toggle');
 		if (btn) {
 			btn.setAttribute('aria-label', theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
 			btn.innerHTML = theme === 'dark' ? SUN_ICON : MOON_ICON;
@@ -37,3 +37,46 @@
 	if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', initToggle); }
 	else { initToggle(); }
 })();
+
+
+/* === NEXUS ABSOLUTE: copy-link wiring (D7) — delegated, no inline JS needed === */
+document.addEventListener('click', function (e) {
+  var t = e.target && e.target.closest ? e.target.closest('.share-copy, .icon-button[aria-label="Copy link"]') : null;
+  if (!t) { return; }
+  e.preventDefault();
+  var url = t.getAttribute('data-url') || window.location.href;
+  function done() {
+    var orig = t.innerHTML;
+    if (t.classList.contains('share-copy')) { t.textContent = '\u2713'; }
+    else { t.setAttribute('aria-label', 'Copied!'); }
+    setTimeout(function () { t.innerHTML = orig; t.setAttribute('aria-label', 'Copy link'); }, 1500);
+  }
+  function fallback(u) {
+    var ta = document.createElement('textarea');
+    ta.value = u; ta.style.position = 'fixed'; ta.style.opacity = '0';
+    document.body.appendChild(ta); ta.select();
+    try { document.execCommand('copy'); } catch (err) {}
+    document.body.removeChild(ta);
+  }
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(url).then(done, function () { fallback(url); done(); });
+  } else { fallback(url); done(); }
+});
+
+/* === NEXUS ABSOLUTE: newsletter form wiring (D5) — opens prefilled mail request === */
+document.addEventListener('submit', function (e) {
+  var form = e.target;
+  if (!form || !form.classList || !form.classList.contains('newsletter-form')) { return; }
+  e.preventDefault();
+  var email = form.querySelector('input[type="email"]');
+  if (!email || !email.value || !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email.value)) {
+    if (email) { email.focus(); email.setAttribute('aria-invalid', 'true'); }
+    return;
+  }
+  var btn = form.querySelector('button[type="submit"]');
+  if (btn) { btn.textContent = 'Opening email app\u2026'; btn.disabled = true; }
+  var mailto = 'mailto:hello@verityadaily.com?subject=' + encodeURIComponent('Newsletter signup: The Daily Brief') +
+    '&body=' + encodeURIComponent('Please subscribe ' + email.value + ' to The Daily Brief (Veritya Daily).');
+  window.location.href = mailto;
+  setTimeout(function () { if (btn) { btn.textContent = 'SUBSCRIBE'; btn.disabled = false; } }, 3000);
+});

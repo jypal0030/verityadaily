@@ -11,6 +11,7 @@
 
   /* 30% SECONDARY: Text & structure */
   --text-primary: #1A1A1A;
+  --text-secondary: #4B5563;
   --text-muted:   #6B7280;
   --border:       #E5E7EB;
 
@@ -85,6 +86,7 @@
   --bg-soft:       #161B22;
   --surface:       #151A23;
   --text-primary:  #E6EDF3;
+  --text-secondary: #9CA3AF;
   --text-muted:    #8B949E;
   --border:        #2A2F3A;
 

@@ -4,26 +4,26 @@
 
 ## About
 
-- [About Us](https://verityadaily.com/about.html): Who we are, our mission, and our editorial standards
-- [Editorial Policy](https://verityadaily.com/editorial-policy.html): How we select topics, fact-check, and handle AI assistance
-- [Corrections Policy](https://verityadaily.com/corrections.html): How we handle errors and corrections
-- [Contact](https://verityadaily.com/contact.html): Email, address, and how to reach us
+- [About Us](https://verityadaily.com/about): Who we are, our mission, and our editorial standards
+- [Editorial Policy](https://verityadaily.com/editorial-policy): How we select topics, fact-check, and handle AI assistance
+- [Corrections Policy](https://verityadaily.com/corrections): How we handle errors and corrections
+- [Contact](https://verityadaily.com/contact): Email, address, and how to reach us
 
 ## Authors
 
-- [Author: Jai](https://verityadaily.com/author.html): Founder & lead writer covering AI, crypto, finance, and technology since 2018
+- [Author: Jai](https://verityadaily.com/author): Founder & lead writer covering AI, crypto, finance, and technology since 2018
 
 ## Key Topic Guides
 
-- [Best Crypto Exchanges Compared (2026)](https://verityadaily.com/article.html): Side-by-side fees, coins, security, and ease of use
-- [AI Tools Compared: Claude vs GPT-5 vs Gemini](https://verityadaily.com/article.html): Capabilities, pricing, and best use cases
-- [Bitcoin ETF Guide (2026)](https://verityadaily.com/article.html): How Bitcoin ETFs work and how to invest
+- [Best Crypto Exchanges Compared (2026)](https://verityadaily.com/coinbase-abu-dhabi): Side-by-side fees, coins, security, and ease of use
+- [AI Tools Compared: Claude vs GPT-5 vs Gemini](https://verityadaily.com/openai-halts-model-2): Capabilities, pricing, and best use cases
+- [Bitcoin ETF Guide (2026)](https://verityadaily.com/strategy-sells-bitcoin): How Bitcoin ETFs work and how to invest
 
 ## Optional
 
-- [Privacy Policy](https://verityadaily.com/privacy-policy.html)
-- [Financial Disclaimer](https://verityadaily.com/disclaimer.html)
-- [Affiliate Disclosure](https://verityadaily.com/affiliate-disclosure.html)
-- [Cookie Policy](https://verityadaily.com/cookie-policy.html)
-- [Terms of Service](https://verityadaily.com/terms.html)
+- [Privacy Policy](https://verityadaily.com/privacy-policy)
+- [Financial Disclaimer](https://verityadaily.com/disclaimer)
+- [Affiliate Disclosure](https://verityadaily.com/affiliate-disclosure)
+- [Cookie Policy](https://verityadaily.com/cookie-policy)
+- [Terms of Service](https://verityadaily.com/terms)
 - [XML Sitemap](https://verityadaily.com/sitemap.xml)

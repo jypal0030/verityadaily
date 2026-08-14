@@ -3,7 +3,7 @@
 
 User-agent: *
 Allow: /
-Disallow: /admin/
+Disallow: /admin
 
 # Sitemaps
 Sitemap: https://verityadaily.com/sitemap.xml
