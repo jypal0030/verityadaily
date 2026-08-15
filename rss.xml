@@ -5,8 +5,32 @@
     <link>https://verityadaily.com</link>
     <description>Independent reporting on AI, cryptocurrency, finance, cybersecurity, and technology. Original analysis you can trust.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 16 Aug 2026 03:00:00 +0530</lastBuildDate>
+    <lastBuildDate>Sun, 16 Aug 2026 04:30:00 +0530</lastBuildDate>
     <atom:link href="https://verityadaily.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Anthropic Hits $47B Run Rate: The AI Money Race, Explained</title>
+      <link>https://verityadaily.com/anthropic-money-race</link>
+      <guid isPermaLink="true">https://verityadaily.com/anthropic-money-race</guid>
+      <pubDate>Sat, 15 Aug 2026 22:00:00 +0530</pubDate>
+      <description>Anthropic's revenue run rate hit $47B in May 2026, and it just committed $200M with the Gates Foundation. Inside the AI money race with OpenAI.</description>
+      <category>Artificial Intelligence</category>
+    </item>
+    <item>
+      <title>AI Agent Security: Why Your Company's New Workers Are Bots</title>
+      <link>https://verityadaily.com/ai-agent-security</link>
+      <guid isPermaLink="true">https://verityadaily.com/ai-agent-security</guid>
+      <pubDate>Sat, 15 Aug 2026 22:30:00 +0530</pubDate>
+      <description>AI agents are getting company logins faster than security teams can track them. Real risks, survey data, and what to do before a bot gets hacked.</description>
+      <category>Cybersecurity</category>
+    </item>
+    <item>
+      <title>Samsung 400+ Layer BV-NAND: Memory Is the New AI Bottleneck</title>
+      <link>https://verityadaily.com/samsung-bv-nand</link>
+      <guid isPermaLink="true">https://verityadaily.com/samsung-bv-nand</guid>
+      <pubDate>Sat, 15 Aug 2026 23:00:00 +0530</pubDate>
+      <description>Samsung unveiled V10 BV-NAND with 400+ layers and wafer bonding — 58% denser than V9. Why storage is quietly becoming the next AI bottleneck.</description>
+      <category>Technology</category>
+    </item>
     <item>
       <title>Google DeepMind's Gemini AI Pointer: Point at Anything in Chrome and Ask</title>
       <link>https://verityadaily.com/google-ai-pointer</link>
@@ -106,7 +130,7 @@
       <title>Samsung Galaxy Z Fold8 Sets Pre-Order Records in Korea &amp; Europe</title>
       <link>https://verityadaily.com/samsung-fold8-preorders</link>
       <guid isPermaLink="true">https://verityadaily.com/samsung-fold8-preorders</guid>
-      <pubDate>Fri, 14 Aug 2026 13:30:00 +0530</pubDate>
+      <pubDate>Sun, 16 Aug 2026 04:45:00 +0530</pubDate>
       <description>Fold8, Flip8 and Fold8 Ultra hit 1.44M Korean pre-orders - a Galaxy record - while Europe orders jump 20%. Samsung boosts production by 1M.</description>
       <category>Technology</category>
     </item>
