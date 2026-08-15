@@ -1,12 +1,35 @@
 # Veritya Daily — Independent tech, crypto, finance, and AI news
 # https://verityadaily.com
 
+# Default: allow all good crawlers
 User-agent: *
 Allow: /
 Disallow: /admin
+Disallow: /article.html
+
+# Bing + Microsoft
+User-agent: Bingbot
+Allow: /
+
+# Yandex
+User-agent: Yandex
+Allow: /
+
+# Google
+User-agent: Googlebot
+Allow: /
+
+# AI crawlers: allowed, but we ask for attribution/link-back
+User-agent: GPTBot
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: CCBot
+Allow: /
 
 # Sitemaps
 Sitemap: https://verityadaily.com/sitemap.xml
-
-# AI Crawler guidance
-# We allow AI crawlers but request citation and link-back
