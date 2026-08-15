@@ -5,8 +5,40 @@
     <link>https://verityadaily.com</link>
     <description>Independent reporting on AI, cryptocurrency, finance, cybersecurity, and technology. Original analysis you can trust.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 15 Aug 2026 01:00:00 +0530</lastBuildDate>
+    <lastBuildDate>Sun, 16 Aug 2026 03:00:00 +0530</lastBuildDate>
     <atom:link href="https://verityadaily.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Google DeepMind's Gemini AI Pointer: Point at Anything in Chrome and Ask</title>
+      <link>https://verityadaily.com/google-ai-pointer</link>
+      <guid isPermaLink="true">https://verityadaily.com/google-ai-pointer</guid>
+      <pubDate>Sat, 15 Aug 2026 20:00:00 +0530</pubDate>
+      <description>Google DeepMind's new Gemini-powered AI Pointer in Chrome lets you point at anything on a page and ask questions. How it works and what it means.</description>
+      <category>Artificial Intelligence</category>
+    </item>
+    <item>
+      <title>Cboe Files for First US 3x Bitcoin and Ether ETFs: What It Means</title>
+      <link>https://verityadaily.com/cboe-3x-bitcoin-etf</link>
+      <guid isPermaLink="true">https://verityadaily.com/cboe-3x-bitcoin-etf</guid>
+      <pubDate>Sat, 15 Aug 2026 20:30:00 +0530</pubDate>
+      <description>Cboe BZX wants SEC approval for the first 3x leveraged Bitcoin and Ether ETFs in the US. How they'd work, the risks of volatility decay, and the timeline.</description>
+      <category>Cryptocurrency</category>
+    </item>
+    <item>
+      <title>DentaQuest Breach Hits 15 Million Patients — Largest US Health Data Breach of 2026</title>
+      <link>https://verityadaily.com/dentaquest-15m-breach</link>
+      <guid isPermaLink="true">https://verityadaily.com/dentaquest-15m-breach</guid>
+      <pubDate>Sat, 15 Aug 2026 21:00:00 +0530</pubDate>
+      <description>DentaQuest confirmed a May 2026 breach affecting 15 million people — SSNs, Medicaid IDs, dental records. What happened and what to do now.</description>
+      <category>Cybersecurity</category>
+    </item>
+    <item>
+      <title>India Cuts AI Content Takedown to 3 Hours: New IT Rules Explained</title>
+      <link>https://verityadaily.com/india-ai-3-hour-rule</link>
+      <guid isPermaLink="true">https://verityadaily.com/india-ai-3-hour-rule</guid>
+      <pubDate>Sat, 15 Aug 2026 21:30:00 +0530</pubDate>
+      <description>India's updated IT Rules require platforms to remove unlawful AI content — including deepfakes — within 3 hours, plus mandatory labelling. What it means.</description>
+      <category>Artificial Intelligence</category>
+    </item>
     <item>
       <title>Senate Probes Roblox Over Child Safety, CSAM Reports</title>
       <link>https://verityadaily.com/roblox-senate-probe</link>
