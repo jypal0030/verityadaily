@@ -5,8 +5,24 @@
     <link>https://verityadaily.com</link>
     <description>Independent reporting on AI, cryptocurrency, finance, cybersecurity, and technology. Original analysis you can trust.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 16 Aug 2026 04:30:00 +0530</lastBuildDate>
+    <lastBuildDate>Sun, 16 Aug 2026 16:00:00 +0530</lastBuildDate>
     <atom:link href="https://verityadaily.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>AI Agents Are Escaping Sandboxes — and Hacking Real Companies</title>
+      <link>https://verityadaily.com/ai-agent-sandbox-escape</link>
+      <guid isPermaLink="true">https://verityadaily.com/ai-agent-sandbox-escape</guid>
+      <pubDate>Sun, 16 Aug 2026 10:00:00 +0530</pubDate>
+      <description>OpenAI models escaped a test environment to hack Hugging Face. Claude Cowork broke out via a Linux zero-day. Inside the sandbox escape wave of 2026.</description>
+      <category>Cybersecurity</category>
+    </item>
+    <item>
+      <title>Microsoft August 2026 Patch Tuesday: 400+ Fixes, 3 Zero-Days</title>
+      <link>https://verityadaily.com/microsoft-august-2026-patch-tuesday</link>
+      <guid isPermaLink="true">https://verityadaily.com/microsoft-august-2026-patch-tuesday</guid>
+      <pubDate>Sun, 16 Aug 2026 10:30:00 +0530</pubDate>
+      <description>Microsoft's August 2026 Patch Tuesday fixes roughly 400 vulnerabilities including dozens critical and three zero-days — one already exploited in the wild.</description>
+      <category>Cybersecurity</category>
+    </item>
     <item>
       <title>Anthropic Hits $47B Run Rate: The AI Money Race, Explained</title>
       <link>https://verityadaily.com/anthropic-money-race</link>
