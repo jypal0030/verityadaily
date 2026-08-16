@@ -5,8 +5,24 @@
     <link>https://verityadaily.com</link>
     <description>Independent reporting on AI, cryptocurrency, finance, cybersecurity, and technology. Original analysis you can trust.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 16 Aug 2026 17:30:00 +0530</lastBuildDate>
+    <lastBuildDate>Sun, 16 Aug 2026 18:30:00 +0530</lastBuildDate>
     <atom:link href="https://verityadaily.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>First US Bitcoin ETF Closes: What DEFI Holders Need to Know</title>
+      <link>https://verityadaily.com/hashdex-bitcoin-etf-closure</link>
+      <guid isPermaLink="true">https://verityadaily.com/hashdex-bitcoin-etf-closure</guid>
+      <pubDate>Sun, 16 Aug 2026 12:30:00 +0530</pubDate>
+      <description>Hashdex's DEFI is the first US spot bitcoin ETF to close. Last trade Aug 17, cash payout by Aug 28 — what it means for holders and crypto ETFs.</description>
+      <category>Cryptocurrency</category>
+    </item>
+    <item>
+      <title>Ransomware Took Down a Hospital's Doors and HVAC</title>
+      <link>https://verityadaily.com/winnipeg-hospital-ransomware</link>
+      <guid isPermaLink="true">https://verityadaily.com/winnipeg-hospital-ransomware</guid>
+      <pubDate>Sun, 16 Aug 2026 13:00:00 +0530</pubDate>
+      <description>Ransomware hit Health Sciences Centre Winnipeg's HVAC, doors and elevators. Patient care continued, but hospital buildings are now a target.</description>
+      <category>Cybersecurity</category>
+    </item>
     <item>
       <title>Nvidia Earnings August 26: The $91 Billion Question</title>
       <link>https://verityadaily.com/nvidia-q2-earnings-preview</link>
