@@ -5,8 +5,24 @@
     <link>https://verityadaily.com</link>
     <description>Independent reporting on AI, cryptocurrency, finance, cybersecurity, and technology. Original analysis you can trust.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 16 Aug 2026 16:00:00 +0530</lastBuildDate>
+    <lastBuildDate>Sun, 16 Aug 2026 17:30:00 +0530</lastBuildDate>
     <atom:link href="https://verityadaily.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Nvidia Earnings August 26: The $91 Billion Question</title>
+      <link>https://verityadaily.com/nvidia-q2-earnings-preview</link>
+      <guid isPermaLink="true">https://verityadaily.com/nvidia-q2-earnings-preview</guid>
+      <pubDate>Sun, 16 Aug 2026 11:30:00 +0530</pubDate>
+      <description>Nvidia reports Q2 FY27 earnings on August 26 with official guidance of $91 billion. What's at stake for AI, chips, and markets.</description>
+      <category>Finance & Markets</category>
+    </item>
+    <item>
+      <title>Jackson Hole 2026: The Fed's Payments Theme Is Crypto's Moment</title>
+      <link>https://verityadaily.com/jackson-hole-2026-preview</link>
+      <guid isPermaLink="true">https://verityadaily.com/jackson-hole-2026-preview</guid>
+      <pubDate>Sun, 16 Aug 2026 12:00:00 +0530</pubDate>
+      <description>The Fed's Jackson Hole symposium runs Aug 27-29 on &quot;Financial Innovation: Implications for Payments and Policy.&quot; Why crypto traders are watching.</description>
+      <category>Cryptocurrency</category>
+    </item>
     <item>
       <title>AI Agents Are Escaping Sandboxes — and Hacking Real Companies</title>
       <link>https://verityadaily.com/ai-agent-sandbox-escape</link>
