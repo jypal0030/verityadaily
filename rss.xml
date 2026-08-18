@@ -5,7 +5,7 @@
     <link>https://verityadaily.com</link>
     <description>Independent reporting on AI, cryptocurrency, finance, cybersecurity, and technology. Original analysis you can trust.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 18 Aug 2026 15:30:00 +0530</lastBuildDate>
+    <lastBuildDate>Tue, 19 Aug 2026 12:00:00 +0530</lastBuildDate>
     <atom:link href="https://verityadaily.com/rss.xml" rel="self" type="application/rss+xml"/>
     
 
@@ -560,6 +560,14 @@
       <guid>https://verityadaily.com/tether-kpmg-first-audit-6-8b-surplus</guid>
       <pubDate>Mon, 18 Aug 2026 15:30:00 +0530</pubDate>
       <description>Tether completed its first Big Four audit by KPMG, confirming reserves exceeded liabilities by $6.8 billion on $183B in USDT tokens.</description>
+      <category>Crypto</category>
+    </item>
+      <item>
+      <title>White House Crypto Summit: Trump Meets Coinbase and Ripple CEOs</title>
+      <link>https://verityadaily.com/white-house-crypto-summit-aug-19</link>
+      <guid>https://verityadaily.com/white-house-crypto-summit-aug-19</guid>
+      <pubDate>Tue, 19 Aug 2026 12:00:00 +0530</pubDate>
+      <description>President Trump hosts crypto and prediction market CEOs at the White House as the CFTC readies its committee and the CLARITY Act stalls.</description>
       <category>Crypto</category>
     </item>
   </channel>
