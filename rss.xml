@@ -5,7 +5,7 @@
     <link>https://verityadaily.com</link>
     <description>Independent reporting on AI, cryptocurrency, finance, cybersecurity, and technology. Original analysis you can trust.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 18 Aug 2026 14:00:00 +0530</lastBuildDate>
+    <lastBuildDate>Mon, 18 Aug 2026 15:00:00 +0530</lastBuildDate>
     <atom:link href="https://verityadaily.com/rss.xml" rel="self" type="application/rss+xml"/>
     
 
@@ -529,6 +529,22 @@
       <pubDate>Wed, 13 Aug 2026 09:00:00 +0530</pubDate>
       <description>OpenAI model halt, Google AI shakeup, iPhone 16e backlash, Oppo Find N5, Bitcoin $63K grind, Microsoft quantum, Meta Muse Code — this week's viral roundup.</description>
       <category>Trending</category>
+    </item>
+      <item>
+      <title>Silver Lake Eyes $51B Workday Take-Private in Mega Software Deal</title>
+      <link>https://verityadaily.com/silver-lake-workday-take-private</link>
+      <guid>https://verityadaily.com/silver-lake-workday-take-private</guid>
+      <pubDate>Mon, 18 Aug 2026 14:00:00 +0530</pubDate>
+      <description>Silver Lake is in talks to acquire Workday in what could rank among the largest software buyouts ever, sending shares up 18% to a $51B valuation.</description>
+      <category>Finance &amp; Markets</category>
+    </item>
+    <item>
+      <title>Trump Crypto Firm Backs Venture Selling Restricted Chinese AI Models</title>
+      <link>https://verityadaily.com/world-liberty-worldclaw-chinese-ai</link>
+      <guid>https://verityadaily.com/world-liberty-worldclaw-chinese-ai</guid>
+      <pubDate>Mon, 18 Aug 2026 14:30:00 +0530</pubDate>
+      <description>Trump's World Liberty Financial backs WorldClaw, selling AI models from Alibaba, Baidu, and Z.ai despite US security restrictions.</description>
+      <category>Crypto</category>
     </item>
   </channel>
 </rss>
