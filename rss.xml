@@ -5,7 +5,7 @@
     <link>https://verityadaily.com</link>
     <description>Independent reporting on AI, cryptocurrency, finance, cybersecurity, and technology. Original analysis you can trust.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 18 Aug 2026 15:00:00 +0530</lastBuildDate>
+    <lastBuildDate>Mon, 18 Aug 2026 15:30:00 +0530</lastBuildDate>
     <atom:link href="https://verityadaily.com/rss.xml" rel="self" type="application/rss+xml"/>
     
 
@@ -544,6 +544,22 @@
       <guid>https://verityadaily.com/world-liberty-worldclaw-chinese-ai</guid>
       <pubDate>Mon, 18 Aug 2026 14:30:00 +0530</pubDate>
       <description>Trump's World Liberty Financial backs WorldClaw, selling AI models from Alibaba, Baidu, and Z.ai despite US security restrictions.</description>
+      <category>Crypto</category>
+    </item>
+      <item>
+      <title>GitLab Critical GraphQL Flaw: Unauthenticated Project Deletion</title>
+      <link>https://verityadaily.com/gitlab-critical-graphql-cve-2026</link>
+      <guid>https://verityadaily.com/gitlab-critical-graphql-cve-2026</guid>
+      <pubDate>Mon, 18 Aug 2026 15:00:00 +0530</pubDate>
+      <description>GitLab issued an emergency patch for CVE-2026-19478, a critical GraphQL flaw letting unauthenticated attackers delete public projects.</description>
+      <category>Cybersecurity</category>
+    </item>
+    <item>
+      <title>Tether First Big Four Audit: KPMG Confirms $6.8B Reserve Surplus</title>
+      <link>https://verityadaily.com/tether-kpmg-first-audit-6-8b-surplus</link>
+      <guid>https://verityadaily.com/tether-kpmg-first-audit-6-8b-surplus</guid>
+      <pubDate>Mon, 18 Aug 2026 15:30:00 +0530</pubDate>
+      <description>Tether completed its first Big Four audit by KPMG, confirming reserves exceeded liabilities by $6.8 billion on $183B in USDT tokens.</description>
       <category>Crypto</category>
     </item>
   </channel>
