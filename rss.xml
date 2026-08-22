@@ -570,5 +570,13 @@
       <description>President Trump hosts crypto and prediction market CEOs at the White House as the CFTC readies its committee and the CLARITY Act stalls.</description>
       <category>Crypto</category>
     </item>
-  </channel>
+    <item>
+    <title>Grok Data Theft: Cryptographic Context Injection, Explained</title>
+    <link>https://verityadaily.com/grok-cryptographic-context-injection</link>
+    <guid isPermaLink="true">https://verityadaily.com/grok-cryptographic-context-injection</guid>
+    <pubDate>Wed, 20 Aug 2026 06:30:00 GMT</pubDate>
+    <description>Adversa AI reveals a zero-click attack that hides malicious prompts inside encrypted text to steal Grok chat histories — and it remains unfixed.</description>
+    <category>Cybersecurity</category>
+  </item>
+</channel>
 </rss>
