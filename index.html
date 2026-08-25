@@ -79,7 +79,15 @@
   "@context": "https://schema.org",
   "@type": "WebSite",
   "name": "Veritya Daily",
-  "url": "https://verityadaily.com/"
+  "url": "https://verityadaily.com/",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://verityadaily.com/search?q={search_term_string}"
+    },
+    "query-input": "required name=search_term_string"
+  }
 }
 </script>
 
@@ -100,7 +108,7 @@
       <a href="category-trending">Trending</a>
     </nav>
     <div class="header-actions">
-      <button class="icon-button" aria-label="Search">
+      <button class="icon-button" aria-label="Search" onclick="location.href='/search'">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
       </button>
       <button class="icon-button" id="themeToggle" aria-label="Switch theme"></button>

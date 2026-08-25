@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>try{if(localStorage.getItem('veritya-theme')==='dark'||(!localStorage.getItem('veritya-theme')&&window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches)){document.documentElement.setAttribute('data-theme','dark')}}catch(e){}</script><!-- NEXUS-FOUC -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Search — Veritya Daily</title>
+<meta name="description" content="Search all Veritya Daily articles — AI, crypto, finance, cybersecurity, technology, and trending news.">
+<meta name="robots" content="noindex,follow">
+<link rel="icon" type="image/png" href="assets/img/favicon-32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="assets/img/favicon-16.png" sizes="16x16">
+<link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="canonical" href="https://verityadaily.com/search">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-P6F8LX2DWH"></script>
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-P6F8LX2DWH');
+</script>
+<link rel="stylesheet" href="assets/css/tokens.css?v=2">
+<link rel="stylesheet" href="assets/css/custom-style.css?v=2">
+<style>
+  .search-main { padding: 2.5rem 0 3rem; }
+  .search-hero { max-width: 720px; margin: 1.5rem auto 2rem; text-align: center; }
+  .search-hero h1 { margin-bottom: .6rem; }
+  .search-hero p { color: var(--text-muted); margin-bottom: 1.25rem; }
+  .search-form { display: flex; gap: .5rem; }
+  .search-form input[type="search"] { flex: 1; padding: .85rem 1.1rem; font-size: 1rem; border: 1px solid var(--border); border-radius: 8px; background: var(--bg-card, var(--bg-primary)); color: var(--text-primary); }
+  .search-form input[type="search"]:focus { outline: 2px solid var(--brand-blue, #4F46E5); outline-offset: 1px; }
+  .search-count { text-align: center; color: var(--text-muted); font-size: .9rem; margin-bottom: 1.25rem; }
+  .search-results { min-height: 200px; }
+  .search-empty { text-align: center; color: var(--text-muted); padding: 2.5rem 1rem; }
+  .search-results .post-card { margin-bottom: .5rem; }
+</style>
+</head>
+<body>
+<body>
+<a class="skip-link sr-only" href="#main">Skip to content</a>
+<div class="reading-progress" id="readingProgress" aria-hidden="true"></div>
+
+<div class="price-ticker" id="priceTicker">
+<span class="ticker-item">BTC $63,085 <span class="ticker-down">▼0.50%</span></span>
+<span class="ticker-item">ETH $1,879 <span class="ticker-up">▲0.28%</span></span>
+<span class="ticker-item">SOL $75.22 <span class="ticker-up">▲ 0.50%</span></span>
+<span class="ticker-item">XRP $1.02 <span class="ticker-up">▲ 0.90%</span></span>
+</div>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index" class="logo">Veritya<span class="logo-accent">Daily</span></a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="category-ai">AI</a>
+      <a href="category-crypto">Crypto</a>
+      <a href="category-finance">Finance</a>
+      <a href="category-cybersecurity">Cybersecurity</a>
+      <a href="category-technology">Technology</a>
+      <a href="category-trending">Trending</a>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">🌓</button>
+  </div>
+</header>
+
+<main class="container search-main" id="main">
+  <div class="search-hero">
+    <h1>🔍 Search Veritya Daily</h1>
+    <p>Find articles across AI, crypto, finance, cybersecurity, and technology.</p>
+    <form class="search-form" role="search" id="searchForm" action="/search" method="get">
+      <label class="sr-only" for="searchInput">Search articles</label>
+      <input type="search" id="searchInput" name="q" placeholder="e.g. bitcoin, Grok, Nvidia, White House…" autocomplete="off" autofocus>
+      <button type="submit" class="btn btn-primary" style="flex-shrink:0;">Search</button>
+    </form>
+  </div>
+  <p class="search-count" id="searchCount" role="status" aria-live="polite"></p>
+  <div class="card-grid card-grid--3 search-results" id="searchResults"></div>
+  <div class="search-empty" id="searchEmpty" hidden></div>
+</main>
+<script>
+(function(){
+  const DATA = [{"s":"ai-agent-sandbox-escape","t":"AI Agents Are Escaping Sandboxes — and Hacking Real Companies","k":"Cybersecurity","i":"hero-ai-agent-sandbox-escape.png"},{"s":"ai-agent-security","t":"AI Agent Security: Why Your Company's New Workers Are Bots","k":"Cybersecurity","i":"hero-ai-agent-security.png"},{"s":"ai-designed-viruses","t":"AI Designed Brand New Biological Viruses — Should We Panic?","k":"","i":"hero-ai-designed-viruses.png"},{"s":"ai-spiralism-religion","t":"AI Bots Started a Religion Called 'Spiralism' — and Humans Followed","k":"Trending","i":"hero-ai-spiralism-religion.png"},{"s":"anthropic-custom-chips","t":"Anthropic Is Building Custom AI Chips for Claude — Why It Matters","k":"","i":"hero-anthropic-custom-chips.png"},{"s":"anthropic-money-race","t":"Anthropic Hits $47B Run Rate: The AI Money Race, Explained","k":"Artificial Intelligence","i":"hero-anthropic-money-race.png"},{"s":"apple-glass-iphone","t":"Apple's All-Glass iPhone: Canceled or Alive? Two Reports Clash","k":"Technology","i":"hero-apple-glass-iphone.png"},{"s":"apple-spyware-cve","t":"Apple CVE-2025-43300: Spyware Attack Explained","k":"","i":"hero-apple-spyware-cve.png"},{"s":"bip-110-fork","t":"BIP-110: The Bitcoin Fork Debate","k":"Cryptocurrency","i":"hero-bip-110-fork.png"},{"s":"bitcoin-backed-lending","t":"Bitcoin-Backed Lending Goes Institutional","k":"","i":"hero-bitcoin-backed-lending.png"},{"s":"bitcoin-etf","t":"Bitcoin Crosses $70K: ETF Inflows Hit Record as Institutions Return","k":"Cryptocurrency","i":"hero-bitcoin-etf.png"},{"s":"bitcoin-stuck-63k","t":"Bitcoin Stuck at $63,000: Why ETF Inflows Aren't Enough Anymore","k":"Cryptocurrency","i":"hero-bitcoin-stuck.png"},{"s":"bitcoin-stuck-below-65k","t":"Bitcoin Stuck Below $65K: Why the Market Won't Move","k":"Cryptocurrency","i":"hero-bitcoin-stuck-below-65k.png"},{"s":"breachforums-founder-sentenced","t":"BreachForums Founder Gets 3 Years","k":"","i":"hero-breachforums-founder-sentenced.png"},{"s":"cboe-3x-bitcoin-etf","t":"Cboe Files for First US 3x Bitcoin and Ether ETFs: What It Means","k":"Cryptocurrency","i":"hero-cboe-3x-bitcoin-etf.png"},{"s":"cerebras-ultrafast","t":"Cerebras Powers GPT-5.6 Sol Ultrafast at 750 Tokens Per Second","k":"Artificial Intelligence","i":"hero-cerebras-ultrafast.png"},{"s":"chatgpt-unlimited-free","t":"ChatGPT Free Users Get Unlimited Text Chats with GPT-5.6 Luna","k":"Artificial Intelligence","i":"hero-chatgpt-unlimited-free.png"},{"s":"china-zai-glm5-mythos5","t":"China's Z.ai GLM-5.3 Challenges Mythos 5","k":"AI","i":"hero-china-zai-glm5-mythos5.png"},{"s":"clarity-act-crypto-stalls","t":"CLARITY Act Stalls: What’s Next for Crypto","k":"Crypto","i":"hero-clarity-act-crypto-stalls.png"},{"s":"coinbase-abu-dhabi","t":"Coinbase Picks Abu Dhabi for Tokenized Assets — What It Signals","k":"Cryptocurrency","i":"hero-coinbase-abu-dhabi.png"},{"s":"coreweave-100b","t":"CoreWeave's Backlog Tops $100 Billion — The AI Cloud Boom Explained","k":"","i":"hero-coreweave-100b.png"},{"s":"cpi-report-preview","t":"CPI Report: Will Inflation Break Bitcoin?","k":"","i":"hero-cpi-report-preview.png"},{"s":"crypto-shakeout-2026","t":"100+ Crypto Projects Folded in 2026: The Great Shakeout Explained","k":"Cryptocurrency","i":"hero-crypto-shakeout-2026.png"},{"s":"daily-viral-wrap","t":"Daily Viral Wrap: The 7 Stories Everyone's Talking About This Week","k":"Trending","i":"hero-daily-viral-wrap.png"},{"s":"data-breach","t":"Major Data Breach Hits 50M Users: What Was Leaked and How to Protect Yourself","k":"Cybersecurity","i":"hero-data-breach.png"},{"s":"dentaquest-15m-breach","t":"DentaQuest Breach Hits 15 Million Patients — Largest US Health Data Breach of 2026","k":"Cybersecurity","i":"hero-dentaquest-15m-breach.png"},{"s":"energy-vault-texas","t":"Energy Vault's $600M Texas AI Data Center Power Deal, Explained","k":"Finance & Markets","i":"hero-energy-vault-texas.png"},{"s":"etoro-q2-loss","t":"eToro Reports Q2 Crypto Loss Even as Profit Beats — What Went Wrong","k":"","i":"hero-etoro-q2-loss.png"},{"s":"fcc-robot-vacuum-ban","t":"FCC Bans Foreign Robot Vacuums Chinese Robots: What Changes","k":"Technology","i":"hero-fcc-robot-vacuum-ban.png"},{"s":"french-tax-data-breach","t":"France Tax Hack: 678,000 Taxpayers’ Data Stolen","k":"Cybersecurity","i":"hero-french-tax-data-breach.png"},{"s":"gemini-3-7-flash","t":"Gemini 3.7 Flash Cuts Prices in Half, Beats Sonnet 5 on Coding","k":"Artificial Intelligence","i":"hero-gemini-3-7-flash.png"},{"s":"genai-ransomware","t":"Weaponized GenAI + Extortion-First: The New Age of Ransomware","k":"","i":"hero-genai-ransomware.png"},{"s":"gitlab-critical-graphql-cve-2026","t":"GitLab Critical GraphQL Flaw: Unauthenticated Project Deletion","k":"Cybersecurity","i":"hero-gitlab-critical-graphql-cve-2026.png"},{"s":"google-ai-pointer","t":"Google DeepMind's Gemini AI Pointer: Point at Anything in Chrome and Ask","k":"Artificial Intelligence","i":"hero-google-ai-pointer.png"},{"s":"google-ai-shakeup","t":"Google's AI Leadership Shakeup: What It Means for Search","k":"","i":"hero-google-ai-shakeup.png"},{"s":"gpt5-launch","t":"OpenAI Launches GPT-5: Features, Pricing, and What It Means","k":"Artificial Intelligence","i":"hero-gpt5-launch.png"},{"s":"grok-4-6","t":"Grok 4.6 Matches GPT-5.6 Sol at 61, Costs 60% Less","k":"Artificial Intelligence","i":"hero-grok-4-6.png"},{"s":"grok-cryptographic-context-injection","t":"Grok Data Theft: Cryptographic Context Injection, Explained","k":"Cybersecurity","i":"hero-grok-cryptographic-context-injection.png"},{"s":"gunra-ransomware-cisa","t":"Gunra Ransomware: CISA’s New Warning Explained","k":"Cybersecurity","i":"hero-gunra-ransomware-cisa.png"},{"s":"hashdex-bitcoin-etf-closure","t":"First US Bitcoin ETF Closes: What DEFI Holders Need to Know","k":"Cryptocurrency","i":"hero-hashdex-bitcoin-etf-closure.png"},{"s":"hive-350m-ai-cloud-deal","t":"Bitcoin Miner HIVE's $350M AI Cloud Deal","k":"Finance & Markets","i":"hero-hive-350m-ai-cloud-deal.png"},{"s":"india-ai-3-hour-rule","t":"India Cuts AI Content Takedown to 3 Hours: New IT Rules Explained","k":"Artificial Intelligence","i":"hero-india-ai-3-hour-rule.png"},{"s":"iphone-16e-launch","t":"iPhone 16e Launch: Apple's Budget Play Has Internet Saying \"Get Samsung Instead\"","k":"Technology","i":"hero-iphone-16e.png"},{"s":"iphone-17-air-vs-pro","t":"iPhone 17 Air vs iPhone 17 Pro: Everything We Expect","k":"","i":"hero-iphone-17-air-vs-pro.png"},{"s":"iphone-17-launch","t":"iPhone 17 Launch: Top Features, Pricing, and Should You Upgrade?","k":"Technology","i":"hero-iphone-17-launch.png"},{"s":"jackson-hole-2026-preview","t":"Jackson Hole 2026: The Fed's Payments Theme Is Crypto's Moment","k":"Cryptocurrency","i":"hero-jackson-hole-2026-preview.png"},{"s":"meta-muse-code","t":"Meta Launches Muse Code: AI That Writes Code Like a Senior Dev","k":"","i":"hero-meta-muse-code.png"},{"s":"microsoft-august-2026-patch-tuesday","t":"Microsoft August 2026 Patch Tuesday: 400+ Fixes, 3 Zero-Days","k":"Cybersecurity","i":"hero-microsoft-august-2026-patch-tuesday.png"},{"s":"microsoft-quantum-breakthrough","t":"Microsoft's Quantum Breakthrough: A New \"State of Matter\" Chip Explained","k":"Technology","i":"hero-quantum.png"},{"s":"microsoft-quantum-explained","t":"Microsoft's 'New State of Matter' Quantum Chip: Breakthrough or Hype?","k":"","i":"hero-microsoft-quantum-explained.png"},{"s":"musk-quantum-reaction","t":"Elon Musk Reacts to Microsoft's Quantum Chip: 'More and More...'","k":"Trending","i":"hero-musk-quantum-reaction.png"},{"s":"nvidia-500b-ai","t":"Nvidia's $500B AI Infrastructure Push","k":"","i":"hero-nvidia-500b-ai.png"},{"s":"nvidia-earnings","t":"Nvidia Earnings Beat Again: What Record AI Chip Demand Signals for Tech Stocks","k":"Finance & Markets","i":"hero-nvidia-earnings.png"},{"s":"nvidia-q2-earnings-preview","t":"Nvidia Earnings August 26: The $91 Billion Question","k":"Finance & Markets","i":"hero-nvidia-q2-earnings-preview.png"},{"s":"nvidia-sb-energy-ohio","t":"Nvidia's $3B Power Play: The $500B Ohio AI Campus","k":"Finance & Markets","i":"hero-nvidia-sb-energy-ohio.png"},{"s":"openai-halts-model-2","t":"OpenAI Halts New Model for Being 'Too Powerful' — What We Know","k":"","i":"hero-openai-halts-model-2.png"},{"s":"openai-halts-model","t":"OpenAI Halts New Model for Being \"Too Powerful\" — Should We Be Worried?","k":"Artificial Intelligence","i":"hero-openai-halt.png"},{"s":"oppo-find-n5","t":"Oppo Find N5: The World's Thinnest Foldable That Puts Samsung to Shame","k":"","i":"hero-oppo-find-n5.png"},{"s":"pixel-9a-leaks","t":"Google Pixel 9a: Design, Specs, and Launch Date — Everything Leaked","k":"","i":"hero-pixel-9a-leaks.png"},{"s":"pokemon-cards-crypto","t":"Pokémon Cards: A Multibillion-Dollar Market","k":"Trending","i":"hero-pokemon-cards-crypto.png"},{"s":"prompt-injection-court","t":"Litigant Hid AI Prompt Injection in Filing — Judge Bans E-Filing","k":"Cybersecurity","i":"hero-prompt-injection-court.png"},{"s":"raccoono365-takedown","t":"RaccoonO365 Phishing Network Dismantled","k":"","i":"hero-raccoono365-takedown.png"},{"s":"roblox-senate-probe","t":"Senate Probes Roblox Over Child Safety, CSAM Reports","k":"Trending","i":"hero-roblox-senate-probe.png"},{"s":"samsung-a06-5g","t":"Samsung Galaxy A06 5G at ₹10,499: The Budget King Explained","k":"","i":"hero-samsung-a06-5g.png"},{"s":"samsung-bv-nand","t":"Samsung 400+ Layer BV-NAND: Memory Is the New AI Bottleneck","k":"Technology","i":"hero-samsung-bv-nand.png"},{"s":"samsung-fold8-preorders","t":"Samsung Galaxy Z Fold8 Sets Pre-Order Records in Korea Europe","k":"Technology","i":"hero-samsung-fold8-preorders.png"},{"s":"silver-lake-workday-take-private","t":"Silver Lake Eyes $51B Workday Take-Private in Mega Software Deal","k":"Finance &amp; Markets","i":"hero-silver-lake-workday.png"},{"s":"slopads-ad-fraud","t":"SlopAds: 224 Apps & 2.3B Fake Ad Views","k":"","i":"hero-slopads-ad-fraud.png"},{"s":"sp500-record-high","t":"S P 500 Hits Record 7,799: Rally Explained","k":"Finance & Markets","i":"hero-sp500-record-high.png"},{"s":"strategy-sells-bitcoin","t":"Strategy Sells 1,690 Bitcoin — Is the Bull Run Over?","k":"Cryptocurrency","i":"hero-strategy-sells-bitcoin.png"},{"s":"suno-copyright-ai","t":"Suno to Scan AI Music for Copyright Issues","k":"Trending","i":"hero-suno-copyright-ai.png"},{"s":"tether-kpmg-first-audit-6-8b-surplus","t":"Tether First Big Four Audit: KPMG Confirms $6.8B Reserve Surplus","k":"Crypto","i":"hero-tether-kpmg-first-audit-6-8b-surplus.png"},{"s":"top-ai-tools-2026","t":"Top AI Tools 2026: Essential Platform Guide for Tech Professionals","k":"AI","i":"hero-top-ai-tools-2026.png"},{"s":"trending-daily-wrap","t":"Today's Top 5 Trending Stories in Tech, Crypto & Finance — August 1, 2026","k":"Trending","i":"hero-trending-daily-wrap.png"},{"s":"white-house-crypto-summit-aug-19","t":"White House Crypto Summit: Trump Meets Coinbase and Ripple CEOs","k":"Crypto","i":"hero-white-house-crypto-summit-aug-19.png"},{"s":"winnipeg-hospital-ransomware","t":"Ransomware Took Down a Hospital's Doors and HVAC","k":"Cybersecurity","i":"hero-winnipeg-hospital-ransomware.png"},{"s":"world-liberty-occ-bank-charter","t":"World Liberty Gets OCC Bank Charter","k":"Crypto","i":"hero-world-liberty-occ-bank-charter.png"},{"s":"world-liberty-worldclaw-chinese-ai","t":"Trump Crypto Firm Backs Venture Selling Restricted Chinese AI","k":"Crypto","i":"hero-world-liberty-worldclaw.png"}];
+  const qInput = document.getElementById('searchInput');
+  const resultsEl = document.getElementById('searchResults');
+  const countEl = document.getElementById('searchCount');
+  const emptyEl = document.getElementById('searchEmpty');
+
+  function esc(s){ return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+  function card(a){
+    return '<a href="/' + a.s + '" class="post-card"><div class="post-card__image"><img src="assets/img/' + (a.i || 'og-image.png') + '" alt="' + esc(a.t) + '" loading="lazy" width="400" height="225"></div><div class="post-card__body"><span class="post-card__meta">' + esc(a.k) + '</span><h3 class="post-card__title">' + esc(a.t) + '</h3></div></a>';
+  }
+  function search(q){
+    q = (q || '').trim().toLowerCase();
+    if (!q) {
+      resultsEl.innerHTML = DATA.slice(0, 12).map(card).join('');
+      countEl.textContent = DATA.length + ' articles — type to search';
+      emptyEl.hidden = true;
+      return;
+    }
+    const terms = q.split(/\s+/).filter(Boolean);
+    const hits = DATA.filter(a => {
+      const hay = (a.t + ' ' + a.k + ' ' + a.s).toLowerCase();
+      return terms.every(t => hay.includes(t));
+    });
+    if (hits.length) {
+      resultsEl.innerHTML = hits.map(card).join('');
+      countEl.textContent = hits.length + (hits.length === 1 ? ' article found' : ' articles found');
+      emptyEl.hidden = true;
+    } else {
+      resultsEl.innerHTML = '';
+      countEl.textContent = '0 results';
+      emptyEl.hidden = false;
+      emptyEl.innerHTML = '<strong>No results found for "' + esc(q) + '"</strong><br>Try a different keyword, or browse the <a href="/">homepage</a> or <a href="/category-trending">trending</a> section.';
+    }
+  }
+  // initial query from URL
+  const urlQ = new URLSearchParams(window.location.search).get('q');
+  if (urlQ) { qInput.value = urlQ; search(urlQ); }
+  else search('');
+  qInput.addEventListener('input', function(){ search(this.value); });
+  qInput.addEventListener('keydown', function(e){
+    if (e.key === 'Escape') { this.value = ''; search(''); }
+  });
+})();
+</script>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="index" class="site-logo"><img loading="eager" src="assets/img/logo.svg" alt="Veritya Daily" width="140" height="26"></a>
+        <p class="text-muted" style="margin-top:8px;">Original analysis on AI, crypto, finance & tech. Not financial advice.</p>
+      </div>
+      <div>
+        <h4 style="font-size:13px; text-transform:uppercase; letter-spacing:0.05em;">Sections</h4>
+        <ul class="footer-links">
+          <li><a href="category-ai">Artificial Intelligence</a></li>
+          <li><a href="category-crypto">Cryptocurrency</a></li>
+          <li><a href="category-finance">Cybersecurity</a></li>
+          <li><a href="category-cybersecurity">Cybersecurity</a></li>
+          <li><a href="category-technology">Technology</a></li>
+          <li><a href="category-trending">Trending</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="font-size:13px; text-transform:uppercase; letter-spacing:0.05em;">Company</h4>
+        <ul class="footer-links">
+          <li><a href="about">About</a></li>
+          <li><a href="contact">Contact</a></li>
+          <li><a href="author">Author</a></li>
+          <li><a href="editorial-policy">Editorial Policy</a></li>
+          <li><a href="corrections">Corrections</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="font-size:13px; text-transform:uppercase; letter-spacing:0.05em;">Legal</h4>
+        <ul class="footer-links">
+          <li><a href="privacy-policy">Privacy Policy</a></li>
+          <li><a href="disclaimer">Financial Disclaimer</a></li>
+          <li><a href="affiliate-disclosure">Affiliate Disclosure</a></li>
+          <li><a href="cookie-policy">Cookie Policy</a></li>
+          <li><a href="terms">Terms</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 Veritya Daily · Independent tech, crypto & finance news · Not financial advice</div>
+  </div>
+</footer>
+
+<nav class="bottom-nav mobile-only" aria-label="Primary mobile navigation">
+  <a href="index"><span>🏠</span><span>Home</span></a>
+  <a href="category-ai"><span>🤖</span><span>AI</span></a>
+  <a href="category-crypto"><span>₿</span><span>Crypto</span></a>
+  <a href="category-finance"><span>📈</span><span>Finance</span></a>
+  <a href="category-trending"><span>🔥</span><span>Trending</span></a>
+</nav>
+
+<script src="assets/js/dark-mode.js?v=2" defer></script>
+<script src="assets/js/reading-progress.js?v=2" defer></script>
+</body>
+</html>
