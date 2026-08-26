@@ -33,3 +33,4 @@ Allow: /
 
 # Sitemaps
 Sitemap: https://verityadaily.com/sitemap.xml
+Sitemap: https://verityadaily.com/news-sitemap.xml
