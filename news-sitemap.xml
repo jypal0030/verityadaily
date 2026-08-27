@@ -121,4 +121,15 @@
       <news:title>Nvidia Buying Hugging Face for $12.9B: Open-Source AI Land Grab</news:title>
     </news:news>
   </url>
+<url>
+    <loc>https://verityadaily.com/alabama-openai-subpoena-rogue-agents-explainer</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Veritya Daily</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-27T19:25:00+00:00</news:publication_date>
+      <news:title>Alabama Subpoenas OpenAI: The Rogue-Agents Hack Explained</news:title>
+    </news:news>
+  </url>
 </urlset>
