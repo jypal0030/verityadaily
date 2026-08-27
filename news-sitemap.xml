@@ -88,4 +88,15 @@
       <news:title>Bitcoin Breaks $80,000: Inside the Rally That Nobody Expected</news:title>
     </news:news>
   </url>
+<url>
+    <loc>https://verityadaily.com/gold-price-near-record-rally</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Veritya Daily</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-27T15:40:00+00:00</news:publication_date>
+      <news:title>Gold Nears Record High: Why Everything Is Rallying at Once</news:title>
+    </news:news>
+  </url>
 </urlset>
