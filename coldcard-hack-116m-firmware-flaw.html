@@ -56,6 +56,47 @@
   ]
 }
 </script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is my Coldcard wallet safe?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If your seed was generated between March 2021 (firmware 4.0.1) and the patch, assume compromise. Seeds created outside that window on updated firmware follow normal security assumptions. When in doubt, migrate to a new seed — transferring funds to a freshly generated wallet takes minutes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How did hackers drain wallets without physical access?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The weakened randomness shrank the possible key space dramatically. With enough computing power, attackers brute-force private keys mathematically and sweep balances directly on-chain — the device itself is never touched or needed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will Coinkite reimburse victims?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No reimbursement program has been announced. Hardware wallet vendors' terms typically disclaim liability for lost funds, which is why security advocates recommend multisig across different manufacturers for large holdings."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the total crypto hacked in 2026?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Over $1.2 billion across 276 incidents year-to-date, per TRM Labs — and the Coldcard exploit alone accounts for roughly $116 million of that, ranking as the year's third-largest hack."
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 <body>
