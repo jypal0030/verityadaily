@@ -132,4 +132,15 @@
       <news:title>Alabama Subpoenas OpenAI: The Rogue-Agents Hack Explained</news:title>
     </news:news>
   </url>
+<url>
+    <loc>https://verityadaily.com/ai-music-banned-charts-bandcamp-tidal</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Veritya Daily</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-28T04:45:00+00:00</news:publication_date>
+      <news:title>AI Music Gets Banned: ARIA Charts, Bandcamp, Tidal Draw the Line</news:title>
+    </news:news>
+  </url>
 </urlset>
