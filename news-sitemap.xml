@@ -198,4 +198,15 @@
       <news:title>Hong Kong Launches World’s First Bitcoin + Gold ETF (3002.HK)</news:title>
     </news:news>
   </url>
+<url>
+    <loc>https://verityadaily.com/ai-music-detectors-tested-accuracy</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Veritya Daily</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-08-29T16:20:00+00:00</news:publication_date>
+      <news:title>AI Music Detectors Tested: Deezer, IRCAM and the 99% Illusion</news:title>
+    </news:news>
+  </url>
 </urlset>
