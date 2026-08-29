@@ -1174,3 +1174,22 @@ nav.bottom-nav,
 .sources-list li{padding:8px 0;border-bottom:1px solid var(--border);font-size:.92rem}
 .sources-list a{color:var(--accent);text-decoration:none;word-break:break-all}
 .sources-list a:hover{text-decoration:underline}
+
+/* ===== UX POLISH LAYER (v3) ===== */
+/* 1. Sticky-header offset for TOC/anchor jumps — no more hidden headings */
+[id] { scroll-margin-top: calc(var(--header-height, 64px) + 16px); }
+
+/* 2. Keyboard navigation visibility (accessibility) */
+:focus-visible { outline: 3px solid #4F46E5; outline-offset: 2px; border-radius: 4px; }
+
+/* 3. Balanced headlines — no orphan words on last line */
+h1, h2, h3 { text-wrap: balance; }
+
+/* 4. Branded text selection */
+::selection { background: #4F46E5; color: #FFFFFF; }
+
+/* 5. Long-word safety (URLs in sources never break layout) */
+.article-content { overflow-wrap: break-word; }
+
+/* 6. Smooth anchor scrolling */
+html { scroll-behavior: smooth; }
