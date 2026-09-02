@@ -1392,3 +1392,61 @@ h1.section-title .s-icon { width: 34px; height: 34px; }
 }
 [data-theme="dark"] .post-card:hover .post-card__title a { color: #A5B4FC; }
 [data-theme="dark"] .btn--primary { background: linear-gradient(135deg, #6366F1, #8B5CF6); }
+
+
+/* ===== SIGNATURE CARD GLOW (v10) ===== */
+/* unique bottom shadow: indigo -> violet -> fuchsia gradient bloom */
+.post-card, article.post-card {
+  position: relative;
+}
+
+/* gradient bloom on hover: pseudo-element bottom glow */
+.post-card::after, article.post-card::after {
+  content: "";
+  position: absolute;
+  left: 8%; right: 8%; bottom: -2px;
+  height: 5px;
+  border-radius: 0 0 14px 14px;
+  background: linear-gradient(90deg, transparent, #4F46E5, #8B5CF6, #D946EF, transparent);
+  opacity: 0;
+  transform: scaleX(.3);
+  transition: opacity .35s ease, transform .45s cubic-bezier(.22,1,.36,1);
+  filter: blur(1px);
+  z-index: 1;
+}
+.post-card:hover::after, article.post-card:hover::after {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+/* outer glow beneath card on hover (indigo-violet bloom) */
+.post-card:hover, article.post-card:hover {
+  box-shadow:
+    0 1px 2px rgba(17, 24, 39, .05),
+    0 2px 8px rgba(79, 70, 229, .08),
+    0 10px 22px rgba(79, 70, 229, .18),
+    0 18px 40px -8px rgba(139, 92, 246, .28);
+}
+
+/* rest state: soft indigo under-glow (still styled, not boring grey) */
+.post-card, article.post-card {
+  box-shadow:
+    0 1px 2px rgba(17, 24, 39, .04),
+    0 4px 14px rgba(79, 70, 229, .06),
+    0 10px 26px -10px rgba(99, 102, 241, .14);
+}
+
+/* dark mode: deeper violet bloom */
+[data-theme="dark"] .post-card, [data-theme="dark"] article.post-card {
+  box-shadow:
+    0 1px 2px rgba(0,0,0,.4),
+    0 6px 16px rgba(79, 70, 229, .12),
+    0 14px 30px -8px rgba(139, 92, 246, .25);
+}
+[data-theme="dark"] .post-card:hover, [data-theme="dark"] article.post-card:hover {
+  box-shadow:
+    0 4px 14px rgba(129, 140, 248, .18),
+    0 16px 36px -6px rgba(139, 92, 246, .4);
+}
+[data-theme="dark"] .post-card::after { background: linear-gradient(90deg, transparent, #818CF8, #C4B5FD, #E879F9, transparent); }
+
