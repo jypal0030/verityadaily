@@ -1233,3 +1233,9 @@ h1.section-title .s-icon { width: 34px; height: 34px; }
 [data-theme="dark"] footer, [data-theme="dark"] .site-footer { background: var(--bg-soft); color: var(--text-secondary); }
 [data-theme="dark"] .hero-text .hero-title a, [data-theme="dark"] .hero-title a { color: var(--text-primary); }
 [data-theme="dark"] .hero-meta, [data-theme="dark"] .hero-text .kicker { color: var(--text-secondary); }
+
+
+/* ===== ACTIVE NAV (v7) ===== */
+.nav-desktop a.active-nav { color: var(--brand-blue, #4F46E5); font-weight: 600; }
+.nav-desktop a.active-nav::after { width: 100%; }
+[data-theme="dark"] .nav-desktop a.active-nav { color: #818CF8; }
