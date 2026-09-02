@@ -54,7 +54,7 @@
 
 <!-- Styles -->
 <link rel="stylesheet" href="assets/css/tokens.css?v=2">
-<link rel="stylesheet" href="assets/css/custom-style.css?v=5">
+<link rel="stylesheet" href="assets/css/custom-style.css?v=6">
 
 <!-- Structured Data -->
 <script type="application/ld+json">
@@ -81,9 +81,9 @@
 
 <!-- HEADER -->
 <header class="site-header">
-  <div class="header-inner">
-    <a href="index" class="logo">Veritya<span class="logo-accent">Daily</span></a>
-    <nav class="main-nav" aria-label="Main navigation">
+  <div class="container">
+    <a href="index" class="site-logo"><img loading="eager" fetchpriority="high" src="assets/img/logo.svg" alt="Veritya Daily" width="140" height="26"></a>
+    <nav class="nav-desktop main-nav" aria-label="Main navigation">
       <a href="category-ai">AI</a>
       <a href="category-crypto">Crypto</a>
       <a href="category-finance">Finance</a>
@@ -91,7 +91,12 @@
       <a href="category-technology">Technology</a>
       <a href="category-trending">Trending</a>
     </nav>
-    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+    <div class="header-actions">
+      <button class="icon-button" aria-label="Search" onclick="location.href='/search'">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+      </button>
+      <button class="icon-button" id="themeToggle" aria-label="Switch theme"></button>
+    </div>
   </div>
 </header>
 
@@ -107,8 +112,11 @@
       <div class="section-header">
         <h1 class="section-title"><svg class="s-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#4F46E5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M12 9v6M9 12h6"/><circle cx="12" cy="12" r="1" fill="#4F46E5"/><path d="M9 4V2M15 4V2M9 22v-2M15 22v-2M4 9H2M4 15H2M22 9h-2M22 15h-2"/></svg> Artificial Intelligence</h1>
         
-    <a href="china-zai-glm5-mythos5" class="post-card"><div class="post-card__image"><img src="assets/img/hero-china-zai-glm5-mythos5.png" alt="" loading="lazy" width="400" height="225"></div><div class="post-card__body"><span class="post-card__meta">AI</span><h3 class="post-card__title">China's Z.ai GLM-5.3 Challenges Mythos 5</h3></div></a><a class="section-link" href="index">← Back to Home</a>
-      </div>
+    <a class="section-link" href="index">← Back to Home</a>
+      
+      <div class="posts-grid">
+        <a href="china-zai-glm5-mythos5" class="post-card"><div class="post-card__image"><img src="assets/img/hero-china-zai-glm5-mythos5.png" alt="" loading="lazy" width="400" height="225"></div><div class="post-card__body"><span class="post-card__meta">AI</span><h3 class="post-card__title">China's Z.ai GLM-5.3 Challenges Mythos 5</h3></div></a>
+      </div></div>
       <p style="color: var(--text-muted); max-width: 600px; margin-bottom: 2rem;">The latest in artificial intelligence — from model launches and capability breakthroughs to practical tools, comparisons, and guides. Original analysis you can trust.</p>
     </div>
   </section>

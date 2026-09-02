@@ -54,7 +54,7 @@
 
 <!-- Styles -->
 <link rel="stylesheet" href="assets/css/tokens.css?v=2">
-<link rel="stylesheet" href="assets/css/custom-style.css?v=5">
+<link rel="stylesheet" href="assets/css/custom-style.css?v=6">
 
 <!-- Structured Data -->
 <script type="application/ld+json">
@@ -81,9 +81,9 @@
 
 <!-- HEADER -->
 <header class="site-header">
-  <div class="header-inner">
-    <a href="index" class="logo">Veritya<span class="logo-accent">Daily</span></a>
-    <nav class="main-nav" aria-label="Main navigation">
+  <div class="container">
+    <a href="index" class="site-logo"><img loading="eager" fetchpriority="high" src="assets/img/logo.svg" alt="Veritya Daily" width="140" height="26"></a>
+    <nav class="nav-desktop main-nav" aria-label="Main navigation">
       <a href="category-ai">AI</a>
       <a href="category-crypto">Crypto</a>
       <a href="category-finance">Finance</a>
@@ -91,7 +91,12 @@
       <a href="category-technology">Technology</a>
       <a href="category-trending">Trending</a>
     </nav>
-    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+    <div class="header-actions">
+      <button class="icon-button" aria-label="Search" onclick="location.href='/search'">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+      </button>
+      <button class="icon-button" id="themeToggle" aria-label="Switch theme"></button>
+    </div>
   </div>
 </header>
 
@@ -108,7 +113,11 @@
         <h1 class="section-title">🛡️ Cybersecurity</h1>
         
     
-    <article class="post-card">
+    
+        <a class="section-link" href="index">← Back to Home</a>
+      
+      <div class="posts-grid">
+        <article class="post-card">
           <a href="grok-cryptographic-context-injection" class="post-card__image" style="text-decoration:none;"><img loading="lazy" width="400" height="225" src="assets/img/hero-grok-cryptographic-context-injection.png" alt="grok cryptographic context injection" style="width:100%;height:auto;border-radius:8px;"></a>
           <div class="post-card__body">
             <span class="kicker">CYBERSECURITY</span>
@@ -116,8 +125,9 @@
             <div class="post-card__meta">Jai</div>
           </div>
         </article>
-        <a href="gunra-ransomware-cisa" class="post-card"><div class="post-card__image"><img src="assets/img/hero-gunra-ransomware-cisa.png" alt="" loading="lazy" width="400" height="225"></div><div class="post-card__body"><span class="post-card__meta">Cybersecurity</span><h3 class="post-card__title">Gunra Ransomware: CISA’s New Warning Explained</h3></div></a><a href="french-tax-data-breach" class="post-card"><div class="post-card__image"><img src="assets/img/hero-french-tax-data-breach.png" alt="" loading="lazy" width="400" height="225"></div><div class="post-card__body"><span class="post-card__meta">Cybersecurity</span><h3 class="post-card__title">France Tax Hack: 678,000 Taxpayers’ Data Stolen</h3></div></a><a class="section-link" href="index">← Back to Home</a>
-      </div>
+        <a href="gunra-ransomware-cisa" class="post-card"><div class="post-card__image"><img src="assets/img/hero-gunra-ransomware-cisa.png" alt="" loading="lazy" width="400" height="225"></div><div class="post-card__body"><span class="post-card__meta">Cybersecurity</span><h3 class="post-card__title">Gunra Ransomware: CISA’s New Warning Explained</h3></div></a>
+        <a href="french-tax-data-breach" class="post-card"><div class="post-card__image"><img src="assets/img/hero-french-tax-data-breach.png" alt="" loading="lazy" width="400" height="225"></div><div class="post-card__body"><span class="post-card__meta">Cybersecurity</span><h3 class="post-card__title">France Tax Hack: 678,000 Taxpayers’ Data Stolen</h3></div></a>
+      </div></div>
       <p style="color: var(--text-muted); max-width: 600px; margin-bottom: 2rem;">Data breaches, phishing, password managers, VPNs — practical security news and guides to keep you safe online.</p>
     </div>
   </section>
