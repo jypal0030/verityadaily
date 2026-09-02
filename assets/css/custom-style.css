@@ -1193,3 +1193,9 @@ h1, h2, h3 { text-wrap: balance; }
 
 /* 6. Smooth anchor scrolling */
 html { scroll-behavior: smooth; }
+
+
+/* ===== Premium section icons (v4) ===== */
+.section-title, .home-section-title { display: flex; align-items: center; gap: 12px; }
+.s-icon { flex-shrink: 0; transform: translateY(2px); }
+h1.section-title .s-icon { width: 34px; height: 34px; }
