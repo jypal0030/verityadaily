@@ -8,24 +8,24 @@ RewriteEngine On
 
 # Only rewrite if the request is NOT a real file or directory
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %&#123;REQUEST_FILENAME&#125; !-d
+RewriteCond %{REQUEST_FILENAME} !-d
 
 # Rewrite clean URL to .html file if it exists
-RewriteCond %&#123;DOCUMENT_ROOT&#125;/$1.html -f
+RewriteCond %{DOCUMENT_ROOT}/$1.html -f
 RewriteRule ^(.+?)/?$ $1.html [L]
 
 # --- 2. Trailing slash removal (non-.html) ---
-RewriteCond %&#123;REQUEST_FILENAME&#125; !-f
-RewriteCond %&#123;REQUEST_FILENAME&#125; !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.+)/$ /$1 [R=301,L]
 
 # --- 3. Homepage variants -> / (canonical) ---
-RewriteCond %&#123;REQUEST_URI&#125; ^/index\.html$ [OR]
-RewriteCond %&#123;REQUEST_URI&#125; ^/index\.php$
+RewriteCond %{REQUEST_URI} ^/index\.html$ [OR]
+RewriteCond %{REQUEST_URI} ^/index\.php$
 RewriteRule ^(.*)$ / [R=301,L]
 
 # --- 4. .html -> clean URL 301 (SEO: prevent duplicate content on .html variants) ---
-RewriteCond %&#123;THE_REQUEST&#125; \.html[\s?/]
+RewriteCond %{THE_REQUEST} \.html[\s?/]
 RewriteRule ^(.+)\.html$ /$1 [R=301,L]
 
 </IfModule>
@@ -40,7 +40,7 @@ Header set X-Frame-Options "SAMEORIGIN"
 Header set Referrer-Policy "strict-origin-when-cross-origin"
 Header set Permissions-Policy "camera=(), microphone=(), geolocation=()"
 
-# --- 7. Asset caching (match Vercel /assets/cache-control) ---
+# --- 7. Asset caching (match Vercel /assets cache-control) ---
 <FilesMatch "\.(css|js|png|jpg|jpeg|svg|webp|woff2?)$">
 Header set Cache-Control "public, max-age=3600, must-revalidate"
 </FilesMatch>
