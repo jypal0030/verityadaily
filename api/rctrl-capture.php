@@ -1,6 +1,6 @@
 <?php
 /**
- * rctrl (RankControl) -> Veritya Daily webhook endpoint v2.3
+ * rctrl (RankControl) -> Veritya Daily webhook endpoint v2.3.1
  *
  * POST /api/rctrl-capture.php?k=<URL_KEY>
  * Verification (when config present):
@@ -16,7 +16,7 @@
 
 declare(strict_types=1);
 
-const URL_KEY = 'b8f17f…6165';
+const URL_KEY = 'b8f17f2dbe956b2fb330aa79a5556165';
 
 function rctrl_store_dir(): string
 {
