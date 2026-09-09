@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+    <loc>https://verityadaily.com/quantum-computing-cloud-pricing-2026-2026</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Veritya Daily</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-09T22:10:08+05:30</news:publication_date>
+      <news:title>Quantum Computing Cloud Pricing in 2026: Costs, Plans, and Providers</news:title>
+    </news:news>
+  </url>
+<url>
     <loc>https://verityadaily.com/ai-productivity-roi-small-business-study-2026-2026</loc>
     <news:news>
       <news:publication>
@@ -317,17 +328,6 @@
       </news:publication>
       <news:publication_date>2026-09-05T17:00:00+00:00</news:publication_date>
       <news:title>Zcash Hits $1,000: The Privacy Coin Comeback of 2026</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://verityadaily.com/apple-event-live-watch-guide-india-time</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Veritya Daily</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-08T14:25:00+00:00</news:publication_date>
-      <news:title>Apple Event LIVE Tonight: India Time, Free Stream Links, Predictions</news:title>
     </news:news>
   </url>
 </urlset>
