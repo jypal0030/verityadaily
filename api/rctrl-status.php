@@ -1,8 +1,9 @@
 <?php
 /**
- * rctrl pipeline status + setup - Veritya Daily  (v2.2)
+ * rctrl pipeline status + setup - Veritya Daily  (v2.3.1)
  * GET  /api/rctrl-status.php?k=<URL_KEY>            -> config presence + recent deliveries summary
  * GET  /api/rctrl-status.php?k=<URL_KEY>&full=1     -> + last full log entry (raw payload)
+ * GET  /api/rctrl-status.php?k=<URL_KEY>&since=N    -> entries from index N onward (FULL, for pollers)
  * POST /api/rctrl-status.php?k=<URL_KEY>
  *      body: {"action":"setup","whsec":"whsec_...","gh_token":"optional"}
  *      -> writes server-side config outside public_html (not in git)
@@ -34,7 +35,7 @@ $k = $_GET['k'] ?? '';
 if (!hash_equals(URL_KEY, (string)$k)) {
     http_response_code(403);
     header('Content-Type: application/json');
-    echo json_encode(['ok' => false, 'error' => 'forbidden']);
+    echo json_encode(['ok' => false, 'error' => 'rctrl-status forbidden']);
     exit;
 }
 
@@ -79,33 +80,44 @@ if (is_file($cfgFile)) {
     }
 }
 
-$recent = [];
-$total = 0;
-$lastFull = null;
-if (is_file($logFile)) {
-    $lines = @file($logFile, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES) ?: [];
-    $total = count($lines);
-    if ($total > 0 && isset($_GET['full'])) {
-        $lastFull = json_decode($lines[$total - 1], true);
+$lines = is_file($logFile) ? (@file($logFile, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES) ?: []) : [];
+$total = count($lines);
+
+// &since=N -> full entries from index N (poller mode)
+if (isset($_GET['since'])) {
+    $since = max(0, (int)$_GET['since']);
+    $out = [];
+    for ($i = $since; $i < $total; $i++) {
+        $e = json_decode($lines[$i], true);
+        if (is_array($e)) { $out[] = $e; }
     }
-    $tail = array_slice($lines, -10);
-    foreach ($tail as $line) {
-        $e = json_decode($line, true);
-        if (!is_array($e)) { continue; }
-        $body = $e['body'] ?? null;
-        $art = is_array($body) ? ($body['article'] ?? null) : null;
-        $recent[] = [
-            'ts' => $e['ts'] ?? null,
-            'event' => $e['event'] ?? null,
-            'verified' => $e['verified'] ?? false,
-            'stale' => $e['stale'] ?? false,
-            'bytes' => $e['body_bytes'] ?? null,
-            'title' => is_array($art) ? ($art['title'] ?? null) : null,
-            'slug' => is_array($art) ? ($art['slug'] ?? null) : null,
-        ];
-    }
-    $recent = array_reverse($recent);
+    header('Content-Type: application/json');
+    echo json_encode(['ok' => true, 'total' => $total, 'since' => $since, 'entries' => $out]);
+    exit;
 }
+
+$recent = [];
+$lastFull = null;
+if ($total > 0 && isset($_GET['full'])) {
+    $lastFull = json_decode($lines[$total - 1], true);
+}
+$tail = array_slice($lines, -10);
+foreach ($tail as $line) {
+    $e = json_decode($line, true);
+    if (!is_array($e)) { continue; }
+    $body = $e['body'] ?? null;
+    $art = is_array($body) ? ($body['article'] ?? null) : null;
+    $recent[] = [
+        'ts' => $e['ts'] ?? null,
+        'event' => $e['event'] ?? null,
+        'verified' => $e['verified'] ?? false,
+        'stale' => $e['stale'] ?? false,
+        'bytes' => $e['body_bytes'] ?? null,
+        'title' => is_array($art) ? ($art['title'] ?? null) : null,
+        'slug' => is_array($art) ? ($art['slug'] ?? null) : null,
+    ];
+}
+$recent = array_reverse($recent);
 
 header('Content-Type: application/json');
 $out = [
