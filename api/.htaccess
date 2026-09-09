@@ -1,7 +1,14 @@
-# Veritya Daily /api - protect private pipeline files
+# Veritya Daily /api - protect private pipeline files + Authorization passthrough
 <Files "rctrl-config.php">
   Require all denied
 </Files>
 <FilesMatch "\.(jsonl|log|old)$">
   Require all denied
 </FilesMatch>
+
+# FastCGI/LiteSpeed: pass Authorization header through to PHP
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTP:Authorization} .
+  RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+</IfModule>

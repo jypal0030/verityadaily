@@ -1,6 +1,6 @@
 <?php
 /**
- * rctrl (RankControl) -> Veritya Daily webhook endpoint v2
+ * rctrl (RankControl) -> Veritya Daily webhook endpoint v2.1
  *
  * POST /api/rctrl-capture.php?k=<URL_KEY>
  * Verified when config is present:
@@ -9,8 +9,8 @@
  *   X-RankControl-Event: article.published | article.updated | test
  * Body: {"event":string,"timestamp":number,"article":Article}
  *
- * Config lives OUTSIDE public_html (deploy-proof), written via rctrl-status.php setup.
- * Every delivery is appended to rctrl-payloads.jsonl for the publisher pipeline.
+ * v2.1: header fallbacks (apache_request_headers / REDIRECT_HTTP_AUTHORIZATION),
+ *       401 diagnostics (no secret material exposed).
  */
 
 declare(strict_types=1);
@@ -43,6 +43,20 @@ function rctrl_load_whsec(string $store): string
     return is_array($cfg) ? (string)($cfg['whsec'] ?? '') : '';
 }
 
+function rctrl_header(string $name): string
+{
+    $key = 'HTTP_' . strtoupper(str_replace('-', '_', $name));
+    $v = (string)($_SERVER[$key] ?? '');
+    if ($v === '' && function_exists('apache_request_headers')) {
+        $hdrs = array_change_key_case(apache_request_headers() ?: [], CASE_LOWER);
+        $v = (string)($hdrs[strtolower($name)] ?? '');
+    }
+    if ($v === '' && $name === 'authorization' && isset($_SERVER['REDIRECT_HTTP_AUTHORIZATION'])) {
+        $v = (string)$_SERVER['REDIRECT_HTTP_AUTHORIZATION'];
+    }
+    return trim($v);
+}
+
 function rctrl_log(string $store, array $entry): void
 {
     $file = $store . '/rctrl-payloads.jsonl';
@@ -61,7 +75,7 @@ if (!hash_equals(URL_KEY, (string)$k)) {
 
 if (($_SERVER['REQUEST_METHOD'] ?? '') !== 'POST') {
     http_response_code(405);
-    header('Content-Type: application/json');
+    header('Content-Type: application/null', true);
     echo json_encode(['ok' => false, 'error' => 'POST only']);
     exit;
 }
@@ -76,9 +90,9 @@ if ($raw === false || $raw === '') {
     exit;
 }
 
-$auth = trim($_SERVER['HTTP_AUTHORIZATION'] ?? '');
-$sig  = trim($_SERVER['HTTP_X_RANKCONTROL_SIGNATURE'] ?? '');
-$evHeader = trim($_SERVER['HTTP_X_RANKCONTROL_EVENT'] ?? '');
+$auth = rctrl_header('authorization');
+$sig  = rctrl_header('x-rctrl-signature');
+$evHeader = rctrl_header('x-rctrl-event');
 
 $bearerOk = $whsec !== '' && hash_equals('Bearer ' . $whsec, $auth);
 $sigOk = false;
@@ -93,8 +107,17 @@ $tsBody = is_array($parsed) ? ($parsed['timestamp'] ?? null) : null;
 $stale = false;
 if (is_int($tsBody) || is_numeric($tsBody)) {
     $ts = (int)$tsBody;
-    if ($ts > 0 && $ts < 1000000000000) { $stale = abs(time() - $ts) > 900; }
+    if ($ts > 0 && $ts < 1000000000000) { $stale = abs(time() + -1 * $tsBody) > 900; }
 }
+
+$diag = [
+    'auth_present' => $auth !== '',
+    'auth_prefix' => substr($auth, 0, 10),
+    'auth_len' => strlen($auth),
+    'sig_present' => $sig !== '',
+    'sig_prefix' => substr($sig, 0, 11),
+    'sig_len' => strlen($sig),
+];
 
 $entry = [
     'ts' => gmdate('c'),
@@ -110,6 +133,7 @@ $entry = [
     'content_type' => $_SERVER['CONTENT_TYPE'] ?? '',
     'body_bytes' => strlen($raw),
     'is_valid_json' => $parsed !== null,
+    'diag' => $diag,
     'body' => $parsed !== null ? $parsed : $raw,
 ];
 rctrl_log($store, $entry);
@@ -117,7 +141,7 @@ rctrl_log($store, $entry);
 header('Content-Type: application/json');
 if ($whsec !== '' && !$verified) {
     http_response_code(401);
-    echo json_encode(['ok' => false, 'error' => 'unauthorized']);
+    echo json_encode(['ok' => false, 'error' => 'unauthorized', 'diag' => $diag]);
     exit;
 }
 echo json_encode(['ok' => true, 'mode' => $whsec !== '' ? 'signed' : 'capture', 'event' => $event, 'received' => gmdate('c')]);
