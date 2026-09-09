@@ -45,7 +45,8 @@ img { max-width: 100%; height: auto; display: block; }
 
 /* 3. STICKY HEADER */
 .site-header {
-  position: sticky; top: 0; z-index: 100;
+  position: sticky; top: 0; z-index: 500;
+  transform: translateZ(0); -webkit-transform: translateZ(0);
   background: var(--bg-primary);
   border-bottom: 1px solid var(--border);
   height: var(--header-height);
@@ -1085,6 +1086,42 @@ nav.bottom-nav,
   border: 0 !important;
 }
 /* === END OMEGA X: Missing component styles === */
+/* === RCTRL TABLE FIX: bare tables (rctrl webhook sends <table> without class) === */
+/* classless variant of the .data-table styles: real borders, padded cells, shaded header */
+.article-container table,
+.article-content table,
+.article-body table {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+  margin: var(--space-4) 0;
+  font-size: 15px;
+}
+.article-container table th,
+.article-content table th,
+.article-body table th {
+  background: var(--bg-soft);
+  font-weight: 600;
+  text-align: left;
+}
+.article-container table th,
+.article-container table td,
+.article-content table th,
+.article-content table td,
+.article-body table th,
+.article-body table td {
+  border: 1px solid var(--border);
+  padding: 10px 14px;
+  vertical-align: top;
+  word-break: break-word;
+}
+[data-theme="dark"] .article-container table th,
+[data-theme="dark"] .article-content table th,
+[data-theme="dark"] .article-body table th {
+  background: #1C2330;
+}
+/* END RCTRL TABLE FIX */
+
 /* === OMEGA X: Table responsive overflow === */
 .article-content table,
 .article-body table,
