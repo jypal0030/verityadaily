@@ -1,15 +1,13 @@
 <?php
 /**
- * rctrl (RankControl) -> Veritya Daily webhook endpoint v2.2
+ * rctrl (RankControl) -> Veritya Daily webhook endpoint v2.2.1
  *
  * POST /api/rctrl-capture.php?k=<URL_KEY>
  * Verification (when config present):
  *   - Always: Authorization: Bearer <whsec>
  *   - article.published / article.updated: + X-RankControl-Signature: sha256=<HMAC-SHA256(raw body, whsec)>
- *   - test events: signature optional (rctrl connection tests send Bearer only); verified when present
+ *   - test events: Bearer sufficient, but a PRESENT signature must be valid (anti-probe)
  * Body: {"event":string,"timestamp":number,"article":Article}
- *
- * v2.2: test events accept Bearer-only; all header NAMES logged for diagnostics.
  */
 
 declare(strict_types=1);
@@ -19,8 +17,8 @@ const URL_KEY = 'b8f17f2dbe956b2fb330aa79a5556165';
 function rctrl_store_dir(): string
 {
     $candidates = [
-        dirname(__DIR__, 2) . '/rctrl-store',  // outside public_html (preferred, deploy-proof)
-        __DIR__ . '/store',                    // fallback inside webroot (denied via .htaccess)
+        dirname(__DIR__, 2) . '/rctrl-store',
+        __DIR__ . '/store',
     ];
     foreach ($candidates as $dir) {
         if (!is_dir($dir)) { @mkdir($dir, 0755, true); }
@@ -112,7 +110,10 @@ $parsed = json_decode($raw, true);
 $event = is_array($parsed) ? (string)($parsed['event'] ?? $evHeader) : $evHeader;
 if ($event === '' && $evHeader !== '') { $event = $evHeader; }
 $isTest = ($event === 'test');
-$verified = $whsec !== '' && ($isTest ? $bearerOk : ($bearerOk && $sigOk));
+$sigPresent = $sig !== '';
+// test: Bearer sufficient, but a PRESENT signature must be valid (anti-probe)
+// article events: Bearer + valid signature required
+$verified = $whsec !== '' && ($isTest ? ($bearerOk && (!$sigPresent || $sigOk)) : ($bearerOk && $sigOk));
 
 $tsBody = is_array($parsed) ? ($parsed['timestamp'] ?? null) : null;
 $stale = false;
@@ -125,7 +126,7 @@ $diag = [
     'auth_present' => $auth !== '',
     'auth_prefix' => substr($auth, 0, 10),
     'auth_len' => strlen($auth),
-    'sig_present' => $sig !== '',
+    'sig_present' => $sigPresent,
     'sig_prefix' => substr($sig, 0, 11),
     'sig_len' => strlen($sig),
     'is_test' => $isTest,
@@ -156,7 +157,7 @@ rctrl_log($store, $entry);
 header('Content-Type: application/json');
 if ($whsec !== '' && !$verified) {
     http_response_code(401);
-    echo json_encode(['ok' => false, 'error' => 'unauthorized', 'diag' => $diag]);
+    echo json_encode(['ok' => false, 'error' => 'regenerate-sig', 'diag' => $diag]);
     exit;
 }
 echo json_encode(['ok' => true, 'mode' => $whsec !== '' ? 'signed' : 'capture', 'event' => $event, 'sig_ok' => $sigOk, 'received' => gmdate('c')]);
