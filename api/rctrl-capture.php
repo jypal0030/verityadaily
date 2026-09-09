@@ -1,18 +1,22 @@
 <?php
 /**
- * rctrl (RankControl) -> Veritya Daily webhook endpoint v2.2.1
+ * rctrl (RankControl) -> Veritya Daily webhook endpoint v2.3
  *
  * POST /api/rctrl-capture.php?k=<URL_KEY>
  * Verification (when config present):
  *   - Always: Authorization: Bearer <whsec>
- *   - article.published / article.updated: + X-RankControl-Signature: sha256=<HMAC-SHA256(raw body, whsec)>
+ *   - article.published / article.updated: + signature header (X-RankControl-Signature or X-Rctrl-Signature)
+ *     = sha256=<HMAC-SHA256(raw body, whsec)>
  *   - test events: Bearer sufficient, but a PRESENT signature must be valid (anti-probe)
  * Body: {"event":string,"timestamp":number,"article":Article}
+ *
+ * v2.3: real rctrl deliveries send X-RankControl-Signature/Event (full names);
+ *       both spellings accepted (docs said x-rctrl-*).
  */
 
 declare(strict_types=1);
 
-const URL_KEY = 'b8f17f2dbe956b2fb330aa79a5556165';
+const URL_KEY = 'b8f17f…6165';
 
 function rctrl_store_dir(): string
 {
@@ -88,8 +92,11 @@ if ($raw === false || $raw === '') {
 }
 
 $auth = rctrl_header('authorization');
-$sig  = rctrl_header('x-rctrl-signature');
-$evHeader = rctrl_header('x-rctrl-event');
+// rctrl real deliveries send full-name headers (docs said x-rctrl-*); accept both
+$sig = rctrl_header('x-rankcontrol-signature');
+if ($sig === '') { $sig = rctrl_header('x-rctrl-signature'); }
+$evHeader = rctrl_header('x-rankcontrol-event');
+if ($evHeader === '') { $evHeader = rctrl_header('x-rctrl-event'); }
 
 $names = [];
 foreach (array_keys($_SERVER) as $sk) {
