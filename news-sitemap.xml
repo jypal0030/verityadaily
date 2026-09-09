@@ -12,6 +12,17 @@
     </news:news>
   </url>
 <url>
+    <loc>https://verityadaily.com/how-to-keep-up-with-ai-news-2026</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Veritya Daily</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-09T18:11:37+05:30</news:publication_date>
+      <news:title>How to Keep Up With AI News Without Missing Major Breakthroughs</news:title>
+    </news:news>
+  </url>
+<url>
     <loc>https://verityadaily.com/best-ai-news-websites-2026</loc>
     <news:news>
       <news:publication>
@@ -317,17 +328,6 @@
       </news:publication>
       <news:publication_date>2026-09-02T08:00:00+00:00</news:publication_date>
       <news:title>8th Pay Commission Verdict Tracker: Confirmed vs Pending (Sept 2026)</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://verityadaily.com/samsung-discontinuing-quick-measure-ar-doodle-december</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Veritya Daily</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-02T09:00:00+00:00</news:publication_date>
-      <news:title>Samsung Kills Quick Measure + AR Doodle on Dec 31 — Why</news:title>
     </news:news>
   </url>
 </urlset>
