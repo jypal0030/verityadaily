@@ -1,16 +1,15 @@
 <?php
 /**
- * rctrl (RankControl) -> Veritya Daily webhook endpoint v2.1
+ * rctrl (RankControl) -> Veritya Daily webhook endpoint v2.2
  *
  * POST /api/rctrl-capture.php?k=<URL_KEY>
- * Verified when config is present:
- *   Authorization: Bearer <whsec>
- *   X-RankControl-Signature: sha256=<HMAC-SHA256(raw body, keyed with whsec)>
- *   X-RankControl-Event: article.published | article.updated | test
+ * Verification (when config present):
+ *   - Always: Authorization: Bearer <whsec>
+ *   - article.published / article.updated: + X-RankControl-Signature: sha256=<HMAC-SHA256(raw body, whsec)>
+ *   - test events: signature optional (rctrl connection tests send Bearer only); verified when present
  * Body: {"event":string,"timestamp":number,"article":Article}
  *
- * v2.1: header fallbacks (apache_request_headers / REDIRECT_HTTP_AUTHORIZATION),
- *       401 diagnostics (no secret material exposed).
+ * v2.2: test events accept Bearer-only; all header NAMES logged for diagnostics.
  */
 
 declare(strict_types=1);
@@ -51,8 +50,8 @@ function rctrl_header(string $name): string
         $hdrs = array_change_key_case(apache_request_headers() ?: [], CASE_LOWER);
         $v = (string)($hdrs[strtolower($name)] ?? '');
     }
-    if ($v === '' && $name === 'authorization' && isset($_SERVER['REDIRECT_HTTP_AUTHORIZATION'])) {
-        $v = (string)$_SERVER['REDIRECT_HTTP_AUTHORIZATION'];
+    if ($v === '' && $name === 'authorization') {
+        $v = (string)($_SERVER['REDIRECT_HTTP_AUTHORIZATION'] ?? '');
     }
     return trim($v);
 }
@@ -75,7 +74,7 @@ if (!hash_equals(URL_KEY, (string)$k)) {
 
 if (($_SERVER['REQUEST_METHOD'] ?? '') !== 'POST') {
     http_response_code(405);
-    header('Content-Type: application/null', true);
+    header('Content-Type: application/json');
     echo json_encode(['ok' => false, 'error' => 'POST only']);
     exit;
 }
@@ -94,20 +93,32 @@ $auth = rctrl_header('authorization');
 $sig  = rctrl_header('x-rctrl-signature');
 $evHeader = rctrl_header('x-rctrl-event');
 
+$names = [];
+foreach (array_keys($_SERVER) as $sk) {
+    if (strpos($sk, 'HTTP_') === 0) {
+        $names[] = strtolower(str_replace('_', '-', substr($sk, 5)));
+    }
+}
+if (isset($_SERVER['CONTENT_TYPE'])) { $names[] = 'content-type'; }
+if (isset($_SERVER['REDIRECT_HTTP_AUTHORIZATION'])) { $names[] = 'redirect-http-authorization'; }
+
 $bearerOk = $whsec !== '' && hash_equals('Bearer ' . $whsec, $auth);
 $sigOk = false;
 if ($whsec !== '' && preg_match('/^sha256=([0-9a-fA-F]{64})$/', $sig, $m)) {
     $sigOk = hash_equals(hash_hmac('sha256', $raw, $whsec), strtolower($m[1]));
 }
-$verified = $whsec !== '' && $bearerOk && $sigOk;
 
 $parsed = json_decode($raw, true);
 $event = is_array($parsed) ? (string)($parsed['event'] ?? $evHeader) : $evHeader;
+if ($event === '' && $evHeader !== '') { $event = $evHeader; }
+$isTest = ($event === 'test');
+$verified = $whsec !== '' && ($isTest ? $bearerOk : ($bearerOk && $sigOk));
+
 $tsBody = is_array($parsed) ? ($parsed['timestamp'] ?? null) : null;
 $stale = false;
 if (is_int($tsBody) || is_numeric($tsBody)) {
     $ts = (int)$tsBody;
-    if ($ts > 0 && $ts < 1000000000000) { $stale = abs(time() + -1 * $tsBody) > 900; }
+    if ($ts > 0 && $ts < 1000000000000) { $stale = abs(time() - $ts) > 900; }
 }
 
 $diag = [
@@ -117,6 +128,8 @@ $diag = [
     'sig_present' => $sig !== '',
     'sig_prefix' => substr($sig, 0, 11),
     'sig_len' => strlen($sig),
+    'is_test' => $isTest,
+    'sig_required' => !$isTest,
 ];
 
 $entry = [
@@ -126,6 +139,7 @@ $entry = [
     'verified' => $verified,
     'bearer_ok' => $bearerOk,
     'sig_ok' => $sigOk,
+    'sig_optional' => $isTest,
     'stale' => $stale,
     'event' => $event,
     'event_header' => $evHeader,
@@ -133,6 +147,7 @@ $entry = [
     'content_type' => $_SERVER['CONTENT_TYPE'] ?? '',
     'body_bytes' => strlen($raw),
     'is_valid_json' => $parsed !== null,
+    'headers_seen' => $names,
     'diag' => $diag,
     'body' => $parsed !== null ? $parsed : $raw,
 ];
@@ -144,4 +159,4 @@ if ($whsec !== '' && !$verified) {
     echo json_encode(['ok' => false, 'error' => 'unauthorized', 'diag' => $diag]);
     exit;
 }
-echo json_encode(['ok' => true, 'mode' => $whsec !== '' ? 'signed' : 'capture', 'event' => $event, 'received' => gmdate('c')]);
+echo json_encode(['ok' => true, 'mode' => $whsec !== '' ? 'signed' : 'capture', 'event' => $event, 'sig_ok' => $sigOk, 'received' => gmdate('c')]);

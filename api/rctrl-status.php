@@ -1,8 +1,8 @@
 <?php
 /**
- * rctrl pipeline status + setup - Veritya Daily
- * GET  /api/rctrl-status.php?k=<URL_KEY>
- *      -> config presence + recent deliveries (secrets never returned, only fingerprints)
+ * rctrl pipeline status + setup - Veritya Daily  (v2.2)
+ * GET  /api/rctrl-status.php?k=<URL_KEY>            -> config presence + recent deliveries summary
+ * GET  /api/rctrl-status.php?k=<URL_KEY>&full=1     -> + last full log entry (raw payload)
  * POST /api/rctrl-status.php?k=<URL_KEY>
  *      body: {"action":"setup","whsec":"whsec_...","gh_token":"optional"}
  *      -> writes server-side config outside public_html (not in git)
@@ -81,9 +81,13 @@ if (is_file($cfgFile)) {
 
 $recent = [];
 $total = 0;
+$lastFull = null;
 if (is_file($logFile)) {
     $lines = @file($logFile, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES) ?: [];
     $total = count($lines);
+    if ($total > 0 && isset($_GET['full'])) {
+        $lastFull = json_decode($lines[$total - 1], true);
+    }
     $tail = array_slice($lines, -10);
     foreach ($tail as $line) {
         $e = json_decode($line, true);
@@ -104,11 +108,13 @@ if (is_file($logFile)) {
 }
 
 header('Content-Type: application/json');
-echo json_encode([
+$out = [
     'ok' => true,
     'config_present' => $whsec !== '',
     'whsec_fingerprint' => $whsec !== '' ? substr(sha1($whsec), 0, 10) : null,
     'gh_token_saved' => $ghTokenSaved,
     'deliveries_total' => $total,
     'recent' => $recent,
-]);
+];
+if ($lastFull !== null) { $out['last_full'] = $lastFull; }
+echo json_encode($out);
