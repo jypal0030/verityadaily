@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+    <loc>https://verityadaily.com/ai-productivity-roi-small-business-study-2026-2026</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Veritya Daily</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-09T21:39:35+05:30</news:publication_date>
+      <news:title>2026 Study Reveals AI Productivity ROI Gains for Small Businesses</news:title>
+    </news:news>
+  </url>
+<url>
     <loc>https://verityadaily.com/how-to-keep-up-with-ai-news-2026</loc>
     <news:news>
       <news:publication>
@@ -317,17 +328,6 @@
       </news:publication>
       <news:publication_date>2026-09-08T14:25:00+00:00</news:publication_date>
       <news:title>Apple Event LIVE Tonight: India Time, Free Stream Links, Predictions</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://verityadaily.com/8th-pay-commission-verdict-tracker</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Veritya Daily</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-02T08:00:00+00:00</news:publication_date>
-      <news:title>8th Pay Commission Verdict Tracker: Confirmed vs Pending (Sept 2026)</news:title>
     </news:news>
   </url>
 </urlset>
