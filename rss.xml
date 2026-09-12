@@ -5,7 +5,7 @@
     <link>https://verityadaily.com</link>
     <description>Independent reporting on AI, cryptocurrency, finance, cybersecurity, and technology. Original analysis you can trust.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 12 Sep 2026 17:57:26 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 12 Sep 2026 20:19:10 +0000</lastBuildDate>
     <atom:link href="https://verityadaily.com/rss.xml" rel="self" type="application/rss+xml"/>
     
 
@@ -906,6 +906,14 @@
   <guid isPermaLink="true">https://verityadaily.com/aws-braket-pricing-2026-2026</guid>
   <pubDate>Sat, 12 Sep 2026 17:57:26 +0000</pubDate>
   <description>Learn AWS Braket pricing across quantum devices, jobs, and simulators, including two main charge types. Read the 2026 cost guide.</description>
+</item>
+
+<item>
+  <title>How to Evaluate New AI Models Without Getting Misled</title>
+  <link>https://verityadaily.com/evaluate-ai-models-2026</link>
+  <guid isPermaLink="true">https://verityadaily.com/evaluate-ai-models-2026</guid>
+  <pubDate>Sat, 12 Sep 2026 20:19:10 +0000</pubDate>
+  <description>Learn 5 checks to evaluate AI models fairly, from benchmark quality to real-world testing. Read Verityadaily’s practical guide.</description>
 </item>
 </channel>
 </rss>
