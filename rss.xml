@@ -5,7 +5,7 @@
     <link>https://verityadaily.com</link>
     <description>Independent reporting on AI, cryptocurrency, finance, cybersecurity, and technology. Original analysis you can trust.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 11 Sep 2026 11:45:27 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 12 Sep 2026 17:57:26 +0000</lastBuildDate>
     <atom:link href="https://verityadaily.com/rss.xml" rel="self" type="application/rss+xml"/>
     
 
@@ -898,6 +898,14 @@
   <guid isPermaLink="true">https://verityadaily.com/ai-productivity-roi-small-businesses-2026</guid>
   <pubDate>Fri, 11 Sep 2026 11:45:27 +0000</pubDate>
   <description>Learn how small businesses can measure AI ROI using hours saved, costs cut, and revenue gained. Use this guide to prove results.</description>
+</item>
+
+<item>
+  <title>AWS Braket Pricing in 2026: Understanding Devices, Jobs, and Charges</title>
+  <link>https://verityadaily.com/aws-braket-pricing-2026-2026</link>
+  <guid isPermaLink="true">https://verityadaily.com/aws-braket-pricing-2026-2026</guid>
+  <pubDate>Sat, 12 Sep 2026 17:57:26 +0000</pubDate>
+  <description>Learn AWS Braket pricing across quantum devices, jobs, and simulators, including two main charge types. Read the 2026 cost guide.</description>
 </item>
 </channel>
 </rss>

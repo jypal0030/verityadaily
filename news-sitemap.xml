@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+<url>
+    <loc>https://verityadaily.com/aws-braket-pricing-2026-2026</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Veritya Daily</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-12T23:27:26+05:30</news:publication_date>
+      <news:title>AWS Braket Pricing in 2026: Understanding Devices, Jobs, and Charges</news:title>
+    </news:news>
+  </url>
 <url><loc>https://verityadaily.com/jackson-hole-2026-preview</loc><news:news><news:publication><news:name>Veritya Daily</news:name><news:language>en</news:language></news:publication><news:publication_date>2026-09-12T11:45:00+05:30</news:publication_date><news:title>Jackson Hole 2026: The Fed's Payments Theme Is Crypto's Moment — September FOMC Update</news:title></news:news></url>
 <url>
     <loc>https://verityadaily.com/ai-productivity-roi-small-businesses-2026</loc>
@@ -309,16 +320,4 @@
       <news:title>Hong Kong Launches World’s First Bitcoin + Gold ETF (3002.HK)</news:title>
     </news:news>
   </url>
-<url>
-    <loc>https://verityadaily.com/ai-music-detectors-tested-accuracy</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Veritya Daily</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-29T16:20:00+00:00</news:publication_date>
-      <news:title>AI Music Detectors Tested: Deezer, IRCAM and the 99% Illusion</news:title>
-    </news:news>
-  </url>
-
 </urlset>
