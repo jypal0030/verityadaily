@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+    <loc>https://verityadaily.com/ai-productivity-tools-1789243118062-5-2026</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Veritya Daily</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-14T00:23:19+05:30</news:publication_date>
+      <news:title>Top 8 AI Tools for Faster Everyday Productivity</news:title>
+    </news:news>
+  </url>
+<url>
     <loc>https://verityadaily.com/chatgpt-vs-claude-2026</loc>
     <news:news>
       <news:publication>
@@ -307,17 +318,6 @@
       </news:publication>
       <news:publication_date>2026-08-28T04:45:00+00:00</news:publication_date>
       <news:title>AI Music Gets Banned: ARIA Charts, Bandcamp, Tidal Draw the Line</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://verityadaily.com/apple-september-9-event-iphone-18-fold</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Veritya Daily</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-28T05:20:00+00:00</news:publication_date>
-      <news:title>Apple Sept 9 Event Confirmed: iPhone 18 Pro, First Foldable, Watch 12</news:title>
     </news:news>
   </url>
 </urlset>
