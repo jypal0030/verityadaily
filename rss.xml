@@ -5,7 +5,7 @@
     <link>https://verityadaily.com</link>
     <description>Independent reporting on AI, cryptocurrency, finance, cybersecurity, and technology. Original analysis you can trust.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 13 Sep 2026 18:25:14 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 13 Sep 2026 18:37:24 +0000</lastBuildDate>
     <atom:link href="https://verityadaily.com/rss.xml" rel="self" type="application/rss+xml"/>
     
 
@@ -930,6 +930,14 @@
   <guid isPermaLink="true">https://verityadaily.com/ai-productivity-tools-2026</guid>
   <pubDate>Sun, 13 Sep 2026 18:25:14 +0000</pubDate>
   <description>Get answers to 7 common questions about AI productivity tools, including what they can automate and where human judgment still matters. Read the FAQ.</description>
+</item>
+
+<item>
+  <title>ChatGPT vs Claude: Which Is Better for Research Work?</title>
+  <link>https://verityadaily.com/chatgpt-vs-claude-2026</link>
+  <guid isPermaLink="true">https://verityadaily.com/chatgpt-vs-claude-2026</guid>
+  <pubDate>Sun, 13 Sep 2026 18:37:24 +0000</pubDate>
+  <description>ChatGPT vs Claude for research: compare accuracy, citations, writing, and analysis to choose the right AI tool. Read the 2026 comparison.</description>
 </item>
 </channel>
 </rss>

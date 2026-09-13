@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+    <loc>https://verityadaily.com/chatgpt-vs-claude-2026</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Veritya Daily</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-14T00:07:24+05:30</news:publication_date>
+      <news:title>ChatGPT vs Claude: Which Is Better for Research Work?</news:title>
+    </news:news>
+  </url>
+<url>
     <loc>https://verityadaily.com/ai-productivity-tools-2026</loc>
     <news:news>
       <news:publication>
@@ -307,17 +318,6 @@
       </news:publication>
       <news:publication_date>2026-08-28T05:20:00+00:00</news:publication_date>
       <news:title>Apple Sept 9 Event Confirmed: iPhone 18 Pro, First Foldable, Watch 12</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://verityadaily.com/why-crypto-down-warsh-speech-bitcoin-77k</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Veritya Daily</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-28T16:50:00+00:00</news:publication_date>
-      <news:title>Why Is Crypto Down Today? Warsh’s “No Rescue” Message Explained</news:title>
     </news:news>
   </url>
 </urlset>
