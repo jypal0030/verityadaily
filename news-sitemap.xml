@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+    <loc>https://verityadaily.com/ai-research-tools-2026</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Veritya Daily</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-14T00:30:38+05:30</news:publication_date>
+      <news:title>12 Best AI Research Tools for Journalists and Analysts</news:title>
+    </news:news>
+  </url>
+<url>
     <loc>https://verityadaily.com/ai-productivity-tools-1789243118062-5-2026</loc>
     <news:news>
       <news:publication>
@@ -307,17 +318,6 @@
       </news:publication>
       <news:publication_date>2026-08-27T19:25:00+00:00</news:publication_date>
       <news:title>Alabama Subpoenas OpenAI: The Rogue-Agents Hack Explained</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://verityadaily.com/ai-music-banned-charts-bandcamp-tidal</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Veritya Daily</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-28T04:45:00+00:00</news:publication_date>
-      <news:title>AI Music Gets Banned: ARIA Charts, Bandcamp, Tidal Draw the Line</news:title>
     </news:news>
   </url>
 </urlset>
