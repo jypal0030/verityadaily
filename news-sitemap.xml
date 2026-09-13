@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+  <url>
+    <loc>https://verityadaily.com/ai-crypto-scams-2026</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Veritya Daily</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-14T01:15:00+05:30</news:publication_date>
+      <news:title>AI Crypto Scams in 2026: How Deepfakes, Fake Bots &amp; Phishing Steal Crypto</news:title>
+    </news:news>
+  </url>
 <url>
     <loc>https://verityadaily.com/ai-adoption-statistics-2026</loc>
     <news:news>
@@ -309,15 +320,5 @@
       <news:title>Gold Nears Record High: Why Everything Is Rallying at Once</news:title>
     </news:news>
   </url>
-<url>
-    <loc>https://verityadaily.com/gta-6-extended-look-netflix-how-to-watch</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Veritya Daily</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-27T18:20:00+00:00</news:publication_date>
-      <news:title>GTA 6 Extended Look Tonight: Netflix India Time, Free YouTube Option</news:title>
-    </news:news>
-  </url>
+
 </urlset>
