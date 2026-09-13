@@ -5,7 +5,7 @@
     <link>https://verityadaily.com</link>
     <description>Independent reporting on AI, cryptocurrency, finance, cybersecurity, and technology. Original analysis you can trust.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 13 Sep 2026 19:00:38 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 13 Sep 2026 19:08:35 +0000</lastBuildDate>
     <atom:link href="https://verityadaily.com/rss.xml" rel="self" type="application/rss+xml"/>
     
 
@@ -954,6 +954,14 @@
   <guid isPermaLink="true">https://verityadaily.com/ai-research-tools-2026</guid>
   <pubDate>Sun, 13 Sep 2026 19:00:38 +0000</pubDate>
   <description>Compare 12 AI research tools for journalists and analysts, including features, use cases, and pricing. Find the right tool with Verityadaily.</description>
+</item>
+
+<item>
+  <title>7 Ways to Spot Misleading AI Model Claims</title>
+  <link>https://verityadaily.com/ai-model-claims-2026</link>
+  <guid isPermaLink="true">https://verityadaily.com/ai-model-claims-2026</guid>
+  <pubDate>Sun, 13 Sep 2026 19:08:35 +0000</pubDate>
+  <description>Learn 7 checks for misleading AI model claims, from benchmark context to missing evidence. Read Verityadaily's guide.</description>
 </item>
 </channel>
 </rss>
