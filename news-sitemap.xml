@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
-  <url>
+    <url>
+    <loc>https://verityadaily.com/v2-test-v21dqhr</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Veritya Daily</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-14T09:24:27.315Z</news:publication_date>
+      <news:title>V2 Workspace Test v21dqhr</news:title>
+    </news:news>
+  </url>
+<url>
     <loc>https://verityadaily.com/ai-phishing-attacks-2026</loc>
     <news:news>
       <news:publication>
@@ -309,16 +320,6 @@
       <news:title>How to Start Cryptocurrency Trading: Complete Guide 2026</news:title>
     </news:news>
   </url>
-<url>
-    <loc>https://verityadaily.com/top-ai-tools-2026</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Veritya Daily</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-25T12:00:00+05:30</news:publication_date>
-      <news:title>Top AI Tools 2026: Essential Platform Guide for Tech Professionals</news:title>
-    </news:news>
-  </url>
+
 
 </urlset>
