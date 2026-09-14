@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+  <url>
+    <loc>https://verityadaily.com/ai-phishing-attacks-2026</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Veritya Daily</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-14T12:20:00+05:30</news:publication_date>
+      <news:title>AI Phishing Attacks in 2026: How to Spot Them and Protect Yourself</news:title>
+    </news:news>
+  </url>
 <url>
     <loc>https://verityadaily.com/chatgpt-alternatives-2026</loc>
     <news:news>
@@ -309,15 +320,5 @@
       <news:title>Top AI Tools 2026: Essential Platform Guide for Tech Professionals</news:title>
     </news:news>
   </url>
-<url>
-    <loc>https://verityadaily.com/bitcoin-80000-breakout-rally</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Veritya Daily</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-27T06:00:00+00:00</news:publication_date>
-      <news:title>Bitcoin Breaks $80,000: Inside the Rally That Nobody Expected</news:title>
-    </news:news>
-  </url>
+
 </urlset>
