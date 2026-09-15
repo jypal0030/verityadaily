@@ -1,5 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">                        <url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">                                      <url>
+    <loc>https://verityadaily.com/ai-tools-productivity-gains-2026</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Veritya Daily</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-15T20:10:00+05:30</news:publication_date>
+      <news:title>AI Tools That Deliver Measurable Productivity Gains</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://verityadaily.com/sec-crypto-headlines-2026</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Veritya Daily</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-15T20:30:00+05:30</news:publication_date>
+      <news:title>SEC Crypto Headlines Distort Market Signals Overnight</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://verityadaily.com/claude-news-guide-2026</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Veritya Daily</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-15T20:50:00+05:30</news:publication_date>
+      <news:title>Claude News Guide for Tracking AI Rollouts Clearly</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://verityadaily.com/ethereum-tokenization-2026</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Veritya Daily</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-15T21:10:00+05:30</news:publication_date>
+      <news:title>How Tokenization Rewrites the Ethereum Investment Case</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://verityadaily.com/ai-tools-privacy-risks-2026</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Veritya Daily</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-15T21:30:00+05:30</news:publication_date>
+      <news:title>AI Tools Expose Hidden Privacy Risks</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://verityadaily.com/ai-capex-signals-2026</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Veritya Daily</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-15T21:50:00+05:30</news:publication_date>
+      <news:title>AI Capex Signals That Reveal Real Monetization</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://verityadaily.com/economic-calendar-signals-2026</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Veritya Daily</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-15T22:10:00+05:30</news:publication_date>
+      <news:title>7 Economic Calendar Signals Every Trader Should Track</news:title>
+    </news:news>
+  </url>
+<url>
     <loc>https://verityadaily.com/bitcoin-etf-inflows-vs-onchain-2026</loc>
     <news:news>
       <news:publication>
@@ -252,73 +329,13 @@
       <news:title>12 Best AI Research Tools for Journalists and Analysts</news:title>
     </news:news>
   </url>
-<url>
-    <loc>https://verityadaily.com/ai-productivity-tools-1789243118062-5-2026</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Veritya Daily</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-14T00:23:19+05:30</news:publication_date>
-      <news:title>Top 8 AI Tools for Faster Everyday Productivity</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://verityadaily.com/chatgpt-vs-claude-2026</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Veritya Daily</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-14T00:07:24+05:30</news:publication_date>
-      <news:title>ChatGPT vs Claude: Which Is Better for Research Work?</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://verityadaily.com/ai-productivity-tools-2026</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Veritya Daily</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-13T23:55:14+05:30</news:publication_date>
-      <news:title>Can AI Tools Replace Your Workflow? Common Productivity Questions</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://verityadaily.com/ai-agents-2026</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Veritya Daily</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-13T13:13:22+05:30</news:publication_date>
-      <news:title>What AI Agents Are and How They Actually Work</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://verityadaily.com/evaluate-ai-models-2026</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Veritya Daily</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-13T01:49:10+05:30</news:publication_date>
-      <news:title>How to Evaluate New AI Models Without Getting Misled</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://verityadaily.com/aws-braket-pricing-2026-2026</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Veritya Daily</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-12T23:27:26+05:30</news:publication_date>
-      <news:title>AWS Braket Pricing in 2026: Understanding Devices, Jobs, and Charges</news:title>
-    </news:news>
-  </url>
-<url><loc>https://verityadaily.com/jackson-hole-2026-preview</loc><news:news><news:publication><news:name>Veritya Daily</news:name><news:language>en</news:language></news:publication><news:publication_date>2026-09-12T11:45:00+05:30</news:publication_date><news:title>Jackson Hole 2026: The Fed's Payments Theme Is Crypto's Moment — September FOMC Update</news:title></news:news></url>
+
+
+
+
+
+
+
 
 
 
