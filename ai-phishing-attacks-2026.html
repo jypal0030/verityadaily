@@ -28,6 +28,7 @@
 <meta name="google-site-verification" content="XdK31a28Im_VDYclEp842TawqSyEyH-9coRatlEKe_w">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/tokens.css?v=2">
 <link rel="stylesheet" href="assets/css/custom-style.css?v=11">
@@ -334,55 +335,55 @@
 <p>To be clear: grammar isn't useless. A message full of errors is still a warning sign. The point is that <strong>clean writing is no longer evidence of legitimacy</strong> — it's the baseline. What still works is checking the request, the sender's domain, the link's real destination, and the story itself against an independent source.</p>
 <h2 id="9-ai-phishing-warning-signs-to-watch-for">9 AI Phishing Warning Signs to Watch For</h2>
 <p>Since appearance no longer separates real from fake, behavioral and contextual signals do the work. These nine warning signs apply to email, SMS, phone, and chat:</p>
-<h4>1. Unexpected urgency</h4>
+<h3>1. Unexpected urgency</h4>
 <ul>
 <li><strong>What it looks like:</strong> "Your account will be suspended in 24 hours."</li>
 <li><strong>Why it matters:</strong> deadlines short-circuit the verification you'd normally do.</li>
 <li><strong>What to do:</strong> treat any artificial deadline as a signal to slow down, not speed up.</li>
 </ul>
-<h4>2. Requests for credentials or money</h4>
+<h3>2. Requests for credentials or money</h4>
 <ul>
 <li><strong>What it looks like:</strong> password resets, "re-authentication," invoice changes, gift cards, crypto transfers.</li>
 <li><strong>Why it matters:</strong> legitimate organizations rarely need your password, an OTP, or an urgent payment change by message.</li>
 <li><strong>What to do:</strong> never act on money or credential requests from an inbound message; verify through a known channel first.</li>
 </ul>
-<h4>3. Login and approval requests</h4>
+<h3>3. Login and approval requests</h4>
 <ul>
 <li><strong>What it looks like:</strong> "Approve this sign-in," a sudden MFA prompt, or a request to enter a code on a website or phone call.</li>
 <li><strong>Why it matters:</strong> approval prompts and device-code flows are being actively abused — you approve the attacker's session.</li>
 <li><strong>What to do:</strong> if you didn't initiate a login, deny the prompt and change your password.</li>
 </ul>
-<h4>4. Sender and domain mismatch</h4>
+<h3>4. Sender and domain mismatch</h4>
 <ul>
 <li><strong>What it looks like:</strong> display name says "Microsoft 365," but the address is an unrelated domain or a lookalike.</li>
 <li><strong>Why it matters:</strong> AI fixes the body text easily; the sender's domain still has to come from somewhere.</li>
 <li><strong>What to do:</strong> expand the full sender address and hover every link before trusting either.</li>
 </ul>
-<h4>5. Links that don't match the claim</h4>
+<h3>5. Links that don't match the claim</h4>
 <ul>
 <li><strong>What it looks like:</strong> text says "paypal.com," the actual link goes to "paypa1-secure.example" or a redirect chain.</li>
 <li><strong>Why it matters:</strong> the destination, not the label, is the truth.</li>
 <li><strong>What to do:</strong> long-press on mobile or hover on desktop to preview; when in doubt, navigate to the site yourself.</li>
 </ul>
-<h4>6. Requests to bypass normal process</h4>
+<h3>6. Requests to bypass normal process</h4>
 <ul>
 <li><strong>What it looks like:</strong> "Don't go through procurement," "Keep this off the ticket system," "Handle this outside IT."</li>
 <li><strong>Why it matters:</strong> real organizations depend on their processes; attackers need you to skip them.</li>
 <li><strong>What to do:</strong> treat any request to skip checks as the attack itself.</li>
 </ul>
-<h4>7. Unusual secrecy or confidentiality</h4>
+<h3>7. Unusual secrecy or confidentiality</h4>
 <ul>
 <li><strong>What it looks like:</strong> "This is confidential until the announcement — don't discuss with anyone."</li>
 <li><strong>Why it matters:</strong> isolation is a classic social-engineering move, and AI copy makes it read naturally.</li>
 <li><strong>What to do:</strong> confirm sensitive-sounding requests through a second, independent channel.</li>
 </ul>
-<h4>8. Sudden change in communication behavior</h4>
+<h3>8. Sudden change in communication behavior</h4>
 <ul>
 <li><strong>What it looks like:</strong> your "bank" emails for the first time, your "CEO" messages from a new number, a chat app replaces email.</li>
 <li><strong>Why it matters:</strong> channel-switching defeats the filters and habits tied to the old channel.</li>
 <li><strong>What to do:</strong> verify on the channel you already use for that person or organization.</li>
 </ul>
-<h4>9. Pressure not to verify</h4>
+<h3>9. Pressure not to verify</h4>
 <ul>
 <li><strong>What it looks like:</strong> "Don't call the branch, they'll lock your account," "I'm in a meeting, just approve it."</li>
 <li><strong>Why it matters:</strong> attackers can't survive verification — so verification itself becomes the target.</li>
@@ -504,7 +505,7 @@
   <img src="assets/img/ai-phishing-clicked.jpg" alt="Emergency response steps after clicking a phishing link: stop, change password, sign out sessions, contact service, report" width="1100" height="1375" loading="lazy">
   <figcaption>Clicked? Work through these steps in order — and watch out for follow-up "recovery" scams.</figcaption>
 </figure>
-<h4>If you clicked but entered nothing</h4>
+<h3>If you clicked but entered nothing</h3>
 <p>Close the tab, delete the message, and report it. Run a quick check that no file was downloaded (scan if unsure). You're almost certainly fine — the click alone rarely compromises anything.</p>
 <h4>If you entered a password</h4>
 <p>Change that password immediately from a trusted device — not the machine you suspect, if the page pushed a download. Change it anywhere the same password was reused. Sign out all active sessions in the account's security settings, enable MFA if it's off, and check for new forwarding rules or recovery contacts the attacker may have added.</p>
@@ -583,7 +584,7 @@
         <p class="text-muted" style="margin-top:8px;">Original analysis on AI, crypto, finance & tech. Not financial advice.</p>
       </div>
       <div>
-        <h4 style="font-size:13px; text-transform:uppercase; letter-spacing:0.05em;">Sections</h4>
+        <h3 style="font-size:13px; text-transform:uppercase; letter-spacing:0.05em;">Sections</h3>
         <ul class="footer-links">
           <li><a href="category-ai">Artificial Intelligence</a></li>
           <li><a href="category-crypto">Cryptocurrency</a></li>

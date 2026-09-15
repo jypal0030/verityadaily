@@ -15,6 +15,7 @@
 <link rel="canonical" href="https://verityadaily.com/search">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-P6F8LX2DWH"></script>
 <script>
@@ -83,7 +84,7 @@ window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);
 
   function esc(s){ return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
   function card(a){
-    return '<a href="/' + a.s + '" class="post-card"><div class="post-card__image"><img src="assets/img/' + (a.i || 'og-image.png') + '" alt="' + esc(a.t) + '" loading="lazy" width="400" height="225"></div><div class="post-card__body"><span class="post-card__meta">' + esc(a.k) + '</span><h3 class="post-card__title">' + esc(a.t) + '</h3></div></a>';
+    return '<a href="/' + a.s + '" class="post-card"><div class="post-card__image"><img src="assets/img/' + (a.i || 'og-image.png') + '" alt="' + esc(a.t) + '" loading="lazy" width="400" height="225"></div><div class="post-card__body"><span class="post-card__meta">' + esc(a.k) + '</span><h2 class="post-card__title">' + esc(a.t) + '</h2></div></a>';
   }
   function search(q){
     q = (q || '').trim().toLowerCase();
@@ -127,7 +128,7 @@ window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);
         <p class="text-muted" style="margin-top:8px;">Original analysis on AI, crypto, finance & tech. Not financial advice.</p>
       </div>
       <div>
-        <h4 style="font-size:13px; text-transform:uppercase; letter-spacing:0.05em;">Sections</h4>
+        <h3 style="font-size:13px; text-transform:uppercase; letter-spacing:0.05em;">Sections</h3>
         <ul class="footer-links">
           <li><a href="category-ai">Artificial Intelligence</a></li>
           <li><a href="category-crypto">Cryptocurrency</a></li>
