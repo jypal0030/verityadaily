@@ -167,4 +167,21 @@ if ($whsec !== '' && !$verified) {
     echo json_encode(['ok' => false, 'error' => 'regenerate-sig', 'diag' => $diag]);
     exit;
 }
-echo json_encode(['ok' => true, 'mode' => $whsec !== '' ? 'signed' : 'capture', 'event' => $event, 'sig_ok' => $sigOk, 'received' => gmdate('c')]);
+// rctrl live-check contract: every delivery is answered with the article URL
+// (publisher builds: slug sanitized + '-2026' suffix; mirror that prediction here)
+$artBody = is_array($parsed) ? (array)($parsed['article'] ?? []) : [];
+$slugPred = strtolower(trim((string)($artBody['slug'] ?? '')));
+$slugPred = preg_replace('/[^a-z0-9-]+/', '-', $slugPred);
+$slugPred = trim((string)$slugPred, '-');
+if (strlen($slugPred) > 60) { $slugPred = substr($slugPred, 0, 60); }
+$articleUrl = $slugPred !== '' ? ('https://verityadaily.com/' . $slugPred . '-2026') : null;
+echo json_encode([
+    'ok' => true,
+    'mode' => $whsec !== '' ? 'signed' : 'capture',
+    'event' => $event,
+    'sig_ok' => $sigOk,
+    'received' => gmdate('c'),
+    'slug' => $slugPred !== '' ? $slugPred : null,
+    'article_url' => $articleUrl,
+    'url' => $articleUrl,
+]);
