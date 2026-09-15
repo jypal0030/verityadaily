@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"><url>
+    <loc>https://verityadaily.com/recover-stolen-cryptocurrency-2026</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Veritya Daily</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-15T10:51:44+05:30</news:publication_date>
+      <news:title>Can You Recover Stolen Cryptocurrency? And Other Security Questions</news:title>
+    </news:news>
+  </url>
+<url>
     <loc>https://verityadaily.com/crypto-price-volatility-2026</loc>
     <news:news>
       <news:publication>
@@ -306,17 +317,6 @@
       </news:publication>
       <news:publication_date>2026-08-26T23:45:00+05:30</news:publication_date>
       <news:title>XRP Price Surge: 4 Forces Behind the 56% Weekly Rally</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://verityadaily.com/coldcard-hack-116m-firmware-flaw</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Veritya Daily</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-26T23:30:00+05:30</news:publication_date>
-      <news:title>Coldcard Hack: $116M in Bitcoin Drained Via 2021 Firmware Flaw</news:title>
     </news:news>
   </url>
 </urlset>
