@@ -23,7 +23,7 @@
     <link>https://verityadaily.com</link>
     <description>Independent reporting on AI, cryptocurrency, finance, cybersecurity, and technology. Original analysis you can trust.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 14 Sep 2026 14:27:15 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 15 Sep 2026 05:15:30 +0000</lastBuildDate>
     <atom:link href="https://verityadaily.com/rss.xml" rel="self" type="application/rss+xml"/>
     
 
@@ -1020,6 +1020,14 @@
   <guid isPermaLink="true">https://verityadaily.com/bitcoin-vs-ethereum-2026</guid>
   <pubDate>Mon, 14 Sep 2026 14:27:15 +0000</pubDate>
   <description>Compare Bitcoin and Ethereum by use case, fees, growth potential, and risks. Use this 2026 guide to choose the right crypto for you.</description>
+</item>
+
+<item>
+  <title>Why Crypto Prices Move Suddenly (And How to Investigate)</title>
+  <link>https://verityadaily.com/crypto-price-volatility-2026</link>
+  <guid isPermaLink="true">https://verityadaily.com/crypto-price-volatility-2026</guid>
+  <pubDate>Tue, 15 Sep 2026 05:15:30 +0000</pubDate>
+  <description>Investigate crypto price volatility with four practical checks for news, liquidity, leverage, and market data. Learn how prices move.</description>
 </item>
 </channel>
 </rss>

@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"><url>
+    <loc>https://verityadaily.com/crypto-price-volatility-2026</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Veritya Daily</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-15T10:45:30+05:30</news:publication_date>
+      <news:title>Why Crypto Prices Move Suddenly (And How to Investigate)</news:title>
+    </news:news>
+  </url>
+<url>
     <loc>https://verityadaily.com/bitcoin-vs-ethereum-2026</loc>
     <news:news>
       <news:publication>
@@ -306,17 +317,6 @@
       </news:publication>
       <news:publication_date>2026-08-26T23:30:00+05:30</news:publication_date>
       <news:title>Coldcard Hack: $116M in Bitcoin Drained Via 2021 Firmware Flaw</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://verityadaily.com/ai-vs-machine-learning-key-differences</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Veritya Daily</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-26T11:00:00+05:30</news:publication_date>
-      <news:title>AI vs Machine Learning: Key Differences 2026</news:title>
     </news:news>
   </url>
 </urlset>
