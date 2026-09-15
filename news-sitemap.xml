@@ -1,5 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">  <url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">            <url>
+    <loc>https://verityadaily.com/crypto-etf-signals-2026</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Veritya Daily</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-15T15:40:00+05:30</news:publication_date>
+      <news:title>5 Crypto ETF Signals That Matter More Than Charts Today</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://verityadaily.com/gpt-vs-claude-gemini-product-teams-2026</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Veritya Daily</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-15T16:00:00+05:30</news:publication_date>
+      <news:title>GPT Compared With Claude and Gemini for Product Teams</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://verityadaily.com/ai-benchmark-guide-2026</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Veritya Daily</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-15T16:20:00+05:30</news:publication_date>
+      <news:title>AI Benchmark Guide for Reading AI Launch Claims Fast</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://verityadaily.com/stablecoins-global-payment-rails-2026</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Veritya Daily</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-15T16:40:00+05:30</news:publication_date>
+      <news:title>Why Stablecoins Are Becoming Global Payment Rails</news:title>
+    </news:news>
+  </url>
+<url>
+    <loc>https://verityadaily.com/solana-supply-shock-2026</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Veritya Daily</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-15T17:00:00+05:30</news:publication_date>
+      <news:title>What Is Supply Shock and Why Solana Traders Care Today</news:title>
+    </news:news>
+  </url>
+<url>
     <loc>https://verityadaily.com/ai-news-evidence-2026</loc>
     <news:news>
       <news:publication>
@@ -264,60 +319,10 @@
       <news:title>Quantum Computing Cloud Pricing in 2026: Costs, Plans, and Providers</news:title>
     </news:news>
   </url>
-<url>
-    <loc>https://verityadaily.com/ai-productivity-roi-small-business-study-2026-2026</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Veritya Daily</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-09T21:39:35+05:30</news:publication_date>
-      <news:title>2026 Study Reveals AI Productivity ROI Gains for Small Businesses</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://verityadaily.com/how-to-keep-up-with-ai-news-2026</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Veritya Daily</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-09T18:11:37+05:30</news:publication_date>
-      <news:title>How to Keep Up With AI News Without Missing Major Breakthroughs</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://verityadaily.com/how-to-keep-up-with-ai-news-2026</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Veritya Daily</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-09T18:11:37+05:30</news:publication_date>
-      <news:title>How to Keep Up With AI News Without Missing Major Breakthroughs</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://verityadaily.com/best-ai-news-websites-2026</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Veritya Daily</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-09T17:32:27+05:30</news:publication_date>
-      <news:title>11 Best AI News Websites for Breaking Updates and Expert Analysis</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://verityadaily.com/minimax-arr-800m-chinese-ai</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Veritya Daily</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-08-27T00:05:00+05:30</news:publication_date>
-      <news:title>MiniMax ARR Hits $800M: Chinese AI's Revenue Rocket</news:title>
-    </news:news>
-  </url>
+
+
+
+
+
 
 </urlset>
