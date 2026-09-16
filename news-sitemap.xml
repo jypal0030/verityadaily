@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"><url>
+    <loc>https://verityadaily.com/cryptocurrency-security-2026</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Veritya Daily</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-16T10:38:17+05:30</news:publication_date>
+      <news:title>Cryptocurrency Security: The Complete Protection Resource</news:title>
+    </news:news>
+  </url>
+<url>
     <loc>https://verityadaily.com/bitcoin-statistics-2026</loc>
     <news:news>
       <news:publication>
@@ -316,17 +327,6 @@
       </news:publication>
       <news:publication_date>2026-09-14T00:48:07+05:30</news:publication_date>
       <news:title>AI Adoption Statistics 2026: 40 Numbers That Matter</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://verityadaily.com/ai-model-claims-2026</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Veritya Daily</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-14T00:38:35+05:30</news:publication_date>
-      <news:title>7 Ways to Spot Misleading AI Model Claims</news:title>
     </news:news>
   </url>
 </urlset>
