@@ -176,7 +176,7 @@
     <link>https://verityadaily.com</link>
     <description>Independent reporting on AI, cryptocurrency, finance, cybersecurity, and technology. Original analysis you can trust.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 16 Sep 2026 18:42:34 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 17 Sep 2026 05:37:10 +0000</lastBuildDate>
     <atom:link href="https://verityadaily.com/rss.xml" rel="self" type="application/rss+xml"/>
     
 
@@ -1237,6 +1237,14 @@
   <guid isPermaLink="true">https://verityadaily.com/reduce-tech-news-information-overload-2026</guid>
   <pubDate>Wed, 16 Sep 2026 18:42:34 +0000</pubDate>
   <description>Learn how constant tech news drains focus, why decision fatigue builds, and how a simple 2-step filter can reduce information overload. Read the guide.</description>
+</item>
+
+<item>
+  <title>IBM Quantum Pay-As-You-Go Pricing: How Runtime Seconds Affect Costs</title>
+  <link>https://verityadaily.com/ibm-quantum-pay-as-you-go-pricing-2026</link>
+  <guid isPermaLink="true">https://verityadaily.com/ibm-quantum-pay-as-you-go-pricing-2026</guid>
+  <pubDate>Thu, 17 Sep 2026 05:37:10 +0000</pubDate>
+  <description>Learn how IBM Quantum runtime seconds affect pay-as-you-go costs and see what drives each charge. Read the pricing guide from Verityadaily.</description>
 </item>
 </channel>
 </rss>
