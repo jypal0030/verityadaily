@@ -13,11 +13,16 @@
   function render(data) {
     var el = document.getElementById('priceTicker');
     if (!el) return;
-    el.innerHTML = data.map(function (c) {
+    var items = data.map(function (c) {
       var up = c.pct >= 0;
       return '<span class="ticker-item">' + c.n + ' ' + fmt(c.price) +
         ' <span class="' + (up ? 'ticker-up' : 'ticker-down') + '">' + (up ? '\u25B2' : '\u25BC') + Math.abs(c.pct).toFixed(2) + '%</span></span>';
-    }).join('');
+    }).join('<span class="ticker-sep" aria-hidden="true">\u00B7</span>');
+    // duplicated content => seamless -50% translateX loop
+    el.innerHTML = '<div class="ticker-track" aria-label="Live cryptocurrency prices">' +
+      '<div class="ticker-track__group">' + items + '</div>' +
+      '<div class="ticker-track__group" aria-hidden="true">' + items + '</div>' +
+      '</div>';
   }
   render([
     { n: 'BTC', price: 78801, pct: -0.38 },

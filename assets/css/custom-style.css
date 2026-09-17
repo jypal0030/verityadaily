@@ -77,19 +77,27 @@ img { max-width: 100%; height: auto; display: block; }
 .icon-button:hover { background: var(--bg-soft); }
 .icon-button svg { width: 22px; height: 22px; }
 
-/* 4. CRYPTO PRICE TICKER */
+/* 4. CRYPTO PRICE TICKER (centered + slow right-to-left marquee) */
 .price-ticker {
   background: var(--bg-soft); border-bottom: 1px solid var(--border);
-  padding: var(--space-2) var(--mobile-margin); overflow-x: auto; white-space: nowrap;
-  font-family: var(--font-mono); font-size: 13px; scrollbar-width: none;
+  padding: var(--space-2) 0; overflow: hidden; white-space: nowrap;
+  font-family: var(--font-mono); font-size: 13px;
+  display: flex; justify-content: center;
 }
-.price-ticker::-webkit-scrollbar { display: none; }
-.price-ticker .ticker-track { display: inline-flex; gap: var(--space-4); min-width: max-content; }
+.price-ticker .ticker-track { display: inline-flex; min-width: max-content; will-change: transform; animation: vdy-ticker-scroll 40s linear infinite; }
+.price-ticker .ticker-track:hover { animation-play-state: paused; }
+.price-ticker .ticker-track__group { display: inline-flex; align-items: center; gap: var(--space-4); padding-inline: var(--space-4); }
 .price-ticker .ticker-item { display: inline-flex; align-items: center; gap: 6px; color: var(--text-primary); }
 .price-ticker .ticker-item .sym { font-weight: 500; color: var(--text-muted); }
 .price-ticker .ticker-item .price { font-weight: 500; }
 .price-ticker .ticker-item .change.up { color: var(--green-up); }
 .price-ticker .ticker-item .change.down { color: var(--red-down); }
+.price-ticker .ticker-sep { color: var(--text-muted); opacity: .55; padding-inline: 2px; }
+@keyframes vdy-ticker-scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) {
+  .price-ticker .ticker-track { animation: none; }
+  .price-ticker .ticker-track__group[aria-hidden] { display: none; }
+}
 
 /* 5. HOMEPAGE HERO */
 .hero { padding-block: var(--space-5); }
@@ -738,8 +746,7 @@ a.site-logo {
   background: var(--bg-soft);
 }
 
-/* Price ticker */
-.price-ticker,
+/* Price ticker (post variant keeps scroll fallback; homepage marquee overrides) */
 .ticker-wrap {
   overflow-x: auto;
   overflow-y: hidden;
@@ -751,16 +758,20 @@ a.site-logo {
   padding: 6px 0;
 }
 
-.ticker-inner,
-.price-ticker .container {
+.ticker-inner {
   display: inline-flex;
   gap: 16px;
   padding: 4px 16px;
   white-space: nowrap;
 }
 
-.ticker-item,
-.price-ticker span {
+.ticker-item {
+  font-size: 13px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.price-ticker .ticker-item {
   font-size: 13px;
   white-space: nowrap;
   flex-shrink: 0;
