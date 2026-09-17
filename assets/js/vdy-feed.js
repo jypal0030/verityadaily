@@ -15,7 +15,7 @@
     try { return new Date(iso).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' }); } catch (e) { return ''; }
   }
 
-  var pool = conf.mode === 'cat' ? posts.filter(function (p) { return p.c === conf.cat; }) : posts.slice();
+  var pool = (conf.mode === 'cat' && conf.cat !== 'trending') ? posts.filter(function (p) { return p.c === conf.cat; }) : posts.slice();
   var per = conf.per || 12;
   var pages = Math.max(1, Math.ceil(pool.length / per));
   var cur = 1;
@@ -67,6 +67,8 @@
     gridEl.innerHTML = slice.map(card).join('');
     gridEl.classList.add('vdy-fadein');
     setTimeout(function () { gridEl.classList.remove('vdy-fadein'); }, 650);
+
+    if (pages <= 1) { pagerEl.innerHTML = ''; relLink('prev', 0); relLink('next', 0); return; }
 
     var info = 'Page ' + cur + ' of ' + pages + ' &middot; ' + pool.length + ' stories';
     var html = '<span class="vdy-pager__info">' + info + '</span><span class="vdy-pager__nums">';
