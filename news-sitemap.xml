@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"><url>
+    <loc>https://verityadaily.com/trezor-safe-5-review-2026</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Veritya Daily</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-18T10:45:59+05:30</news:publication_date>
+      <news:title>Trezor Safe 5 Review: Security Features, Usability, and Tradeoffs</news:title>
+    </news:news>
+  </url>
+<url>
     <loc>https://verityadaily.com/technology-trends-2026</loc>
     <news:news>
       <news:publication>
@@ -316,17 +327,6 @@
       </news:publication>
       <news:publication_date>2026-09-15T10:45:30+05:30</news:publication_date>
       <news:title>Why Crypto Prices Move Suddenly (And How to Investigate)</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://verityadaily.com/bitcoin-vs-ethereum-2026</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Veritya Daily</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-14T19:57:15+05:30</news:publication_date>
-      <news:title>Bitcoin or Ethereum? How to Pick in 2026</news:title>
     </news:news>
   </url>
 </urlset>
