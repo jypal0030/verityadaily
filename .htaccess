@@ -61,3 +61,8 @@ Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains
 Header always set X-Content-Type-Options "nosniff"
 Header always set Referrer-Policy "strict-origin-when-cross-origin"
 </IfModule>
+
+# --- 301: Upwork study post consolidated into main ROI guide (Sep 19, 2026) ---
+<IfModule mod_rewrite.c>
+RewriteRule ^ai-productivity-roi-small-business-study-2026-2026/?$ https://verityadaily.com/ai-productivity-roi-small-businesses-2026 [R=301,L]
+</IfModule>
