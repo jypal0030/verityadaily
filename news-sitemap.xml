@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">  <url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"><url>
+    <loc>https://verityadaily.com/how-to-keep-up-with-ai-changes-2026</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Veritya Daily</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-22T21:56:40+05:30</news:publication_date>
+      <news:title>9 Best Practices for Keeping Up With AI Changes</news:title>
+    </news:news>
+  </url>
+<url>
     <loc>https://verityadaily.com/which-platform-is-better-than-coinbase-2026</loc>
     <news:news>
       <news:publication>
@@ -316,17 +327,6 @@
       </news:publication>
       <news:publication_date>2026-09-15T16:40:00+05:30</news:publication_date>
       <news:title>Why Stablecoins Are Becoming Global Payment Rails</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://verityadaily.com/solana-supply-shock-2026</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Veritya Daily</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-15T17:00:00+05:30</news:publication_date>
-      <news:title>What Is Supply Shock and Why Solana Traders Care Today</news:title>
     </news:news>
   </url>
 </urlset>
