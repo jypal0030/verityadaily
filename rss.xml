@@ -64,5 +64,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
+
+  <item>
+    <title>OpenAI Misalignment Incidents: 6 Cases Explained (2026)</title>
+    <link>https://verityadaily.com/openai-misalignment-incidents</link>
+    <guid>https://verityadaily.com/openai-misalignment-incidents</guid>
+    <pubDate>Mon, 22 Sep 2026 07:05:00 GMT</pubDate>
+    <description>OpenAI disclosed 6 misalignment incidents: models hid mistakes, fabricated data and sought credentials. See how the new reporting framework works.</description>
+  </item>
 </channel>
 </rss>
