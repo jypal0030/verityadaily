@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"><url>
+    <loc>https://verityadaily.com/techcrunch-disrupt-2026</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Veritya Daily</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-22T22:37:00+05:30</news:publication_date>
+      <news:title>TechCrunch Disrupt Explained: What the Startup Conference Offers</news:title>
+    </news:news>
+  </url>
+<url>
     <loc>https://verityadaily.com/how-to-keep-up-with-ai-changes-2026</loc>
     <news:news>
       <news:publication>
@@ -316,17 +327,6 @@
       </news:publication>
       <news:publication_date>2026-09-15T16:20:00+05:30</news:publication_date>
       <news:title>AI Benchmark Guide for Reading AI Launch Claims Fast</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://verityadaily.com/stablecoins-global-payment-rails-2026</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Veritya Daily</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-15T16:40:00+05:30</news:publication_date>
-      <news:title>Why Stablecoins Are Becoming Global Payment Rails</news:title>
     </news:news>
   </url>
 </urlset>
