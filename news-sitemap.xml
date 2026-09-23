@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"><url>
+    <loc>https://verityadaily.com/ai-roi-queries-2026</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Veritya Daily</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-24T00:48:15+05:30</news:publication_date>
+      <news:title>AI Tools vs Traditional Software: Which Is Better for Measurable ROI?</news:title>
+    </news:news>
+  </url>
+<url>
     <loc>https://verityadaily.com/how-to-verify-cryptocurrency-news-2026</loc>
     <news:news>
       <news:publication>
@@ -316,17 +327,6 @@
       </news:publication>
       <news:publication_date>2026-09-15T19:30:00+05:30</news:publication_date>
       <news:title>AI News Workflow Builds Better Daily Briefings Fast</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://verityadaily.com/password-manager-comparison-2026</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Veritya Daily</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-15T19:50:00+05:30</news:publication_date>
-      <news:title>Password Manager Options Compared for Better Security</news:title>
     </news:news>
   </url>
 </urlset>
