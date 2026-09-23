@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"><url>
+    <loc>https://verityadaily.com/how-to-verify-a-crypto-investment-2026</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Veritya Daily</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-22T23:16:36+05:30</news:publication_date>
+      <news:title>How to Verify a Crypto Investment Without Trusting Online Hype</news:title>
+    </news:news>
+  </url>
+<url>
     <loc>https://verityadaily.com/techcrunch-disrupt-2026</loc>
     <news:news>
       <news:publication>
@@ -316,17 +327,6 @@
       </news:publication>
       <news:publication_date>2026-09-15T16:00:00+05:30</news:publication_date>
       <news:title>GPT Compared With Claude and Gemini for Product Teams</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://verityadaily.com/ai-benchmark-guide-2026</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Veritya Daily</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-15T16:20:00+05:30</news:publication_date>
-      <news:title>AI Benchmark Guide for Reading AI Launch Claims Fast</news:title>
     </news:news>
   </url>
 </urlset>
