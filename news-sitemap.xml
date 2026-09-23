@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"><url>
+    <loc>https://verityadaily.com/how-to-verify-cryptocurrency-news-2026</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Veritya Daily</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-24T00:41:42+05:30</news:publication_date>
+      <news:title>Can You Trust AI Crypto News? And Other Verification Questions</news:title>
+    </news:news>
+  </url>
+<url>
     <loc>https://verityadaily.com/how-ai-is-changing-financial-services-2026</loc>
     <news:news>
       <news:publication>
@@ -316,17 +327,6 @@
       </news:publication>
       <news:publication_date>2026-09-15T19:50:00+05:30</news:publication_date>
       <news:title>Password Manager Options Compared for Better Security</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://verityadaily.com/crypto-etf-signals-2026</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Veritya Daily</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-15T15:40:00+05:30</news:publication_date>
-      <news:title>5 Crypto ETF Signals That Matter More Than Charts Today</news:title>
     </news:news>
   </url>
 </urlset>
