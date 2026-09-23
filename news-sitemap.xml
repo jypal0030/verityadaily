@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"><url>
+    <loc>https://verityadaily.com/the-rundown-ai-newsletter-2026</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Veritya Daily</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-24T01:02:22+05:30</news:publication_date>
+      <news:title>Is The Rundown AI Newsletter Legit? A Reader’s Guide to Its Sources and Value</news:title>
+    </news:news>
+  </url>
+<url>
     <loc>https://verityadaily.com/ai-phishing-attacks-2026-2026</loc>
     <news:news>
       <news:publication>
@@ -316,17 +327,6 @@
       </news:publication>
       <news:publication_date>2026-09-15T18:50:00+05:30</news:publication_date>
       <news:title>7 Crypto News Red Flags Every Reader Should Know Today</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://verityadaily.com/ai-stocks-revenue-reality-2026</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Veritya Daily</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-15T19:10:00+05:30</news:publication_date>
-      <news:title>AI Stocks Demand Revenue Reality Over Product Hype</news:title>
     </news:news>
   </url>
 </urlset>
