@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"><url>
+    <loc>https://verityadaily.com/how-ai-is-changing-financial-services-2026</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Veritya Daily</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-24T00:31:49+05:30</news:publication_date>
+      <news:title>How AI Is Changing Financial Services: Benefits, Risks, and Examples</news:title>
+    </news:news>
+  </url>
+<url>
     <loc>https://verityadaily.com/how-to-verify-a-crypto-investment-2026</loc>
     <news:news>
       <news:publication>
@@ -316,17 +327,6 @@
       </news:publication>
       <news:publication_date>2026-09-15T15:40:00+05:30</news:publication_date>
       <news:title>5 Crypto ETF Signals That Matter More Than Charts Today</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://verityadaily.com/gpt-vs-claude-gemini-product-teams-2026</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Veritya Daily</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-15T16:00:00+05:30</news:publication_date>
-      <news:title>GPT Compared With Claude and Gemini for Product Teams</news:title>
     </news:news>
   </url>
 </urlset>
