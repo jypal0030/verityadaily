@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"><url>
+    <loc>https://verityadaily.com/what-is-the-30-rule-in-ai-2026</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Veritya Daily</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-25T10:10:46+05:30</news:publication_date>
+      <news:title>What Is the 30% Rule in AI? Meaning, Examples, and Limits</news:title>
+    </news:news>
+  </url>
+<url>
     <loc>https://verityadaily.com/which-3-jobs-will-not-survive-ai-2026</loc>
     <news:news>
       <news:publication>
@@ -316,17 +327,6 @@
       </news:publication>
       <news:publication_date>2026-09-15T21:30:00+05:30</news:publication_date>
       <news:title>AI Tools Expose Hidden Privacy Risks</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://verityadaily.com/ai-capex-signals-2026</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Veritya Daily</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-15T21:50:00+05:30</news:publication_date>
-      <news:title>AI Capex Signals That Reveal Real Monetization</news:title>
     </news:news>
   </url>
 </urlset>
