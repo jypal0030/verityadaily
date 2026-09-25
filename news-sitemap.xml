@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"><url>
+    <loc>https://verityadaily.com/the-rundown-ai-2026</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Veritya Daily</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-25T09:46:03+05:30</news:publication_date>
+      <news:title>The Rundown AI Pricing: Is the Newsletter Really Free in 2026?</news:title>
+    </news:news>
+  </url>
+<url>
     <loc>https://verityadaily.com/crypto-news-live-2026</loc>
     <news:news>
       <news:publication>
@@ -316,17 +327,6 @@
       </news:publication>
       <news:publication_date>2026-09-15T18:10:00+05:30</news:publication_date>
       <news:title>ETF Inflows vs On Chain Metrics for Bitcoin Momentum</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://verityadaily.com/data-breach-signals-2026</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Veritya Daily</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-15T18:30:00+05:30</news:publication_date>
-      <news:title>How to Read Early Data Breach Signals Without Hype</news:title>
     </news:news>
   </url>
 </urlset>
