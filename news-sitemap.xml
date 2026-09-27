@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"><url>
+    <loc>https://verityadaily.com/how-to-how-to-compare-ai-model-release-pace-step-by-step-2026</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Veritya Daily</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-27T20:59:05+05:30</news:publication_date>
+      <news:title>How-To: How to Compare AI Model Release Pace (Step-by-Step)</news:title>
+    </news:news>
+  </url>
+<url>
     <loc>https://verityadaily.com/how-to-evaluate-ai-tools-2026</loc>
     <news:news>
       <news:publication>
@@ -316,17 +327,6 @@
       </news:publication>
       <news:publication_date>2026-09-16T10:38:17+05:30</news:publication_date>
       <news:title>Cryptocurrency Security: The Complete Protection Resource</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://verityadaily.com/bitcoin-statistics-2026</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Veritya Daily</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-15T19:41:19+05:30</news:publication_date>
-      <news:title>Bitcoin Statistics 2026: 35 Numbers Behind the Market</news:title>
     </news:news>
   </url>
 </urlset>
