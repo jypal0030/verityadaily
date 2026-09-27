@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"><url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">  <url><loc>https://verityadaily.com/ai-agent-integration-2026</loc><news:news><news:publication><news:name>Veritya Daily</news:name><news:language>en</news:language></news:publication><news:publication_date>2026-09-28T00:05:00+05:30</news:publication_date><news:title>AI Agent Integration: How to Connect AI Agents to Business Workflows</news:title></news:news></url>
+<url>
     <loc>https://verityadaily.com/ai-cyberattacks-11-warning-signs-of-automated-threats-2026</loc>
     <news:news>
       <news:publication>
@@ -318,15 +319,5 @@
       <news:title>Why Constant Tech News Can Drain Focus and Decision-Making</news:title>
     </news:news>
   </url>
-<url>
-    <loc>https://verityadaily.com/official-crypto-market-news-sources-2026</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Veritya Daily</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-16T23:54:25+05:30</news:publication_date>
-      <news:title>Where to Find Authoritative Cryptocurrency Market News and Regulatory Updates</news:title>
-    </news:news>
-  </url>
-</urlset>
+
+  </urlset>
