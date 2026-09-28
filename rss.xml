@@ -328,5 +328,13 @@
         <pubDate>Mon, 28 Sep 2026 10:11:19 GMT</pubDate>
         <description>The four camps of AI agent deployment platforms — Copilot Studio, Agentforce, no-code, and code-first — with pricing models, security checks, and a stack-first way to choose.</description>
     </item>
+
+    <item>
+        <title>Enterprise AI Agents: How Companies Run AI Agents at Scale</title>
+        <link>https://verityadaily.com/enterprise-ai-agents-2026</link>
+        <guid isPermaLink="true">https://verityadaily.com/enterprise-ai-agents-2026</guid>
+        <pubDate>Mon, 28 Sep 2026 10:40:26 GMT</pubDate>
+        <description>How enterprises run AI agents at scale: architecture, identity, governance, multi-agent orchestration, and ROI measurement — with the 2026 numbers that matter.</description>
+    </item>
 </channel>
 </rss>
