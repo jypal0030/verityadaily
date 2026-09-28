@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">  <url><loc>https://verityadaily.com/ai-agent-integration-2026</loc><news:news><news:publication><news:name>Veritya Daily</news:name><news:language>en</news:language></news:publication><news:publication_date>2026-09-28T00:05:00+05:30</news:publication_date><news:title>AI Agent Integration: How to Connect AI Agents to Business Workflows</news:title></news:news></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">    <url><loc>https://verityadaily.com/ai-agents-vs-chatbots-2026</loc><news:news><news:publication><news:name>Veritya Daily</news:name><news:language>en</news:language></news:publication><news:publication_date>2026-09-28T12:30:00+05:30</news:publication_date><news:title>AI Agents vs Chatbots: The Difference That Decides Your Build</news:title></news:news></url>
+<url><loc>https://verityadaily.com/ai-agent-integration-2026</loc><news:news><news:publication><news:name>Veritya Daily</news:name><news:language>en</news:language></news:publication><news:publication_date>2026-09-28T00:05:00+05:30</news:publication_date><news:title>AI Agent Integration: How to Connect AI Agents to Business Workflows</news:title></news:news></url>
 <url>
     <loc>https://verityadaily.com/ai-cyberattacks-11-warning-signs-of-automated-threats-2026</loc>
     <news:news>
@@ -308,16 +309,6 @@
       <news:title>IBM Quantum Pay-As-You-Go Pricing: How Runtime Seconds Affect Costs</news:title>
     </news:news>
   </url>
-<url>
-    <loc>https://verityadaily.com/reduce-tech-news-information-overload-2026</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Veritya Daily</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-17T00:12:34+05:30</news:publication_date>
-      <news:title>Why Constant Tech News Can Drain Focus and Decision-Making</news:title>
-    </news:news>
-  </url>
+
 
   </urlset>
