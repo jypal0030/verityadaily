@@ -20,7 +20,8 @@ RewriteRule ^(.+?)/?$ $1.html [L]
 
 # --- 3. Homepage variants -> / (canonical) ---
 RewriteCond %{REQUEST_URI} ^/index\.html$ [OR]
-RewriteCond %{REQUEST_URI} ^/index\.php$
+RewriteCond %{REQUEST_URI} ^/index\.php$ [OR]
+RewriteCond %{REQUEST_URI} ^/index$
 RewriteRule ^(.*)$ / [R=301,L]
 
 # --- 4. .html -> clean URL 301 (SEO: prevent duplicate content on .html variants) ---
