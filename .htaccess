@@ -6,6 +6,13 @@
 <IfModule mod_rewrite.c>
 RewriteEngine On
 
+# --- 3. Homepage variants -> / (canonical) ---
+RewriteCond %{REQUEST_URI} ^/index\.html$ [OR]
+RewriteCond %{REQUEST_URI} ^/index\.php$ [OR]
+RewriteCond %{REQUEST_URI} ^/index$
+RewriteRule ^(.*)$ / [R=301,L]
+
+
 # --- 1a. Trailing slash removal FIRST (301 /contact/ -> /contact) so the
 # clean-URL rewrite never serves 200 from a slashed URL (GSC: alternative canonical) ---
 RewriteRule ^(.+)/$ /$1 [R=301,L]
@@ -18,11 +25,7 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{DOCUMENT_ROOT}/$1.html -f
 RewriteRule ^(.+?)/?$ $1.html [L]
 
-# --- 3. Homepage variants -> / (canonical) ---
-RewriteCond %{REQUEST_URI} ^/index\.html$ [OR]
-RewriteCond %{REQUEST_URI} ^/index\.php$ [OR]
-RewriteCond %{REQUEST_URI} ^/index$
-RewriteRule ^(.*)$ / [R=301,L]
+
 
 # --- 4. .html -> clean URL 301 (SEO: prevent duplicate content on .html variants) ---
 RewriteCond %{THE_REQUEST} \.html[\s?/]
