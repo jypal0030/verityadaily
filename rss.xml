@@ -304,5 +304,13 @@
         <pubDate>Mon, 28 Sep 2026 08:27:34 GMT</pubDate>
         <description>Where AI agents fit in 7 business functions, what integration really costs, and the risks brochures skip — a 2026 guide with sourced numbers.</description>
     </item>
+
+    <item>
+        <title>AI Agent Integration With APIs: How Agents Connect to Systems</title>
+        <link>https://verityadaily.com/ai-agent-integration-apis-2026</link>
+        <guid isPermaLink="true">https://verityadaily.com/ai-agent-integration-apis-2026</guid>
+        <pubDate>Mon, 28 Sep 2026 08:54:17 GMT</pubDate>
+        <description>How AI agents connect through APIs: tool calling, OAuth authentication, MCP vs direct APIs, rate limits, and security — the 2026 technical guide.</description>
+    </item>
 </channel>
 </rss>
