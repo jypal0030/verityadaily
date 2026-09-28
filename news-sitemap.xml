@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"><url>
+    <loc>https://verityadaily.com/how-to-evaluate-whether-ai-capital-spending-is-slowing-step--2026</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Veritya Daily</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-09-28T20:15:33+05:30</news:publication_date>
+      <news:title>How to Evaluate Whether AI Capital Spending Is Slowing (Step-by-Step)</news:title>
+    </news:news>
+  </url>
+<url>
     <loc>https://verityadaily.com/the-complete-guide-to-generative-ai-applications-in-cell-bio-2026</loc>
     <news:news>
       <news:publication>
@@ -236,17 +247,6 @@
       </news:publication>
       <news:publication_date>2026-09-22T23:16:36+05:30</news:publication_date>
       <news:title>How to Verify a Crypto Investment Without Trusting Online Hype</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://verityadaily.com/techcrunch-disrupt-2026</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Veritya Daily</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-22T22:37:00+05:30</news:publication_date>
-      <news:title>TechCrunch Disrupt Explained: What the Startup Conference Offers</news:title>
     </news:news>
   </url>
 </urlset>
