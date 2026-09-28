@@ -6,6 +6,10 @@
 <IfModule mod_rewrite.c>
 RewriteEngine On
 
+# --- 1a. Trailing slash removal FIRST (301 /contact/ -> /contact) so the
+# clean-URL rewrite never serves 200 from a slashed URL (GSC: alternative canonical) ---
+RewriteRule ^(.+)/$ /$1 [R=301,L]
+
 # Only rewrite if the request is NOT a real file or directory
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
@@ -13,11 +17,6 @@ RewriteCond %{REQUEST_FILENAME} !-d
 # Rewrite clean URL to .html file if it exists
 RewriteCond %{DOCUMENT_ROOT}/$1.html -f
 RewriteRule ^(.+?)/?$ $1.html [L]
-
-# --- 2. Trailing slash removal (non-.html) ---
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.+)/$ /$1 [R=301,L]
 
 # --- 3. Homepage variants -> / (canonical) ---
 RewriteCond %{REQUEST_URI} ^/index\.html$ [OR]
