@@ -57,7 +57,7 @@ html[data-theme="dark"] .nav-desktop a.active-nav{background:linear-gradient(135
 .post-card__share .sh-cp:hover{background:#4F46E5;}
 /* -- Mobile: top navbar hidden, only bottom nav -- */
 @media (max-width: 767px){
-  .site-header .nav-desktop,.site-header .header-actions{display:none !important;}
+  .site-header .nav-desktop,.site-header .main-nav,.site-header .header-actions,.site-header .theme-toggle{display:none !important;}
   .site-header{height:56px;}
   .bottom-nav{background:rgba(22,27,34,0.88);backdrop-filter:blur(16px) saturate(160%);-webkit-backdrop-filter:blur(16px) saturate(160%);border-top:1px solid rgba(99,102,241,.25);box-shadow:0 -4px 24px rgba(79,70,229,.12);}
   html:not([data-theme="dark"]) .bottom-nav{background:rgba(255,255,255,0.9);}
@@ -89,3 +89,6 @@ html[data-theme="dark"] .nav-desktop a.active-nav{background:linear-gradient(135
 html[data-theme="dark"] .callout-like,html[data-theme="dark"] .vdy-pager{background:rgba(99,102,241,.12);}
 /* -- Reduced motion -- */
 @media (prefers-reduced-motion: reduce){.nav-desktop a,.post-card,.post-card__share button,.vdy-share a,.bottom-nav__item svg{transition:none !important;animation:none !important;}}
+
+/* -- bottom-nav theme toggle button reset -- */
+.bottom-nav button.bottom-nav__item{background:transparent;border:none;font-family:inherit;cursor:pointer;-webkit-appearance:none;appearance:none;}
