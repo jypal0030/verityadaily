@@ -86,18 +86,23 @@ window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);
 
 <script defer src="assets/js/price-ticker.js?v=2"></script>
 <header class="site-header">
-  <div class="header-inner">
-    <a href="index" class="logo">Veritya<span class="logo-accent">Daily</span></a>
-    <nav class="main-nav" aria-label="Main navigation">
-      <a href="index" class="nav-home active-nav" aria-current="page">Home</a>
+  <div class="container">
+    <a href="index" class="site-logo"><img loading="eager" src="assets/img/logo.svg" alt="Veritya Daily" width="140" height="26"></a>
+    <nav class="nav-desktop main-nav" aria-label="Main navigation">
+      <a href="index">Home</a>
       <a href="category-ai">AI</a>
       <a href="category-crypto">Crypto</a>
       <a href="category-finance">Finance</a>
       <a href="category-cybersecurity">Cybersecurity</a>
-      <a href="category-technology">Technology</a>
+      <a href="category-technology" class="active-nav" aria-current="page">Technology</a>
       <a href="category-trending">Trending</a>
     </nav>
-    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">🌓</button>
+    <div class="header-actions">
+      <button class="icon-button" aria-label="Search" onclick="location.href='/search'">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+      </button>
+      <button class="icon-button" id="themeToggle" aria-label="Switch theme"></button>
+    </div>
   </div>
 </header>
 
