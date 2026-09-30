@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
  * rctrl Step 7: AI crawler visit reporter + static page server (v1.0)
  * .htaccess rewrites AI-bot requests (non-search-engine) here; we report the visit

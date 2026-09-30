@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 declare(strict_types=1);
 $path = preg_replace('/[^a-z0-9\-]/', '', strtolower((string)($_GET['__path'] ?? '')));
 $file = dirname(__DIR__) . '/' . $path . '.html';
