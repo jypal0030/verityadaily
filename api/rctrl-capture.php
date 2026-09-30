@@ -66,6 +66,12 @@ function rctrl_log(string $store, array $entry): void
 }
 
 // ---- request gates ----
+if (($_SERVER['REQUEST_METHOD'] ?? '') === 'GET') {
+    // v2.3.3: GET = health/live-check; respond 200 info (no secrets). POST stays key-gated.
+    header('Content-Type: application/json');
+    echo json_encode(['ok' => true, 'endpoint' => 'rctrl-capture', 'expects' => 'POST JSON {event,timestamp,article} with Authorization Bearer + X-RankControl-Signature', 'hint' => 'keep ?k=<URL_KEY> in the URL', 'v' => '2.3.3']);
+    exit;
+}
 $k = $_GET['k'] ?? '';
 if (!hash_equals(URL_KEY, (string)$k)) {
     // v2.3.2: log failed k-gate hits (403 diagnosis) - never expose the key itself
@@ -183,7 +189,8 @@ $slugPred = strtolower(trim((string)($artBody['slug'] ?? '')));
 $slugPred = preg_replace('/[^a-z0-9-]+/', '-', $slugPred);
 $slugPred = trim((string)$slugPred, '-');
 if (strlen($slugPred) > 60) { $slugPred = substr($slugPred, 0, 60); }
-$articleUrl = $slugPred !== '' ? ('https://verityadaily.com/' . $slugPred . '-2026') : null;
+$isTest = ($event === 'test');
+$articleUrl = (!$isTest && $slugPred !== '') ? ('https://verityadaily.com/' . $slugPred . '-2026') : null;
 echo json_encode([
     'ok' => true,
     'mode' => $whsec !== '' ? 'signed' : 'capture',
@@ -193,4 +200,5 @@ echo json_encode([
     'slug' => $slugPred !== '' ? $slugPred : null,
     'article_url' => $articleUrl,
     'url' => $articleUrl,
+    'v' => '2.3.3',
 ]);

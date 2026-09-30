@@ -10,12 +10,20 @@ RewriteEngine On
 RewriteCond %{REQUEST_URI} ^/index\.html$ [OR]
 RewriteCond %{REQUEST_URI} ^/index\.php$ [OR]
 RewriteCond %{REQUEST_URI} ^/index$
-RewriteRule ^(.*)$ / [R=301,L]
+RewriteRule ^(.*)$ / [R=301,L]
 
 
 # --- 1a. Trailing slash removal FIRST (301 /contact/ -> /contact) so the
 # clean-URL rewrite never serves 200 from a slashed URL (GSC: alternative canonical) ---
 RewriteRule ^(.+)/$ /$1 [R=301,L]
+
+# --- AI crawler report+serve (rctrl Step 7; search engines stay native for safety) ---
+RewriteCond %{HTTP_USER_AGENT} (GPTBot|ChatGPT-User|PerplexityBot|ClaudeBot|Claude-Web|anthropic-ai|Bytespider|CCBot|cohere-ai|Amazonbot|Meta-ExternalAgent|Applebot-Extended)
+RewriteCond %{REQUEST_URI} !^/api/ [NC]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{DOCUMENT_ROOT}/$1.html -f
+RewriteRule ^(.+?)/?$ /api/ai-crawl.php?__path=$1 [L]
 
 # Only rewrite if the request is NOT a real file or directory
 RewriteCond %{REQUEST_FILENAME} !-f
