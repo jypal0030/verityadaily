@@ -68,6 +68,15 @@ function rctrl_log(string $store, array $entry): void
 // ---- request gates ----
 $k = $_GET['k'] ?? '';
 if (!hash_equals(URL_KEY, (string)$k)) {
+    // v2.3.2: log failed k-gate hits (403 diagnosis) - never expose the key itself
+    $store0 = rctrl_store_dir();
+    @file_put_contents($store0 . '/rctrl-payloads.jsonl',
+        json_encode(['ts' => gmdate('c'), 'ip' => $_SERVER['REMOTE_ADDR'] ?? '', 'kgate_fail' => true,
+            'k_len' => strlen((string)$k), 'k_prefix' => substr((string)$k, 0, 6),
+            'ua' => substr((string)($_SERVER['HTTP_USER_AGENT'] ?? ''), 0, 80),
+            'query_keys' => implode(',', array_keys($_GET ?: [])),
+            'path' => $_SERVER['REQUEST_URI'] ?? '']) . "\n",
+        FILE_APPEND | LOCK_EX);
     http_response_code(403);
     header('Content-Type: application/json');
     echo json_encode(['ok' => false, 'error' => 'forbidden']);

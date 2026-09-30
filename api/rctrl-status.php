@@ -119,6 +119,17 @@ foreach ($tail as $line) {
 }
 $recent = array_reverse($recent);
 
+// v2.3.2: k-gate (403) diagnostics - failed-key hits logged by capture.php
+$kgate = [];
+for ($i = max(0, $total - 30); $i < $total; $i++) {
+    $e = json_decode($lines[$i], true);
+    if (is_array($e) && !empty($e['kgate_fail'])) {
+        $kgate[] = ['ts' => $e['ts'] ?? null, 'ip' => $e['ip'] ?? null, 'k_len' => $e['k_len'] ?? null,
+            'k_prefix' => $e['k_prefix'] ?? null, 'ua' => $e['ua'] ?? null, 'query_keys' => $e['query_keys'] ?? null];
+    }
+}
+$kgate = array_slice(array_reverse($kgate), 0, 5);
+
 header('Content-Type: application/json');
 $out = [
     'ok' => true,
@@ -127,6 +138,7 @@ $out = [
     'gh_token_saved' => $ghTokenSaved,
     'deliveries_total' => $total,
     'recent' => $recent,
+    'kgate_recent' => $kgate,
 ];
 if ($lastFull !== null) { $out['last_full'] = $lastFull; }
 echo json_encode($out);
