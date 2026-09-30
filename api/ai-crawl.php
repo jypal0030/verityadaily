@@ -37,8 +37,8 @@ $whsec = rctrl_whsec();
 if ($whsec !== '' && is_file($queue)) {
     $lines = @file($queue, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES) ?: [];
     if (count($lines) >= 10 || mt_rand(1, 5) === 1) {
-        $fp = fopen($queue . '.lock', 'w');
-        if ($fp && flock($fp, LOCK_EX | LOCK_NB)) {
+        $fp = @fopen($queue . '.lock', 'w');
+        if ($fp !== false && flock($fp, LOCK_EX | LOCK_NB)) {
             $remain = $lines;
             $posted = 0;
             foreach ($lines as $i => $line) {
@@ -57,9 +57,8 @@ if ($whsec !== '' && is_file($queue)) {
                 else { break; } // API down -> keep queue, try next time
             }
             if ($posted > 0) { @file_put_contents($queue, implode("\n", array_values($remain)) . (count($remain) ? "\n" : ''), LOCK_EX); }
-            flock($fp, LOCK_UN);
+            if ($fp !== false) { flock($fp, LOCK_UN); fclose($fp); }
         }
-        if ($fp) { fclose($fp); }
     }
 }
 
