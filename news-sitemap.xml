@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+    <loc>https://verityadaily.com/why-ai-model-releases-feel-nonstop-as-providers-shorten-laun-2026</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Veritya Daily</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-02T19:58:14+05:30</news:publication_date>
+      <news:title>Why AI Model Releases Feel Nonstop as Providers Shorten Launch Cycles</news:title>
+    </news:news>
+  </url>
+<url>
     <loc>https://verityadaily.com/grok-4-7-and-claude-opus-5-5-intensify-september-s-ai-releas-2026</loc>
     <news:news>
       <news:publication>
@@ -11,7 +22,7 @@
       <news:title>Grok 4.7 and Claude Opus 5.5 Intensify September’s AI Release Rush</news:title>
     </news:news>
   </url>
-  <url>
+<url>
     <loc>https://verityadaily.com/sec-crypto-custody-proposal-2026</loc>
     <news:news>
       <news:publication>
@@ -22,8 +33,7 @@
       <news:title>SEC Crypto Custody Proposal 2026: What It Means for Your Bitcoin, Your Advisor, and Self-Custody</news:title>
     </news:news>
   </url>
-
-  <url>
+<url>
     <loc>https://verityadaily.com/crypto-hacks-2026-why-wallets-still-get-hacked</loc>
     <news:news>
       <news:publication>
@@ -34,7 +44,6 @@
       <news:title>Crypto Hacks 2026: $2.7 Billion Stolen — So Why Are Wallets Still Getting Hacked?</news:title>
     </news:news>
   </url>
-
 <url>
     <loc>https://verityadaily.com/how-to-evaluate-ai-tools-1790850432042-2-2026</loc>
     <news:news>
@@ -199,39 +208,6 @@
       </news:publication>
       <news:publication_date>2026-09-27T20:59:05+05:30</news:publication_date>
       <news:title>How-To: How to Compare AI Model Release Pace (Step-by-Step)</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://verityadaily.com/how-to-evaluate-ai-tools-2026</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Veritya Daily</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-27T16:15:37+05:30</news:publication_date>
-      <news:title>How to Evaluate AI Tools Without Being Misled by Demos</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://verityadaily.com/7-ways-ai-model-slowdowns-could-affect-investors-and-develop-2026</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Veritya Daily</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-27T16:46:58+05:30</news:publication_date>
-      <news:title>7 Ways AI Model Slowdowns Could Affect Investors and Developers</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://verityadaily.com/official-crypto-market-news-sources-1789572591006-7-2026</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Veritya Daily</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-26T12:52:34+05:30</news:publication_date>
-      <news:title>7 CoinDesk Alternatives for Official Crypto Market Coverage</news:title>
     </news:news>
   </url>
 </urlset>
