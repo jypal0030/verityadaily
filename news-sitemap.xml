@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
+  
+  <url>
+    <loc>https://verityadaily.com/ai-voice-cloning-scams-2026</loc>
+    <news:news>
+      <news:publication><news:name>Veritya Daily</news:name><news:language>en</news:language></news:publication>
+      <news:publication_date>2026-10-05T23:30:00+05:30</news:publication_date>
+      <news:title>AI Voice Cloning Scams: How to Spot Them and Protect Your Family</news:title>
+    </news:news>
+  </url>
   <url>
     <loc>https://verityadaily.com/mckinsey-11-million-workers-ai-jobs-2035</loc>
     <news:news>
