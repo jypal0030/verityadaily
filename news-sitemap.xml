@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
-
-  <url>
+<url>
+    <loc>https://verityadaily.com/how-to-research-cryptocurrency-market-news-1790250497656-1-2026</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Veritya Daily</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-05T21:11:57+05:30</news:publication_date>
+      <news:title>Cryptocurrency Market News Research: Evidence, Data, and Source Verification</news:title>
+    </news:news>
+  </url>
+<url>
     <loc>https://verityadaily.com/how-ai-systems-are-evaluated-2026</loc>
     <news:news>
       <news:publication><news:name>Veritya Daily</news:name><news:language>en</news:language></news:publication>
@@ -9,7 +19,7 @@
       <news:title>How AI Systems Are Evaluated: Methods, Benchmarks, and Human Review</news:title>
     </news:news>
   </url>
-  <url>
+<url>
     <loc>https://verityadaily.com/trump-xi-summit-brings-ai-safety-into-the-next-trade-and-tec-2026</loc>
     <news:news>
       <news:publication>
@@ -274,16 +284,4 @@
       <news:title>How to Evaluate Whether AI Capital Spending Is Slowing (Step-by-Step)</news:title>
     </news:news>
   </url>
-<url>
-    <loc>https://verityadaily.com/the-complete-guide-to-generative-ai-applications-in-cell-bio-2026</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Veritya Daily</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-28T20:09:02+05:30</news:publication_date>
-      <news:title>The Complete Guide to Generative AI Applications in Cell Biology</news:title>
-    </news:news>
-  </url>
-<url><loc>https://verityadaily.com/enterprise-ai-agents-2026</loc><news:news><news:publication><news:name>Veritya Daily</news:name><news:language>en</news:language></news:publication><news:publication_date>2026-09-28T18:30:00+05:30</news:publication_date><news:title>Enterprise AI Agents: How Companies Run AI Agents at Scale</news:title></news:news></url>
 </urlset>
