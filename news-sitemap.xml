@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
-
-  <url>
+<url>
+    <loc>https://verityadaily.com/ai-release-fomo-is-rising-as-developers-struggle-to-separate-2026</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Veritya Daily</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-05T10:41:40+05:30</news:publication_date>
+      <news:title>AI Release FOMO Is Rising as Developers Struggle to Separate Progress From Hype</news:title>
+    </news:news>
+  </url>
+<url>
     <loc>https://verityadaily.com/generative-ai-data-challenges-2026</loc>
     <news:news>
       <news:publication><news:name>Veritya Daily</news:name><news:language>en</news:language></news:publication>
@@ -9,7 +19,7 @@
       <news:title>What Challenges Does Generative AI Face With Respect to Data? 7 Verified Problems for 2026</news:title>
     </news:news>
   </url>
-  <url>
+<url>
     <loc>https://verityadaily.com/together-ai-s-platform-puts-generative-ai-infrastructure-and-2026</loc>
     <news:news>
       <news:publication>
@@ -257,6 +267,4 @@
   </url>
 <url><loc>https://verityadaily.com/enterprise-ai-agents-2026</loc><news:news><news:publication><news:name>Veritya Daily</news:name><news:language>en</news:language></news:publication><news:publication_date>2026-09-28T18:30:00+05:30</news:publication_date><news:title>Enterprise AI Agents: How Companies Run AI Agents at Scale</news:title></news:news></url>
 <url><loc>https://verityadaily.com/ai-agent-deployment-platforms-2026</loc><news:news><news:publication><news:name>Veritya Daily</news:name><news:language>en</news:language></news:publication><news:publication_date>2026-09-28T17:30:00+05:30</news:publication_date><news:title>AI Agent Deployment Platforms: What Businesses Need in 2026</news:title></news:news></url>
-<url><loc>https://verityadaily.com/ai-agent-integration-crm-2026</loc><news:news><news:publication><news:name>Veritya Daily</news:name><news:language>en</news:language></news:publication><news:publication_date>2026-09-28T16:30:00+05:30</news:publication_date><news:title>AI Agent Integration With CRM: Automate Sales Workflows</news:title></news:news></url>
-<url><loc>https://verityadaily.com/ai-agent-integration-apis-2026</loc><news:news><news:publication><news:name>Veritya Daily</news:name><news:language>en</news:language></news:publication><news:publication_date>2026-09-28T15:30:00+05:30</news:publication_date><news:title>AI Agent Integration With APIs: How Agents Connect to Systems</news:title></news:news></url>
 </urlset>
