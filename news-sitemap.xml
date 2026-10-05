@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
-<url>
+
+  <url>
+    <loc>https://verityadaily.com/mckinsey-11-million-workers-ai-jobs-2035</loc>
+    <news:news>
+      <news:publication><news:name>Veritya Daily</news:name><news:language>en</news:language></news:publication>
+      <news:publication_date>2026-10-05T22:15:00+05:30</news:publication_date>
+      <news:title>McKinsey 11 Million Workers AI Report: Who&#39;s Safe by 2035</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://verityadaily.com/how-to-research-cryptocurrency-market-news-1790250497656-1-2026</loc>
     <news:news>
       <news:publication>
