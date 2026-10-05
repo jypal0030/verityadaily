@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+    <loc>https://verityadaily.com/trump-xi-summit-brings-ai-safety-into-the-next-trade-and-tec-2026</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Veritya Daily</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-05T10:46:34+05:30</news:publication_date>
+      <news:title>Trump-Xi Summit Brings AI Safety Into the Next Trade and Technology Debate</news:title>
+    </news:news>
+  </url>
+<url>
     <loc>https://verityadaily.com/ai-release-fomo-is-rising-as-developers-struggle-to-separate-2026</loc>
     <news:news>
       <news:publication>
@@ -266,5 +277,4 @@
     </news:news>
   </url>
 <url><loc>https://verityadaily.com/enterprise-ai-agents-2026</loc><news:news><news:publication><news:name>Veritya Daily</news:name><news:language>en</news:language></news:publication><news:publication_date>2026-09-28T18:30:00+05:30</news:publication_date><news:title>Enterprise AI Agents: How Companies Run AI Agents at Scale</news:title></news:news></url>
-<url><loc>https://verityadaily.com/ai-agent-deployment-platforms-2026</loc><news:news><news:publication><news:name>Veritya Daily</news:name><news:language>en</news:language></news:publication><news:publication_date>2026-09-28T17:30:00+05:30</news:publication_date><news:title>AI Agent Deployment Platforms: What Businesses Need in 2026</news:title></news:news></url>
 </urlset>
