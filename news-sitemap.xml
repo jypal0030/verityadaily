@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+  
+  <url>
+    <loc>https://verityadaily.com/openai-safety-crisis-2026</loc>
+    <news:news>
+      <news:publication><news:name>Veritya Daily</news:name><news:language>en</news:language></news:publication>
+      <news:publication_date>2026-10-06T11:30:00+05:30</news:publication_date>
+      <news:title>OpenAI Safety Crisis 2026: Why David Robinson Quit — Full Timeline</news:title>
+    </news:news>
+  </url>
   <url>
     <loc>https://verityadaily.com/conduent-data-breach-what-to-do</loc>
     <news:news>
