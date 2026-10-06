@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
-
-  
-  <url>
+<url>
+    <loc>https://verityadaily.com/ethereum-ecosystem-updates-2026</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Veritya Daily</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-06T10:16:14+05:30</news:publication_date>
+      <news:title>Ethereum Ecosystem Updates: Networks, Applications, Funding, and Risks</news:title>
+    </news:news>
+  </url>
+<url>
     <loc>https://verityadaily.com/ai-voice-cloning-scams-2026</loc>
     <news:news>
       <news:publication><news:name>Veritya Daily</news:name><news:language>en</news:language></news:publication>
@@ -10,7 +19,7 @@
       <news:title>AI Voice Cloning Scams: How to Spot Them and Protect Your Family</news:title>
     </news:news>
   </url>
-  <url>
+<url>
     <loc>https://verityadaily.com/mckinsey-11-million-workers-ai-jobs-2035</loc>
     <news:news>
       <news:publication><news:name>Veritya Daily</news:name><news:language>en</news:language></news:publication>
@@ -18,7 +27,7 @@
       <news:title>McKinsey 11 Million Workers AI Report: Who&#39;s Safe by 2035</news:title>
     </news:news>
   </url>
-  <url>
+<url>
     <loc>https://verityadaily.com/how-to-research-cryptocurrency-market-news-1790250497656-1-2026</loc>
     <news:news>
       <news:publication>
@@ -277,29 +286,6 @@
       </news:publication>
       <news:publication_date>2026-09-29T12:16:39+05:30</news:publication_date>
       <news:title>How to Detect AI-Generated Scams as a Beginner</news:title>
-    </news:news>
-  </url>
-<url><loc>https://verityadaily.com/what-jobs-are-safe-from-ai</loc><news:news><news:publication><news:name>Veritya Daily</news:name><news:language>en</news:language></news:publication><news:publication_date>2026-09-28T20:20:00+00:00</news:publication_date><news:title>What Jobs Are Safe From AI? Careers Less Likely to Be Automated</news:title></news:news><lastmod>2026-09-28T20:20:00+00:00</lastmod></url>
-<url>
-    <loc>https://verityadaily.com/how-to-protect-against-ai-phishing-2026</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Veritya Daily</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-28T21:41:25+05:30</news:publication_date>
-      <news:title>Why AI Phishing Keeps Fooling Experienced Users (And How to Fix It)</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://verityadaily.com/how-to-evaluate-whether-ai-capital-spending-is-slowing-step--2026</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Veritya Daily</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-28T20:15:33+05:30</news:publication_date>
-      <news:title>How to Evaluate Whether AI Capital Spending Is Slowing (Step-by-Step)</news:title>
     </news:news>
   </url>
 </urlset>
