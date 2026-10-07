@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
-
-  <url>
+<url>
+    <loc>https://verityadaily.com/cybersecurity-threats-2026-2026</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Veritya Daily</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-07T12:14:58+05:30</news:publication_date>
+      <news:title>Cybersecurity Threats in 2026: Emerging Attacks and Defensive Priorities</news:title>
+    </news:news>
+  </url>
+<url>
     <loc>https://verityadaily.com/ai-agent-security-risks-2026</loc>
     <news:news>
       <news:publication><news:name>Veritya Daily</news:name><news:language>en</news:language></news:publication>
@@ -9,7 +19,7 @@
       <news:title>AI Agents Are Going Rogue: 10 Security Risks You Need to Know in 2026</news:title>
     </news:news>
   </url>
-  <url>
+<url>
     <loc>https://verityadaily.com/deepfake-scams-2026-2026</loc>
     <news:news>
       <news:publication>
@@ -294,28 +304,6 @@
       </news:publication>
       <news:publication_date>2026-10-01T19:35:42+05:30</news:publication_date>
       <news:title>12 Tests for Verifying Cryptocurrency News Before You Share It</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://verityadaily.com/what-is-the-most-trusted-crypto-news-source-1790850432042-0-2026</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Veritya Daily</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-01T19:34:59+05:30</news:publication_date>
-      <news:title>What Makes a Crypto News Source Trustworthy in 2026?</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://verityadaily.com/crypto-news-today-2026</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Veritya Daily</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-01T11:25:52+05:30</news:publication_date>
-      <news:title>Crypto News Today: Bitcoin, Ethereum, and Regulation in Focus</news:title>
     </news:news>
   </url>
 </urlset>
