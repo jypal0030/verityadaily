@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
-  
-  
-  <url>
+<url>
+    <loc>https://verityadaily.com/deepfake-scams-2026-2026</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Veritya Daily</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-07T10:35:20+05:30</news:publication_date>
+      <news:title>Deepfake Scams in 2026: Verification Signals Before Trusting Digital Media</news:title>
+    </news:news>
+  </url>
+<url>
     <loc>https://verityadaily.com/amazon-same-day-grocery-delivery-2300-cities</loc>
     <news:news>
       <news:publication><news:name>Veritya Daily</news:name><news:language>en</news:language></news:publication>
@@ -10,7 +19,7 @@
       <news:title>Amazon Expands Same-Day Grocery Delivery to 2,300 Cities: What Changes</news:title>
     </news:news>
   </url>
-  <url>
+<url>
     <loc>https://verityadaily.com/openai-safety-crisis-2026</loc>
     <news:news>
       <news:publication><news:name>Veritya Daily</news:name><news:language>en</news:language></news:publication>
@@ -18,7 +27,7 @@
       <news:title>OpenAI Safety Crisis 2026: Why David Robinson Quit — Full Timeline</news:title>
     </news:news>
   </url>
-  <url>
+<url>
     <loc>https://verityadaily.com/conduent-data-breach-what-to-do</loc>
     <news:news>
       <news:publication><news:name>Veritya Daily</news:name><news:language>en</news:language></news:publication>
@@ -26,7 +35,7 @@
       <news:title>Conduent Data Breach: What Happened and What to Do Now</news:title>
     </news:news>
   </url>
-  <url>
+<url>
     <loc>https://verityadaily.com/ai-tools-and-productivity-2026</loc>
     <news:news>
       <news:publication>
@@ -300,28 +309,4 @@
       <news:title>Crypto News Today: Bitcoin, Ethereum, and Regulation in Focus</news:title>
     </news:news>
   </url>
-<url>
-    <loc>https://verityadaily.com/latest-ai-technology-news-2026</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Veritya Daily</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-01T11:18:10+05:30</news:publication_date>
-      <news:title>Latest AI Technology News: Breakthroughs, Releases, and Business Impact</news:title>
-    </news:news>
-  </url>
-<url><loc>https://verityadaily.com/coindesk-vs-the-block-weekday-reading-test-2026</loc><news:news><news:publication><news:name>Veritya Daily</news:name><news:language>en</news:language></news:publication><news:publication_date>2026-09-30T06:46:59Z</news:publication_date><news:title>CoinDesk vs The Block: Which One Should You Actually Read? (Weekday Test)</news:title></news:news></url>
-<url>
-    <loc>https://verityadaily.com/bitcoins-now-2026</loc>
-    <news:news>
-      <news:publication>
-        <news:name>Veritya Daily</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-09-30T12:28:47+05:30</news:publication_date>
-      <news:title>Bitcoin Now: Price Signals, Market Momentum, and Key Developments</news:title>
-    </news:news>
-  </url>
-<url><loc>https://verityadaily.com/how-to-build-ai-productivity-stack-as-a-beginner</loc><news:news><news:publication><news:name>Veritya Daily</news:name><news:language>en</news:language></news:publication><news:publication_date>2026-09-29T19:00:00+00:00</news:publication_date><news:title>How to Build an AI Productivity Stack as a Beginner (2026 Free-Tier Guide)</news:title></news:news><lastmod>2026-09-29T19:00:00+00:00</lastmod></url>
 </urlset>
