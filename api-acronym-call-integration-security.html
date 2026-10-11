@@ -279,7 +279,7 @@ bfg --replace-text passwords.txt my-repo.git</code></pre></div>
 git push origin --force --tags</code></pre></div>
 <ol class="check-list"><li><strong>Contact GitHub support</strong> for serious leaks so cached views on github.com are cleared too — GitHub explicitly warns that remaining cached commits may still be accessible until this is done.</li></ol>
 <p>The bitter truth from the GitGuardian data — 70% of leaked secrets still active two years later — is that most teams do steps in the wrong order or stop after step two. Revoke first, clean second, verify third.</p>
-<h2 id="how-verified">How we verified this guide</h2>
+<h2 id="how-verified">Methodology: how we verified this guide</h2>
 <p>Every technical claim in this article traces to primary documentation: fetch and CORS behavior to MDN's official guides, key-scanning and history-scrubbing steps to GitHub's own security documentation, the BFG usage to the tool's official site, and the leak statistics to GitGuardian's published 2025 and 2026 State of Secrets Sprawl reports. Where sources describe probability rather than certainty — how fast bots actually find a new secret — this guide keeps that uncertainty instead of inventing a number.</p>
 <h2 id="protocols">REST vs SOAP vs Webhooks</h2>
 <p>Before the FAQs, here is the one-glance comparison developers keep searching for — when to use which, and how push-based webhooks differ from the request-response world:</p>
