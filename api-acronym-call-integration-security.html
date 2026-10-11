@@ -187,7 +187,7 @@
 <p>That "fixed menu" is why APIs matter so much in 2026. When you order a cab, an app talks to a maps API for location, a payments API for your card, and a messaging API for driver updates — three separate companies' systems cooperating in seconds, each only exposing what the interface allows.</p>
 <p>APIs show up everywhere:</p>
 <ul class="check-list"><li>Web APIs connect frontends to backends over HTTP (REST is the dominant style).</li><li>Operating-system APIs let apps use hardware and system services.</li><li>AI platform APIs expose models like GPT or Claude to applications.</li></ul>
-<p>One acronym, one idea: <strong>controlled access through a defined contract</strong>.</p>
+<p>One acronym, one idea: <strong>controlled access through a defined contract</strong>. Different API styles may implement that contract differently, but the promise is always the same.</p>
 <h2 id="api-call">How does an API call actually work?</h2>
 <div class="article-figure-wrap"><figure><img loading="lazy" src="assets/img/api-call-lifecycle" alt="" width="1200" height="675" style="width:100%;height:auto;border-radius:12px;"><figcaption style="font-size:13px;color:var(--text-muted,#888);text-align:center;margin:8px 0 24px;"></figcaption></figure></div>
 <p>An <strong>api call</strong> is the full round trip: your application constructs a request (endpoint URL, method, headers, optional body), sends it to a server, and receives a response with a status code and data. Under the hood, five things happen:</p>
@@ -236,7 +236,7 @@ fetchUserData();</code></pre></div>
 <h2 id="integration">What are API integration services — and when do you need one?</h2>
 <div class="article-figure-wrap"><figure><img loading="lazy" src="assets/img/api-integration-hub" alt="" width="1200" height="675" style="width:100%;height:auto;border-radius:12px;"><figcaption style="font-size:13px;color:var(--text-muted,#888);text-align:center;margin:8px 0 24px;"></figcaption></figure></div>
 <p>An <strong>api integration service</strong> connects two or more systems so data flows between them automatically. The difference between "having APIs" and "having an integration" is the workflow: an API is one messenger; an integration is the whole automated assembly line.</p>
-<p>A typical e-commerce flow shows the pattern:</p>
+<p>A typical e-commerce flow shows the pattern, and each numbered step is one API call between two systems:</p>
 <ol class="check-list"><li>A customer places an order on a storefront like Shopify or WooCommerce.</li><li>A trigger fires an API request that syncs the customer and order data into a CRM such as HubSpot.</li><li>A payment gateway like Stripe confirms the transaction via webhook.</li><li>A shipping API generates the label and returns tracking data.</li></ol>
 <p>For teams that don't write custom code, visual automation platforms like Zapier and Make.com have become the default: they expose pre-built connectors for thousands of apps, so mapping a webhook to a CRM record is configuration rather than engineering. The trade-off is real, though — no-code platforms charge per operation and add a dependency, while custom integrations cost more up front but scale without per-run fees.</p>
 <p>Three rules that keep integrations healthy:</p>
