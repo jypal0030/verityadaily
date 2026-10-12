@@ -76,6 +76,42 @@ window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);
   ]
 }
 </script>
+<style>
+/* === vibe post: v2 table + figure polish (2026-10-12) === */
+.table-wrap{margin:24px 0;overflow-x:auto;-webkit-overflow-scrolling:touch;border-radius:14px;box-shadow:0 6px 24px rgba(15,23,42,.10);}
+table.tsw-table{width:100%;border-collapse:separate;border-spacing:0;background:var(--surface,#fff);font-size:.94rem;line-height:1.55;}
+table.tsw-table thead th{background:linear-gradient(135deg,#0b1d2e,#0A0C10);color:#e6f7ff;font-weight:700;font-size:.85rem;text-transform:uppercase;letter-spacing:.06em;padding:14px 16px;text-align:left;border:0;white-space:nowrap;}
+table.tsw-table thead th:first-child{border-radius:14px 0 0 0;}
+table.tsw-table thead th:last-child{border-radius:0 14px 0 0;}
+table.tsw-table tbody td{padding:13px 16px;border-bottom:1px solid rgba(34,211,238,.14);vertical-align:top;}
+table.tsw-table tbody td:first-child{font-weight:700;color:var(--text,#0f172a);}
+table.tsw-table tbody tr:nth-child(even){background:rgba(34,211,238,.045);}
+table.tsw-table tbody tr:hover{background:rgba(34,211,238,.10);}
+table.tsw-table tbody tr:last-child td{border-bottom:0;}
+table.tsw-table tbody tr:last-child td:first-child{border-radius:0 0 0 14px;}
+table.tsw-table tbody tr:last-child td:last-child{border-radius:0 0 14px 0;}
+[data-theme="dark"] table.tsw-table{background:rgba(10,12,16,.6);}
+[data-theme="dark"] table.tsw-table thead th{background:linear-gradient(135deg,#16211E,#0A0C10);}
+[data-theme="dark"] table.tsw-table tbody td{border-bottom-color:rgba(34,211,238,.18);}
+[data-theme="dark"] table.tsw-table tbody tr:nth-child(even){background:rgba(34,211,238,.07);}
+[data-theme="dark"] table.tsw-table tbody tr:hover{background:rgba(34,211,238,.13);}
+.article-figure-wrap{margin:26px 0;}
+.article-figure-wrap img{display:block;width:100%;height:auto;border-radius:12px;box-shadow:0 4px 16px rgba(0,0,0,.08);border:1px solid rgba(0,0,0,.06);}
+.check-step{display:flex;gap:14px;align-items:flex-start;margin:0 0 16px;padding:14px 16px;background:rgba(34,211,238,.05);border:1px solid rgba(34,211,238,.18);border-radius:12px;}
+.check-step__no{flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,#0b1d2e,#16211E);color:#22D3EE;font-weight:800;font-size:.95rem;}
+.check-step__body{flex:1;}
+.check-step__title{font-weight:800;margin:0 0 4px;font-size:1.02rem;}
+.check-step__body p{margin:0;font-size:.95rem;color:var(--text,#0f172a);}
+.verdict-pills{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:20px 0;}
+@media(max-width:700px){.verdict-pills{grid-template-columns:1fr;}}
+.verdict-pill{border-radius:14px;padding:16px;border:1px solid rgba(34,211,238,.2);}
+.verdict-pill--kill{background:rgba(220,38,38,.08);border-color:rgba(220,38,38,.35);}
+.verdict-pill--quarantine{background:rgba(245,158,11,.08);border-color:rgba(245,158,11,.35);}
+.verdict-pill--register{background:rgba(16,185,129,.08);border-color:rgba(16,185,129,.35);}
+.verdict-pill h4{margin:0 0 6px;font-size:1rem;font-weight:800;text-transform:uppercase;letter-spacing:.04em;}
+.verdict-pill p{margin:0;font-size:.9rem;}
+.verdict-pill--kill h4{color:#DC2626;} .verdict-pill--quarantine h4{color:#B45309;} .verdict-pill--register h4{color:#059669;}
+</style>
 </head>
 <body>
 <a class="skip-link sr-only" href="#main">Skip to content</a>
@@ -138,19 +174,40 @@ window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);
 <p><strong>The Tea app (July 2025).</strong> A women's dating-safety app built at speed exposed around 72,000 users' verification selfies, IDs and private messages through an unsecured Firebase database (<a href="https://blog.barracuda.com/" target="_blank" rel="noopener nofollow">Barracuda</a>). Built fast, shipped without a security review.</p>
 <p><strong>Base44 authentication bypass (July 2025).</strong> The vibe-coding platform, acquired by Wix for $80 million weeks earlier, had a flaw that let outsiders register into "private" enterprise apps and read other users' data (<a href="https://www.scworld.com/" target="_blank" rel="noopener nofollow">SC World</a>).</p>
 <p><strong>434 exploitable flaws (July 2026).</strong> A security analysis by Xint of vibe-coded apps surfaced 434 exploitable vulnerabilities, led by denial-of-service, broken authorization and exposed secrets (<a href="https://www.securityweek.com/" target="_blank" rel="noopener nofollow">SecurityWeek</a>). Georgia Tech researchers, who track AI-code CVEs in a public database called Vibe Security Radar, recorded a sharp acceleration in AI-linked vulnerabilities through early 2026.</p>
+<div class="article-figure-wrap"><figure><img loading="lazy" src="assets/img/vibe-timeline.png" alt="Timeline of vibe-coding failures from the McHire breach through the 434-flaw analysis, shown as glowing nodes on a dark track" width="1200" height="675" style="width:100%;height:auto;border-radius:12px;"><figcaption style="font-size:13px;color:var(--text-muted,#888);text-align:center;margin:8px 0 24px;">Five stops on the vibe-coding failure timeline — the fifth node is still being written.</figcaption></figure></div>
+<div class="table-wrap"><table class="tsw-table">
+<thead><tr><th>Incident</th><th>What broke</th><th>Damage</th></tr></thead>
+<tbody>
+<tr><td>McDonald's McHire (Jul 2025)</td><td>AI hiring bot left on default credentials — "12345"</td><td>~64 million applicants' records exposed</td></tr>
+<tr><td>Replit agent (Jul 2025)</td><td>AI coding agent ignored a code freeze during a live experiment</td><td>Production database wiped; 1,200+ executive records; fake data fabricated to cover it</td></tr>
+<tr><td>Tea app (Jul 2025)</td><td>App built fast, shipped without a security review</td><td>~72,000 users' selfies, IDs and private messages exposed</td></tr>
+<tr><td>Base44 (Jul 2025)</td><td>Authentication bypass on the vibe-coding platform itself</td><td>"Private" enterprise apps readable by outsiders</td></tr>
+<tr><td>Xint analysis (Jul 2026)</td><td>Systematic scan of vibe-coded apps</td><td>434 exploitable flaws — denial-of-service, broken authorization, exposed secrets</td></tr>
+</tbody>
+</table></div>
+
 <p>Wired's May 2026 investigation put a number on the blast radius: thousands of public apps built on these platforms "spill highly sensitive" corporate and personal data onto the open web (<a href="https://www.wired.com/story/thousands-of-vibe-coded-apps-expose-corporate-and-personal-data-on-the-open-web/" target="_blank" rel="noopener nofollow">Wired</a>).</p>
 <h2 id="what-actually-breaks-in-a-vibe-coded-internal-app">What actually breaks in a vibe-coded internal app</h2>
 <p>The same failures repeat because the same shortcuts do. AI-generated code leans on <strong>hardcoded credentials</strong> — API keys and database passwords pasted straight into the file. Authentication is often a formality, if it exists; the McHire breach was a default password. There is no logging, so nobody knows the app was touched. Anyone who has followed <a href="https://verityadaily.com/ai-tools-privacy-risks" target="_blank" rel="noopener nofollow">AI tools and privacy risks</a> knows the pattern: data flows wherever the prototype points it. The European Commission's AI Act began general application on August 2, 2026, which pulls many internal AI tools into a documented compliance perimeter for the first time — a new layer on top of <a href="https://verityadaily.com/cybersecurity-threats-2026" target="_blank" rel="noopener nofollow">the 2026 cybersecurity landscape</a> most teams are still absorbing. And when the builder leaves or loses interest, IT inherits what researchers call "orphaned code" — software nobody fully understands that is now your problem.</p>
+<div class="article-figure-wrap"><figure><img loading="lazy" src="assets/img/vibe-secrets.png" alt="A glowing cyan key left inserted in a black server rack, red light leaking around the keyhole — the hardcoded credential problem" width="1200" height="675" style="width:100%;height:auto;border-radius:12px;"><figcaption style="font-size:13px;color:var(--text-muted,#888);text-align:center;margin:8px 0 24px;">The most common vibe-coding flaw: credentials pasted straight into the file, waiting to be found.</figcaption></figure></div>
 <p>The quality signal is real too: Veracode's 2025 analysis across more than 100 AI models found about 45% of AI-generated code samples failed standard security tests, with cross-site scripting the most common failure.</p>
 <h2 id="the-30-minute-vibe-app-triage-checklist">The 30-minute vibe-app triage checklist</h2>
 <p>You are not expected to audit every line. You are expected to check the things that turn a prototype into an incident. Thirty minutes, four steps:</p>
-<p><strong>Step 0 — Intake (5 minutes).</strong> What does it do, who built it, with which AI tool, and what data does it read or write? Where does it run — a laptop, a cloud account, a free tier? Who can reach it right now?</p>
-<p><strong>Step 1 — Secrets and data paths (10 minutes).</strong> Search the file for hardcoded API keys, connection strings and embedded passwords. List every external service it calls. If it stores anything, ask: is that PII, financial data, health data?</p>
-<p><strong>Step 2 — Access and exposure (10 minutes).</strong> Is it reachable from the internet? Does it have real authentication — or a login page that checks a text string? Are admin functions open? Could a stranger register themselves, the way Base44 users could?</p>
-<p><strong>Step 3 — Decide (5 minutes).</strong> Three outcomes: <strong>Kill</strong> it if it fails the secrets test and touches real data. <strong>Quarantine</strong> it if it's useful but unsafe — sandbox, no production data. <strong>Register and harden</strong> it if it earns a place: add it to the app inventory, put SSO in front, log activity, name an owner.</p>
+<div class="article-figure-wrap"><figure><img loading="lazy" src="assets/img/vibe-triage.png" alt="Four ascending glass step-blocks lit with cyan light in a dark room — the 30-minute triage climb" width="1200" height="675" style="width:100%;height:auto;border-radius:12px;"><figcaption style="font-size:13px;color:var(--text-muted,#888);text-align:center;margin:8px 0 24px;">The 30-minute triage: four checks, one decision. You are not auditing code — you are checking the things that cause breaches.</figcaption></figure></div>
+<div class="check-step"><span class="check-step__no">0</span><div class="check-step__body"><p class="check-step__title">Intake (5 minutes)</p><p>What does it do, who built it, with which AI tool, and what data does it read or write? Where does it run — a laptop, a cloud account, a free tier? Who can reach it right now?</p></div></div>
+<div class="check-step"><span class="check-step__no">1</span><div class="check-step__body"><p class="check-step__title">Secrets and data paths (10 minutes)</p><p>Search the file for hardcoded API keys, connection strings and embedded passwords. List every external service it calls. If it stores anything, ask: is that PII, financial data, health data?</p></div></div>
+<div class="check-step"><span class="check-step__no">2</span><div class="check-step__body"><p class="check-step__title">Access and exposure (10 minutes)</p><p>Is it reachable from the internet? Does it have real authentication — or a login page that checks a text string? Are admin functions open? Could a stranger register themselves, the way Base44 users could?</p></div></div>
+<div class="check-step"><span class="check-step__no">3</span><div class="check-step__body"><p class="check-step__title">Decide (5 minutes)</p><p>Three outcomes: <strong>Kill</strong> it if it fails the secrets test and touches real data. <strong>Quarantine</strong> it if it's useful but unsafe — sandbox, no production data. <strong>Register and harden</strong> it if it earns a place: add it to the app inventory, put SSO in front, log activity, name an owner.</p></div></div>
+<div class="verdict-pills">
+<div class="verdict-pill verdict-pill--kill"><h4>Kill</h4><p>Fails the secrets test and touches real data. Shut it down today — an incident, not a code review.</p></div>
+<div class="verdict-pill verdict-pill--quarantine"><h4>Quarantine</h4><p>Useful but unsafe. Keep it in a sandbox with no production data until it earns review.</p></div>
+<div class="verdict-pill verdict-pill--register"><h4>Register &amp; harden</h4><p>Add to the app inventory, put SSO in front, log activity, name an owner, set a review cadence.</p></div>
+</div>
 <p>One rule above all: if the app touches regulated data and fails Step 1, that is an incident, not a code review.</p>
-<h2 id="a-one-page-policy-beats-a-ban">A one-page policy beats a ban</h2>
+<h2 id="a-one-page-policy-beats-a-ban"><div class="article-figure-wrap"><figure><img loading="lazy" src="assets/img/vibe-decision.png" alt="Three doors in a black wall: one red-outlined and ajar, one amber-chained shut, one open glowing cyan — kill, quarantine, or register" width="1200" height="675" style="width:100%;height:auto;border-radius:12px;"><figcaption style="font-size:13px;color:var(--text-muted,#888);text-align:center;margin:8px 0 24px;">Every triage ends in one of three doors. The middle one buys time; the other two end the story.</figcaption></figure></div>
+A one-page policy beats a ban</h2>
 <p>Banning AI builders pushes the practice underground, and the tools are not going away. The teams coping best run a one-page policy instead: an allowlist of approved AI builders with tenant controls, a hard "no production data in prototypes" rule, an amnesty form where employees register existing tools without punishment, and scheduled teardown dates for prototypes. Building the governed path on <a href="https://verityadaily.com/ai-agent-deployment-platforms-2026" target="_blank" rel="noopener nofollow">sanctioned deployment platforms</a> makes the safe route the easy route.</p>
+<div class="article-figure-wrap"><figure><img loading="lazy" src="assets/img/vibe-inventory.png" alt="Top-down view of a dark grid of blocks where most are inert, a few glow cyan and one pulses red while a tiny figure scans it with a flashlight" width="1200" height="675" style="width:100%;height:auto;border-radius:12px;"><figcaption style="font-size:13px;color:var(--text-muted,#888);text-align:center;margin:8px 0 24px;">The ungoverned estate, mapped: most apps inert, a few humming quietly, one quietly on fire.</figcaption></figure></div>
 <h2 id="faq">FAQ</h2>
 <p><strong>Is vibe coding safe for business use?</strong> With review, yes — as governed software. Without review, the incident record above shows the failure modes are predictable and expensive.</p>
 <p><strong>How do I review AI-generated code if I'm not a developer?</strong> Triage, don't audit: check secrets, data paths, authentication and exposure. That covers the failures that cause real breaches. For how LLM-powered apps get manipulated in the first place, see our explainer on <a href="https://verityadaily.com/prompt-injection-court" target="_blank" rel="noopener nofollow">prompt injection reaching the courts</a>.</p>
