@@ -111,6 +111,36 @@ table.tsw-table tbody tr:last-child td:last-child{border-radius:0 0 14px 0;}
 .verdict-pill h4{margin:0 0 6px;font-size:1rem;font-weight:800;text-transform:uppercase;letter-spacing:.04em;}
 .verdict-pill p{margin:0;font-size:.9rem;}
 .verdict-pill--kill h4{color:#DC2626;} .verdict-pill--quarantine h4{color:#B45309;} .verdict-pill--register h4{color:#059669;}
+.faq-item{background:linear-gradient(135deg,rgba(34,211,238,.08),rgba(99,102,241,.05));border:1px solid rgba(34,211,238,.35);border-radius:14px;margin:12px 0;overflow:hidden;box-shadow:0 0 0 1px rgba(34,211,238,.08),0 4px 20px rgba(34,211,238,.10);transition:box-shadow .3s ease,border-color .3s ease;padding:0;border-bottom:1px solid rgba(34,211,238,.35);}
+.faq-item:hover{box-shadow:0 0 0 1px rgba(34,211,238,.16),0 6px 30px rgba(34,211,238,.20);}
+.faq-item[open]{border-color:rgba(34,211,238,.65);box-shadow:0 0 0 1px rgba(34,211,238,.18),0 8px 34px rgba(34,211,238,.24);}
+.faq-item summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px 18px;font-weight:700;font-size:1rem;color:var(--text,#1a1a2e);-webkit-tap-highlight-color:transparent;}
+.faq-item summary::-webkit-details-marker{display:none;}
+.faq-item summary::after{content:'+';flex-shrink:0;width:26px;height:26px;display:inline-flex;align-items:center;justify-content:center;border-radius:50%;background:rgba(34,211,238,.18);color:#0891b2;font-size:18px;font-weight:800;transition:transform .25s ease,background .25s ease;}
+.faq-item[open] summary::after{content:'\2212';transform:rotate(180deg);background:rgba(34,211,238,.85);color:#fff;}
+.faq-item .faq-a{padding:0 18px 16px;animation:vibe-faq-in .3s ease;}
+.faq-item .faq-a p{margin:0;color:var(--text-muted,#444);font-size:.96rem;line-height:1.7;}
+.faq-item .faq-q{margin:0;font-size:1rem;font-weight:700;}
+@keyframes vibe-faq-in{from{opacity:0;transform:translateY(-6px);}to{opacity:1;transform:translateY(0);}}
+[data-theme="dark"] .faq-item{background:linear-gradient(135deg,rgba(34,211,238,.12),rgba(99,102,241,.08));}
+[data-theme="dark"] .faq-item summary{color:#e5e7eb;}
+[data-theme="dark"] .faq-item .faq-a p{color:#9ca3af;}
+.rnv2{margin-top:44px;padding-top:26px;border-top:1px solid var(--border,#e5e7eb);}
+.rnv2 h3{font-size:1.25rem;font-weight:800;margin:0 0 18px;}
+.rnv2-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px;}
+@media(max-width:900px){.rnv2-grid{grid-template-columns:1fr 1fr;}}
+@media(max-width:620px){.rnv2-grid{grid-template-columns:1fr;}}
+.rnv2-card{display:flex;flex-direction:column;background:var(--surface,#fff);border:1px solid var(--border,#e5e7eb);border-radius:16px;overflow:hidden;text-decoration:none;transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease;height:100%;}
+.rnv2-card:hover{transform:translateY(-4px);box-shadow:0 14px 34px rgba(34,211,238,.20);border-color:rgba(34,211,238,.55);}
+.rnv2-card img{display:block;width:100%;height:160px;object-fit:cover;margin:0;transition:transform .3s ease;}
+.rnv2-card:hover img{transform:scale(1.04);}
+.rnv2-body{display:flex;flex-direction:column;gap:8px;padding:14px 16px 16px;flex:1;}
+.rnv2-kicker{display:inline-flex;align-self:flex-start;background:rgba(34,211,238,.14);color:#0891b2;font-size:.7rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:3px 10px;border-radius:999px;}
+.rnv2-title{font-weight:700;font-size:.98rem;line-height:1.4;color:var(--text,#0f172a);}
+.rnv2-card:hover .rnv2-title{color:#0891b2;}
+[data-theme="dark"] .rnv2-card{background:rgba(15,23,42,.6);border-color:rgba(34,211,238,.25);}
+[data-theme="dark"] .rnv2-title{color:#e5e7eb;}
+[data-theme="dark"] .rnv2-card:hover .rnv2-title{color:#67e8f9;}
 </style>
 </head>
 <body>
@@ -208,11 +238,12 @@ table.tsw-table tbody tr:last-child td:last-child{border-radius:0 0 14px 0;}
 A one-page policy beats a ban</h2>
 <p>Banning AI builders pushes the practice underground, and the tools are not going away. The teams coping best run a one-page policy instead: an allowlist of approved AI builders with tenant controls, a hard "no production data in prototypes" rule, an amnesty form where employees register existing tools without punishment, and scheduled teardown dates for prototypes. Building the governed path on <a href="https://verityadaily.com/ai-agent-deployment-platforms-2026" target="_blank" rel="noopener nofollow">sanctioned deployment platforms</a> makes the safe route the easy route.</p>
 <div class="article-figure-wrap"><figure><img loading="lazy" src="assets/img/vibe-inventory.png" alt="Top-down view of a dark grid of blocks where most are inert, a few glow cyan and one pulses red while a tiny figure scans it with a flashlight" width="1200" height="675" style="width:100%;height:auto;border-radius:12px;"><figcaption style="font-size:13px;color:var(--text-muted,#888);text-align:center;margin:8px 0 24px;">The ungoverned estate, mapped: most apps inert, a few humming quietly, one quietly on fire.</figcaption></figure></div>
-<h2 id="faq">FAQ</h2>
-<p><strong>Is vibe coding safe for business use?</strong> With review, yes — as governed software. Without review, the incident record above shows the failure modes are predictable and expensive.</p>
-<p><strong>How do I review AI-generated code if I'm not a developer?</strong> Triage, don't audit: check secrets, data paths, authentication and exposure. That covers the failures that cause real breaches. For how LLM-powered apps get manipulated in the first place, see our explainer on <a href="https://verityadaily.com/prompt-injection-court" target="_blank" rel="noopener nofollow">prompt injection reaching the courts</a>.</p>
-<p><strong>What is shadow AI?</strong> Ungoverned AI use inside an organization — including employee-built apps, dashboards and scripts that never went through IT.</p>
-<p><strong>Who is responsible when a vibe-coded app leaks data?</strong> Legally and operationally, the company that owns the data. "An AI wrote it" has never survived contact with a regulator or a customer.</p>
+<h2 id="faq">Frequently Asked Questions</h2>
+<details class="faq-item"><summary><h3 class="faq-q">Is vibe coding safe for business use?</h3></summary><div class="faq-a"><p>With review, yes — as governed software. Without review, the incident record above shows the failure modes are predictable and expensive: leaked credentials, exposed databases and orphaned code that IT must maintain.</p></div></details>
+<details class="faq-item"><summary><h3 class="faq-q">How do I review AI-generated code if I'm not a developer?</h3></summary><div class="faq-a"><p>Triage, don't audit: check secrets, data paths, authentication and exposure. That covers the failures that cause real breaches. For how LLM-powered apps get manipulated in the first place, see our explainer on <a href="https://verityadaily.com/prompt-injection-court" target="_blank" rel="noopener nofollow">prompt injection reaching the courts</a>.</p></div></details>
+<details class="faq-item"><summary><h3 class="faq-q">What is shadow AI?</h3></summary><div class="faq-a"><p>Ungoverned AI use inside an organization — including employee-built apps, dashboards and scripts that never went through IT.</p></div></details>
+<details class="faq-item"><summary><h3 class="faq-q">Who is responsible when a vibe-coded app leaks data?</h3></summary><div class="faq-a"><p>Legally and operationally, the company that owns the data. "An AI wrote it" has never survived contact with a regulator or a customer.</p></div></details>
+
 <h2 id="the-takeaway">The takeaway</h2>
 <p>The choice in front of IT teams is not whether employees will build apps with AI. That is already happening. The choice is whether those apps are governed or ungoverned — a 30-minute triage today, or an incident response later.</p>
 
@@ -235,32 +266,21 @@ A one-page policy beats a ban</h2>
 <div class="author-bio">
 <div class="author-avatar">J</div>
 <div class="author-info">
-<h3>Jai</h3>
-<p>Jai covers trending tech, AI developments, and the cultural impact of emerging technologies at Veritya Daily. When he's not tracking viral stories, he's probably doom-scrolling through AI research papers.</p>
+<p class="vdy-author-name" style="font-weight:700;font-size:1rem;margin:0 0 .3rem;">Jai</p>
+<p>Jai covers AI security, emerging tech risk, AI developments, and the cultural impact of emerging technologies at Veritya Daily. When he's not tracking viral stories, he's probably doom-scrolling through AI research papers.</p>
 </div>
 </div>
 
-<div class="read-next">
-<h2>Read Next</h2>
-<div class="read-next-grid">
-<a href="ai-agent-security" class="read-next-card">
-<span class="kicker">Cybersecurity</span>
-<h3>AI Agent Security: The New Attack Surface Nobody Patched</h3>
-</a>
-<a href="prompt-injection-court" class="read-next-card">
-<span class="kicker">Cybersecurity</span>
-<h3>Prompt Injection Reaches the Courts: The Ghost Line in the Filing</h3>
-</a>
-<a href="cybersecurity-threats-2026" class="read-next-card">
-<span class="kicker">Cybersecurity</span>
-<h3>Cybersecurity Threats 2026: The Full Landscape</h3>
-</a>
-<a href="category-cybersecurity" class="read-next-card read-next-category">
-<span class="kicker">Explore</span>
-<h3>More Cybersecurity Stories →</h3>
-</a>
+<section class="rnv2" aria-label="Related guides">
+<h3>Read Next</h3>
+<div class="rnv2-grid read-next-grid">
+<a class="rnv2-card read-next-card" href="ai-agent-security"><img loading="lazy" src="https://verityadaily.com/assets/img/hero-ai-agent-security.png" alt="AI agent security" width="640" height="360" onerror="this.style.display='none'"><span class="rnv2-body"><span class="rnv2-kicker">Agent Security</span><span class="rnv2-title">AI Agent Security: The New Attack Surface Nobody Patched</span></span></a>
+<a class="rnv2-card read-next-card" href="prompt-injection-court"><img loading="lazy" src="https://verityadaily.com/assets/img/hero-prompt-injection-court.png" alt="Prompt injection court case" width="640" height="360" onerror="this.style.display='none'"><span class="rnv2-body"><span class="rnv2-kicker">LLM Attacks</span><span class="rnv2-title">Prompt Injection Reaches the Courts: The Ghost Line in the Filing</span></span></a>
+<a class="rnv2-card read-next-card" href="ai-agent-sandbox-escape"><img loading="lazy" src="https://verityadaily.com/assets/img/hero-ai-agent-sandbox-escape.png" alt="AI agent sandbox escape" width="640" height="360" onerror="this.style.display='none'"><span class="rnv2-body"><span class="rnv2-kicker">Agent Risk</span><span class="rnv2-title">AI Agent Sandbox Escape: When Agents Leave the Box</span></span></a>
 </div>
-</div>
+</section>
+
+
 </main>
 
 <footer class="site-footer">
