@@ -171,7 +171,7 @@ html[data-theme="dark"] .vd-search{background:rgba(27,23,15,.95);border-color:rg
 .vd-search__chip[aria-pressed="true"]{background:var(--brand-blue);color:#fff}
 html[data-theme="dark"] .vd-search__chip{background:rgba(129,140,248,.12)}
 html[data-theme="dark"] .vd-search__chip[aria-pressed="true"]{background:#6366F1;color:#fff}
-.vd-search__results{max-height:46vh;overflow-y:auto;padding:8px;overscroll-behavior:contain}
+.vd-search__count{padding:7px 16px 0;font-size:10.5px;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.07em}.vd-search__results{max-height:46vh;overflow-y:auto;padding:8px;overscroll-behavior:contain}
 .vd-search__item{display:flex;align-items:center;gap:12px;padding:8px 10px;border-radius:12px;text-decoration:none;color:var(--text-primary)}
 .vd-search__item:hover,.vd-search__item.sel{background:rgba(79,70,229,.09);text-decoration:none}
 html[data-theme="dark"] .vd-search__item:hover,html[data-theme="dark"] .vd-search__item.sel{background:rgba(129,140,248,.13)}

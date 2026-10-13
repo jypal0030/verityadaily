@@ -167,7 +167,7 @@ document.addEventListener('submit', function (e) {
     }
 
     /* ---- command search overlay ---- */
-    var DATA = null, loaded = false, loading = false;
+    var DATA = null, loaded = false, loading = false, countEl = null;
     var root = null, backdrop = null, input = null, resultsEl = null, chipsEl = null;
     var chip = 'all', sel = -1, shown = [], lastFocus = null;
     var CHIPS = [['All', 'all'], ['AI', 'ai'], ['Crypto', 'crypto'], ['Finance', 'finance'], ['Cybersecurity', 'cyber'], ['Technology', 'tech'], ['Trending', 'trend']];
@@ -190,12 +190,14 @@ document.addEventListener('submit', function (e) {
           '<button type="button" class="vd-search__close" aria-label="Close search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></button>' +
         '</div>' +
         '<div class="vd-search__chips" role="group" aria-label="Filter by topic"></div>' +
+        '<div class="vd-search__count" aria-live="polite"></div>' +
         '<div class="vd-search__results"></div>' +
         '<div class="vd-search__foot"><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> navigate</span><span><kbd>&crarr;</kbd> open</span><span><kbd>esc</kbd> close</span></div>';
       document.body.appendChild(backdrop);
       document.body.appendChild(root);
       input = root.querySelector('input');
       resultsEl = root.querySelector('.vd-search__results');
+      countEl = root.querySelector('.vd-search__count');
       chipsEl = root.querySelector('.vd-search__chips');
       CHIPS.forEach(function (c) {
         var b = document.createElement('button');
@@ -264,6 +266,7 @@ document.addEventListener('submit', function (e) {
         return true;
       });
       list = (!q && chip === 'all') ? list.slice(0, 12) : list.slice(0, 10);
+      if (countEl) countEl.textContent = list.length + (list.length === 1 ? ' result' : ' results') + (q ? ' for "' + q + '"' : '');
       shown = list; sel = -1;
       if (!list.length) { resultsEl.innerHTML = '<div class="vd-search__empty">No matches for "' + esc(q) + '" - try another keyword.</div>'; return; }
       resultsEl.innerHTML = list.map(function (a) {
