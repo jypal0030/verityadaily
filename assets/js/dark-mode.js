@@ -82,3 +82,63 @@ document.addEventListener('submit', function (e) {
   window.location.href = mailto;
   setTimeout(function () { if (btn) { btn.textContent = 'SUBSCRIBE'; btn.disabled = false; } }, 3000);
 });
+
+
+/* === NAV ACTIVE ENGINE (VD-NAV v1, 2026-10-13) ===
+   Source of truth: BreadcrumbList JSON-LD -> category slug (fallback: URL).
+   Self-heals baked/wrong nav active states on EVERY page (incl. future posts).
+   Idempotent: clears desktop .active-nav + bottom-nav .active, then sets exactly one. */
+(function () {
+  'use strict';
+  var CATS = ['ai', 'crypto', 'finance', 'cybersecurity', 'technology', 'trending'];
+  function catFromJSONLD() {
+    try {
+      var scripts = document.querySelectorAll('script[type="application/ld+json"]');
+      for (var i = 0; i < scripts.length; i++) {
+        var data;
+        try { data = JSON.parse(scripts[i].textContent); } catch (e) { continue; }
+        var graph = data && data['@graph'] ? data['@graph'] : [data];
+        for (var g = 0; g < graph.length; g++) {
+          var obj = graph[g];
+          if (obj && obj['@type'] === 'BreadcrumbList' && obj.itemListElement) {
+            var items = obj.itemListElement;
+            for (var k = items.length - 1; k >= 1 && k >= items.length - 2; k--) {
+              var it = items[k] && items[k].item;
+              var id = it && (typeof it === 'string' ? it : (it['@id'] || ''));
+              var m = String(id).match(/category-([a-z0-9-]+)/);
+              if (m && CATS.indexOf(m[1]) >= 0) return m[1];
+            }
+          }
+        }
+      }
+    } catch (e) {}
+    return null;
+  }
+  function catFromURL() {
+    try {
+      var m = location.pathname.match(/category-([a-z0-9-]+)/);
+      if (m && CATS.indexOf(m[1]) >= 0) return m[1];
+    } catch (e) {}
+    return null;
+  }
+  function apply(cat) {
+    var stale = document.querySelectorAll('.main-nav a.active-nav, .nav-desktop a.active-nav, .bottom-nav__item.active');
+    for (var i = 0; i < stale.length; i++) {
+      stale[i].classList.remove('active-nav', 'active');
+      stale[i].removeAttribute('aria-current');
+    }
+    var d = document.querySelectorAll('.main-nav a[href$="category-' + cat + '"], .nav-desktop a[href$="category-' + cat + '"]');
+    for (var j = 0; j < d.length; j++) {
+      d[j].classList.add('active-nav');
+      d[j].setAttribute('aria-current', 'page');
+    }
+    var b = document.querySelectorAll('.bottom-nav__item[href$="category-' + cat + '"]');
+    for (var k = 0; k < b.length; k++) b[k].classList.add('active');
+  }
+  function init() {
+    var cat = catFromJSONLD() || catFromURL();
+    if (cat) apply(cat);
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
+  else init();
+})();
