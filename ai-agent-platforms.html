@@ -87,6 +87,44 @@ details.faq-item .faq-answer p{margin:0;color:#3c4353;line-height:1.65;}
 [data-theme="dark"] .rnv2-thumb{background:rgba(255,255,255,.04);}
 ol{padding-left:22px;}
 ol li{margin:8px 0;line-height:1.6;}
+/* === v2: highlights, takeaways, cites, sources-fold, compact author, h2 accents === */
+.article-container h2[id]{position:relative;padding-left:14px;}
+.article-container h2[id]::before{content:'';position:absolute;left:0;top:5px;bottom:5px;width:4px;border-radius:4px;background:linear-gradient(180deg,#5BC8C3,#4F46E5);}
+.article-container h2[id]::after{content:'';display:block;width:56px;height:3px;margin-top:8px;border-radius:3px;background:linear-gradient(90deg,#8B7CF0,rgba(139,124,240,0));}
+.key-takeaways{margin:26px 0;padding:18px 20px;background:linear-gradient(135deg,#FFFFFF,#F4F3FE);border:1px solid rgba(139,124,240,.28);border-left:5px solid #4F46E5;border-radius:14px;box-shadow:0 6px 20px rgba(79,70,229,.08);}
+.key-takeaways h2{margin:0 0 10px;font-size:1.05rem;}
+.key-takeaways ul{margin:0;padding-left:20px;}
+.key-takeaways li{margin:7px 0;line-height:1.6;}
+.key-takeaways li::marker{color:#4F46E5;}
+[data-theme="dark"] .key-takeaways{background:linear-gradient(135deg,rgba(24,26,38,.6),rgba(30,28,58,.6));border-color:rgba(139,124,240,.3);}
+.section-highlight{margin:26px 0;padding:16px 20px;background:linear-gradient(135deg,#F0FBFA,#F4F3FE);border:1px solid rgba(91,200,195,.35);border-radius:14px;font-size:1.06rem;font-weight:600;color:#20303d;line-height:1.55;box-shadow:0 4px 16px rgba(91,200,195,.10);}
+.section-highlight .sh-attr{display:block;margin-top:8px;font-size:.82rem;font-weight:500;color:#6b7280;font-style:italic;}
+[data-theme="dark"] .section-highlight{background:linear-gradient(135deg,rgba(16,42,40,.5),rgba(30,28,58,.5));color:#dfe7ee;}
+sup.cite{margin-left:2px;}
+sup.cite a{display:inline-block;font-size:.66rem;font-weight:700;color:#4F46E5;background:rgba(139,124,240,.14);border:1px solid rgba(139,124,240,.25);border-radius:6px;padding:1px 5px;text-decoration:none;vertical-align:super;line-height:1.2;}
+sup.cite a:hover{background:#4F46E5;color:#fff;}
+details.sources-fold{margin:34px 0 6px;border:1px solid rgba(139,124,240,.25);border-radius:14px;background:linear-gradient(180deg,#FBFBFF,#F6F6FE);box-shadow:0 4px 14px rgba(79,70,229,.06);}
+details.sources-fold summary{cursor:pointer;list-style:none;padding:14px 18px;font-weight:700;color:#1c1f2b;display:flex;justify-content:space-between;align-items:center;}
+details.sources-fold summary::-webkit-details-marker{display:none;}
+details.sources-fold[open] summary{border-bottom:1px solid rgba(139,124,240,.18);}
+details.sources-fold .sf-toggle::before{content:'+';font-size:1.25rem;color:#4F46E5;}
+details.sources-fold[open] .sf-toggle::before{content:'\2212';}
+.article-sources{margin:0;padding:6px 18px 14px;}
+.article-sources h2{display:none;}
+.article-sources ul{margin:8px 0 0;padding-left:0;list-style:none;counter-reset:src;}
+.article-sources li{counter-increment:src;margin:9px 0;padding-left:30px;position:relative;font-size:.9rem;line-height:1.5;}
+.article-sources li::before{content:counter(src);position:absolute;left:0;top:2px;width:20px;height:20px;border-radius:6px;background:rgba(139,124,240,.15);color:#4F46E5;font-weight:700;font-size:.7rem;display:flex;align-items:center;justify-content:center;}
+.article-sources li a{word-break:break-all;}
+[data-theme="dark"] details.sources-fold{background:rgba(20,22,32,.55);}
+[data-theme="dark"] details.sources-fold summary{color:#e8eaf2;}
+[data-theme="dark"] .article-sources li{color:#c3c9d6;}
+.author-bio.author-bio--compact{display:flex;gap:14px;align-items:flex-start;padding:14px 18px;margin:34px 0 10px;background:linear-gradient(135deg,#FBFBFF,#F1F0FD);border:1px solid rgba(139,124,240,.3);border-left:5px solid #4F46E5;border-radius:12px;}
+.author-bio.author-bio--compact .author-avatar{width:44px;height:44px;min-width:44px;font-size:1.05rem;border-radius:10px;background:linear-gradient(135deg,#5BC8C3,#4F46E5);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;}
+.author-bio.author-bio--compact h3{margin:0 0 4px;font-size:.98rem;}
+.author-bio.author-bio--compact .author-role{font-size:.78rem;font-weight:600;color:#4F46E5;}
+.author-bio.author-bio--compact p{margin:0;font-size:.86rem;color:#4b5563;line-height:1.5;}
+[data-theme="dark"] .author-bio.author-bio--compact{background:rgba(24,26,38,.55);}
+[data-theme="dark"] .author-bio.author-bio--compact p{color:#aeb6c4;}
 </style>
 <script type="application/ld+json">
 {
@@ -213,6 +251,16 @@ ol li{margin:8px 0;line-height:1.6;}
 </ul>
 </details>
 
+<div class="key-takeaways">
+<h2>Key Takeaways</h2>
+<ul>
+<li><strong>"AI agent platforms" is five different markets:</strong> enterprise suites, code-first builders, low-code builders, support built-ins and marketplaces.</li>
+<li><strong>Pricing is verified, not vibes:</strong> Fin at $0.99/resolution vs Zendesk seat tiers; Agentforce Flex Credits (launched at $2/conversation). Volume decides the winner.</li>
+<li><strong>HIPAA-compliant = the vendor signs a BAA</strong> (Copilot Studio and Power Automate are documented); no AI model is compliant by itself.</li>
+<li><strong>Real builders assemble:</strong> LiteLLM, MCP servers and observability layers beat all-in-one lock-in for experienced teams.</li>
+</ul>
+</div>
+
 <p>The search results look identical, but the products could not be more different. One query — "ai agent platforms" — surfaces Salesforce suites, developer frameworks, customer-support bots, marketplaces and free open-source toolkits, all claiming the same category. Search interest has climbed for weeks while buyers keep asking the same follow-up questions: which one fits a support team, which one survives a compliance review, and which ones cost nothing to try.</p>
 <p>This guide separates the five real markets hiding behind one keyword, with pricing models verified in October 2026 and builder sentiment collected from working practitioners.</p>
 <figure class="article-image"><img src="assets/img/ai-agent-platform-types.png" alt="Five AI agent platform types shown as numbered cards from enterprise suites to open source" width="1200" height="675" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:12px;"><figcaption>The five platform categories behind one search term — each a different market.</figcaption></figure>
@@ -229,7 +277,7 @@ ol li{margin:8px 0;line-height:1.6;}
 <tr><td>Marketplaces</td><td>AgentExchange, GPT Store, Microsoft Marketplace, AgentVerse</td><td>Free to browse; per-agent pricing</td><td>Buying prebuilt agents</td></tr></tbody></table></div>
 <p>No single "best" exists — the categories solve different problems. The confusion is the product of vendor marketing: every vendor blog ranks its own category first.</p>
 <h2 id="enterprise-suites-pricing-models-compared">Enterprise Suites: Pricing Models Compared</h2>
-<p>The enterprise tier consolidated around three pricing models in 2026. Salesforce Agentforce officially sells Flex Credits, Resolutions, or per-user licensing — it launched at $2 per conversation, and practitioners still report roughly $125 per user monthly for agent-assist add-ons. Microsoft's Copilot Studio uses message-pack pricing, while Amazon Bedrock and Google's Gemini enterprise agent platform meter underlying model usage.</p>
+<p>The enterprise tier consolidated around three pricing models in 2026. Salesforce Agentforce officially sells Flex Credits, Resolutions, or per-user licensing — it launched at $2 per conversation, and practitioners still report roughly $125 per user monthly for agent-assist add-ons.<sup class="cite"><a href="#source-2" aria-label="Source 2">[2]</a></sup> Microsoft's Copilot Studio uses message-pack pricing, while Amazon Bedrock and Google's Gemini enterprise agent platform meter underlying model usage.<sup class="cite"><a href="#source-5" aria-label="Source 5">[5]</a></sup></p>
 <div class="table-wrap"><table class="tsw-table"><thead><tr><th>Platform</th><th>Pricing model</th><th>What's verified (Oct 2026)</th></tr></thead><tbody><tr><td>Salesforce Agentforce</td><td>Flex Credits / Resolutions / per-user</td><td>$2 per conversation at launch; ~$125/user assist add-on reported</td></tr>
 <tr><td>Microsoft Copilot Studio</td><td>Message packs</td><td>Model confirmed; exact rates vary by tenant</td></tr>
 <tr><td>Amazon Bedrock (AgentCore)</td><td>Usage-metered</td><td>Enterprise-listed; details vary by region</td></tr>
@@ -237,24 +285,26 @@ ol li{margin:8px 0;line-height:1.6;}
 <p>The practical takeaway: enterprise suites invoice unpredictably. Budget for a pilot quarter before committing.</p>
 <figure class="article-image"><img src="assets/img/ai-agent-support-agents.png" alt="Three step AI customer support workflow from ticket arrival to AI resolution and human handoff" width="1200" height="675" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:12px;"><figcaption>Built-in support agents: ticket to resolution to human handoff.</figcaption></figure>
 <h2 id="customer-support-platforms-with-built-in-ai-agents">Customer Support: Platforms With Built-In AI Agents</h2>
-<p>For the highest-intent question — which support platforms ship built-in agents — the 2026 market offers clear pricing math. Intercom Fin charges $0.99 per resolution on top of seat plans starting at $29. Zendesk restructured its AI pricing after May 2026; seat plans start near $25 per agent, with full AI features arriving around the $115 enterprise tier.</p>
+<p>For the highest-intent question — which support platforms ship built-in agents — the 2026 market offers clear pricing math. Intercom Fin charges $0.99 per resolution on top of seat plans starting at $29.<sup class="cite"><a href="#source-3" aria-label="Source 3">[3]</a></sup> Zendesk restructured its AI pricing after May 2026<sup class="cite"><a href="#source-4" aria-label="Source 4">[4]</a></sup>; seat plans start near $25 per agent, with full AI features arriving around the $115 enterprise tier.</p>
 <p>The crossover math: at 900 monthly resolutions, Fin's outcome pricing (~$891 committed) beats Zendesk's AI line (~$1,200); at 2,000 resolutions the gap widens to roughly $1,980 versus $3,000. Volume decides the winner, not brand loyalty. Enterprise buyers also weigh Sierra (custom contracts) and Maven AGI.</p>
 <figure class="article-image"><img src="assets/img/ai-agent-builder-workflow.png" alt="AI agent builder workflow with numbered nodes for trigger, LLM, tools, memory and output" width="1200" height="675" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:12px;"><figcaption>Code-first builders chain trigger, model, tools and memory.</figcaption></figure>
 <h2 id="builder-frameworks-what-developers-actually-use">Builder Frameworks: What Developers Actually Use</h2>
-<p>LangChain's official 2026 guide compares seven frameworks — LangChain, CrewAI, Microsoft Agent Framework, LlamaIndex Workflows, Google ADK and OpenAI's Agents SDK among them — while open-source trackers list ten, adding Dify, AutoGen and Mastra. GitHub adoption tells its own story: n8n holds roughly 204,000 stars, Dify about 154,000.</p>
+<p>LangChain's official 2026 guide compares seven frameworks<sup class="cite"><a href="#source-7" aria-label="Source 7">[7]</a></sup> — LangChain, CrewAI, Microsoft Agent Framework, LlamaIndex Workflows, Google ADK and OpenAI's Agents SDK among them — while open-source trackers list ten, adding Dify, AutoGen and Mastra. GitHub adoption tells its own story: n8n holds roughly 204,000 stars, Dify about 154,000.<sup class="cite"><a href="#source-9" aria-label="Source 9">[9]</a></sup></p>
 <p>The rough positioning: LangGraph for complex production processes, CrewAI for role-based multi-agent teams, n8n and Dify for visual business-team builders, and OpenAI's SDK for ecosystem-native deployments. Note that "framework" here means code-first — pricing is free cores with paid cloud layers, a deliberate wedge pattern across the category.</p>
 <h2 id="compliance-hipaa-and-financial-services">Compliance: HIPAA and Financial Services</h2>
-<p>Compliance questions dominate regulated buyers' searches, and the answer is procedural, not magical: a platform is HIPAA-compliant only if its vendor signs a Business Associate Agreement covering the agent. No AI model is inherently compliant — encryption, access controls and audit logging carry the rest.</p>
-<p>Microsoft's Power Automate and Copilot Studio are documented BAA signers, and healthcare-specific no-code platforms exist for covered entities. Expect BAA procurement to take 5–30 days, and remember the stakes: HIPAA violation averages run near $1.93 million per incident. Financial-services buyers face no equivalent shortcut — the practical route is buying through cloud marketplaces where suites inherit the provider's compliance certifications, or self-hosting open source for full data control.</p>
+<p>Compliance questions dominate regulated buyers' searches, and the answer is procedural, not magical: a platform is HIPAA-compliant only if its vendor signs a Business Associate Agreement covering the agent. No AI model is inherently compliant — encryption, access controls and audit logging carry the rest.<sup class="cite"><a href="#source-14" aria-label="Source 14">[14]</a></sup></p>
+<p>Microsoft's Power Automate and Copilot Studio are documented BAA signers<sup class="cite"><a href="#source-15" aria-label="Source 15">[15]</a></sup>, and healthcare-specific no-code platforms exist for covered entities. Expect BAA procurement to take 5–30 days, and remember the stakes: HIPAA violation averages run near $1.93 million per incident.<sup class="cite"><a href="#source-18" aria-label="Source 18">[18]</a></sup> Financial-services buyers face no equivalent shortcut — the practical route is buying through cloud marketplaces where suites inherit the provider's compliance certifications, or self-hosting open source for full data control.</p>
 <figure class="article-image"><img src="assets/img/ai-agent-compliance-hipaa.png" alt="HIPAA compliant AI agent platform concept with shield, BAA document and gold compliance seal" width="1200" height="675" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:12px;"><figcaption>Compliance starts with a signed BAA — not with a model.</figcaption></figure>
 <h2 id="where-to-buy-ai-agent-marketplaces">Where to Buy: AI Agent Marketplaces</h2>
-<p>"Where to buy" is now a real question with a real answer. Salesforce AgentExchange bills itself as a hub to "find, evaluate, buy, and deploy pre-built AI agents"; OpenAI's GPT Store and Microsoft's marketplace distribute consumer and business agents; AgentVerse and Google's agent space cover the open ecosystem. Treat these like app stores: check ratings, verify the publisher, and start with trial deployments before procurement.</p>
+<p>"Where to buy" is now a real question with a real answer. Salesforce AgentExchange bills itself as a hub to "find, evaluate, buy, and deploy pre-built AI agents"<sup class="cite"><a href="#source-13" aria-label="Source 13">[13]</a></sup>; OpenAI's GPT Store and Microsoft's marketplace distribute consumer and business agents; AgentVerse and Google's agent space cover the open ecosystem. Treat these like app stores: check ratings, verify the publisher, and start with trial deployments before procurement.</p>
 <figure class="article-image"><img src="assets/img/ai-agent-marketplace.png" alt="AI agent marketplace concept with prebuilt agent app cards on glass shelves and install arrow" width="1200" height="675" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:12px;"><figcaption>Marketplaces make &quot;where to buy&quot; a literal question now.</figcaption></figure>
 <h2 id="how-to-build-your-own-ai-agent-for-free">How to Build Your Own AI Agent for Free</h2>
-<p>Free is genuinely viable in 2026. AutoGen, Dify, Flowise, n8n and Haystack are all open source and free to self-host; Botpress offers a free plan for small volumes; CrewAI and Dify sell cloud upgrades from $59–89 monthly when self-hosting becomes chore-work. The honest three-step starter: pick a self-hostable builder, connect one model API, automate one repeatable workflow end-to-end — then judge.</p>
+<p>Free is genuinely viable in 2026. AutoGen, Dify, Flowise, n8n and Haystack are all open source and free to self-host<sup class="cite"><a href="#source-12" aria-label="Source 12">[12]</a></sup>; Botpress offers a free plan for small volumes; CrewAI and Dify sell cloud upgrades from $59–89 monthly when self-hosting becomes chore-work. The honest three-step starter: pick a self-hostable builder, connect one model API, automate one repeatable workflow end-to-end — then judge.</p>
 <h2 id="what-real-builders-actually-use-the-reddit-truth">What Real Builders Actually Use (The Reddit Truth)</h2>
-<p>Vendor blogs rank themselves first; working builders tell a different story. In a July 2026 r/agenticAI thread, the highest-signal comment described no platform at all: "a mix — LiteLLM for routing, OpenTelemetry for instrumentation and Braintrust" for evals. Another described deliberately exiting all-in-one platforms for a "boring" stack of Git, GitHub Actions, Strands SDK and MCP servers, "treating agent workflows like software projects."</p>
-<p>Enterprise commenters confirmed the pattern: companies assemble — cloud agent runtimes plus open-source components for gateways, memory, observability and access control — because "platforms may lack tight security controls, fine-grained permission settings or extensive logging." Two structural complaints recur: streaming breaks in production, and mobile apps are notification mirrors. As one evaluator of twelve platforms put it: "That's not a mobile app. That's a pager."</p>
+<p>Vendor blogs rank themselves first; working builders tell a different story. In a July 2026 r/agenticAI thread, the highest-signal comment described no platform at all: "a mix — LiteLLM for routing, OpenTelemetry for instrumentation and Braintrust" for evals.<sup class="cite"><a href="#source-16" aria-label="Source 16">[16]</a></sup> Another described deliberately exiting all-in-one platforms for a "boring" stack of Git, GitHub Actions, Strands SDK and MCP servers, "treating agent workflows like software projects."</p>
+<p>Enterprise commenters confirmed the pattern: companies assemble — cloud agent runtimes plus open-source components for gateways, memory, observability and access control — because "platforms may lack tight security controls, fine-grained permission settings or extensive logging." Two structural complaints recur: streaming breaks in production, and mobile apps are notification mirrors.<sup class="cite"><a href="#source-17" aria-label="Source 17">[17]</a></sup></p>
+
+<div class="section-highlight">"That's not a mobile app. That's a pager."<span class="sh-attr">— r/Jugl, after evaluating 12 AI agent platforms</span></div>
 <figure class="article-image"><img src="assets/img/ai-agent-developer-stack.png" alt="Developer AI agent stack with laptop terminal and composable blocks for branch, tools, metrics and security" width="1200" height="675" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:12px;"><figcaption>What practitioners actually run: composable, boring, version-controlled.</figcaption></figure>
 <h2 id="how-to-choose-5-questions-before-you-commit">How to Choose: 5 Questions Before You Commit</h2>
 <ol><li><strong>Does it handle your workflow natively</strong> — sales, support and ticketing together — or through brittle integrations?</li><li><strong>What is the real pricing at your volume</strong> — run the per-resolution math at 900 and 2,000 before signing.</li><li><strong>Will it pass your compliance review</strong> — will the vendor sign a BAA or equivalent, today, in writing?</li><li><strong>Is the mobile app a management tool</strong> or a notification mirror?</li><li><strong>What is the exit cost</strong> — can you export workflows and data if you outgrow it?</li></ol>
@@ -284,28 +334,31 @@ ol li{margin:8px 0;line-height:1.6;}
 </details>
 </section>
 
+<details class="sources-fold">
+<summary>📚 Sources & Citations (18)<span class="sf-toggle" aria-hidden="true"></span></summary>
 <div class="article-sources">
-<h2>Sources</h2>
 <ul>
-<li><a href="https://www.salesforce.com/agentforce/" target="_blank" rel="noopener nofollow">www.salesforce.com</a></li>
-<li><a href="https://www.salesforce.com/agentforce-announcement/" target="_blank" rel="noopener nofollow">www.salesforce.com</a></li>
-<li><a href="https://www.intercom.com/pricing" target="_blank" rel="noopener nofollow">www.intercom.com</a></li>
-<li><a href="https://www.zendesk.com/" target="_blank" rel="noopener nofollow">www.zendesk.com</a></li>
-<li><a href="https://cloud.google.com/products/gemini-enterprise-agent-platform" target="_blank" rel="noopener nofollow">cloud.google.com</a></li>
-<li><a href="https://learn.microsoft.com/en-us/azure/ai-services/" target="_blank" rel="noopener nofollow">learn.microsoft.com</a></li>
-<li><a href="https://www.langchain.com/resources/ai-agent-frameworks" target="_blank" rel="noopener nofollow">www.langchain.com</a></li>
-<li><a href="https://www.firecrawl.dev/blog/best-open-source-agent-frameworks" target="_blank" rel="noopener nofollow">www.firecrawl.dev</a></li>
-<li><a href="https://www.sim.ai/library/open-source-ai-agent-platforms" target="_blank" rel="noopener nofollow">www.sim.ai</a></li>
-<li><a href="https://n8n.io/ai-agents" target="_blank" rel="noopener nofollow">n8n.io</a></li>
-<li><a href="https://www.botpress.com/blog/low-code-ai-agent-platforms" target="_blank" rel="noopener nofollow">www.botpress.com</a></li>
-<li><a href="https://www.agentcenter.cloud/Blog" target="_blank" rel="noopener nofollow">www.agentcenter.cloud</a></li>
-<li><a href="https://agentexchange.salesforce.com/" target="_blank" rel="noopener nofollow">agentexchange.salesforce.com</a></li>
-<li><a href="https://www.automationanywhere.com/resources" target="_blank" rel="noopener nofollow">www.automationanywhere.com</a></li>
-<li><a href="https://nirmitee.io/" target="_blank" rel="noopener nofollow">nirmitee.io</a></li>
-<li><a href="https://www.reddit.com/r/agenticAI/comments/1v0bz61/what_platforms_are_you_using_to_build_you_agentic/" target="_blank" rel="noopener nofollow">www.reddit.com</a></li>
-<li><a href="https://www.reddit.com/r/Jugl/comments/1rshty3/we_evaluated_12_ai_agent_platforms_heres_the_gap/" target="_blank" rel="noopener nofollow">www.reddit.com</a></li>
+<li id="source-1"><strong>Salesforce — Agentforce platform & pricing options</strong> — <a href="https://www.salesforce.com/agentforce/" target="_blank" rel="noopener nofollow">www.salesforce.com</a></li>
+<li id="source-2"><strong>Salesforce — Agentforce launch announcement ($2/conversation)</strong> — <a href="https://www.salesforce.com/agentforce-announcement/" target="_blank" rel="noopener nofollow">www.salesforce.com</a></li>
+<li id="source-3"><strong>Intercom — AI agent pricing (Fin $0.99/outcome)</strong> — <a href="https://www.intercom.com/pricing" target="_blank" rel="noopener nofollow">www.intercom.com</a></li>
+<li id="source-4"><strong>Zendesk — AI pricing restructure 2026</strong> — <a href="https://www.zendesk.com/" target="_blank" rel="noopener nofollow">www.zendesk.com</a></li>
+<li id="source-5"><strong>Google Cloud — Gemini enterprise agent platform</strong> — <a href="https://cloud.google.com/products/gemini-enterprise-agent-platform" target="_blank" rel="noopener nofollow">cloud.google.com</a></li>
+<li id="source-6"><strong>Microsoft Learn — Agent Builder overview</strong> — <a href="https://learn.microsoft.com/en-us/azure/ai-services/" target="_blank" rel="noopener nofollow">learn.microsoft.com</a></li>
+<li id="source-7"><strong>LangChain — Best AI agent frameworks 2026</strong> — <a href="https://www.langchain.com/resources/ai-agent-frameworks" target="_blank" rel="noopener nofollow">www.langchain.com</a></li>
+<li id="source-8"><strong>Firecrawl — Best open-source agent frameworks</strong> — <a href="https://www.firecrawl.dev/blog/best-open-source-agent-frameworks" target="_blank" rel="noopener nofollow">www.firecrawl.dev</a></li>
+<li id="source-9"><strong>Sim.ai — Open-source agent platforms compared (GitHub stars)</strong> — <a href="https://www.sim.ai/library/open-source-ai-agent-platforms" target="_blank" rel="noopener nofollow">www.sim.ai</a></li>
+<li id="source-10"><strong>n8n — AI agent workflows & 1,000+ integrations</strong> — <a href="https://n8n.io/ai-agents" target="_blank" rel="noopener nofollow">n8n.io</a></li>
+<li id="source-11"><strong>Botpress — Low-code AI agent platforms (2026)</strong> — <a href="https://www.botpress.com/blog/low-code-ai-agent-platforms" target="_blank" rel="noopener nofollow">www.botpress.com</a></li>
+<li id="source-12"><strong>AgentCenter — 25 AI agent platforms (free tiers)</strong> — <a href="https://www.agentcenter.cloud/Blog" target="_blank" rel="noopener nofollow">www.agentcenter.cloud</a></li>
+<li id="source-13"><strong>Salesforce — AgentExchange marketplace guide</strong> — <a href="https://agentexchange.salesforce.com/" target="_blank" rel="noopener nofollow">agentexchange.salesforce.com</a></li>
+<li id="source-14"><strong>Automation Anywhere — HIPAA compliant AI requires a BAA</strong> — <a href="https://www.automationanywhere.com/resources" target="_blank" rel="noopener nofollow">www.automationanywhere.com</a></li>
+<li id="source-15"><strong>Nirmitee — HIPAA-compliant agent platforms that sign a BAA</strong> — <a href="https://nirmitee.io/" target="_blank" rel="noopener nofollow">nirmitee.io</a></li>
+<li id="source-16"><strong>Reddit r/agenticAI — What platforms builders actually use (Jul 2026)</strong> — <a href="https://www.reddit.com/r/agenticAI/comments/1v0bz61/what_platforms_are_you_using_to_build_you_agentic/" target="_blank" rel="noopener nofollow">www.reddit.com</a></li>
+<li id="source-17"><strong>Reddit r/Jugl — We evaluated 12 AI agent platforms</strong> — <a href="https://www.reddit.com/r/Jugl/comments/1rshty3/we_evaluated_12_ai_agent_platforms_heres_the_gap/" target="_blank" rel="noopener nofollow">www.reddit.com</a></li>
+<li id="source-18"><strong>Integrate.io — HIPAA pipelines & average penalty costs</strong> — <a href="https://www.integrate.io/" target="_blank" rel="noopener nofollow">www.integrate.io</a></li>
 </ul>
 </div>
+</details>
 
 <div class="share-buttons">
 <span class="share-label">Share this story:</span>
@@ -316,11 +369,11 @@ ol li{margin:8px 0;line-height:1.6;}
 <a href="https://wa.me/?text=AI%20Agent%20Platforms%20(2026)%3A%20Types%2C%20Pricing%2C%20How%20to%20Choose%20https%3A%2F%2Fverityadaily.com%2Fai-agent-platforms" class="share-btn share-whatsapp" target="_blank" rel="noopener">✆</a>
 </div>
 
-<div class="author-bio">
+<div class="author-bio author-bio--compact">
 <div class="author-avatar">J</div>
 <div class="author-info">
-<h3>Jai</h3>
-<p>Jai covers trending tech, AI developments, and the cultural impact of emerging technologies at Veritya Daily. When he's not tracking viral stories, he's probably doom-scrolling through AI research papers.</p>
+<h3>Jai <span class="author-role">· AI &amp; Emerging Tech, Veritya Daily</span></h3>
+<p>Covers trending tech, AI developments and the cultural impact of emerging technologies.</p>
 </div>
 </div>
 
