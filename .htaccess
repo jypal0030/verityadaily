@@ -17,6 +17,12 @@ RewriteRule ^(.*)$ / [R=301,L]
 # clean-URL rewrite never serves 200 from a slashed URL (GSC: alternative canonical) ---
 RewriteRule ^(.+)/$ /$1 [R=301,L]
 
+
+# --- 1b. Legacy WordPress feed URLs (GSC cleanup: crawled-not-indexed / 404s) ---
+# WP-era feeds no longer exist; consolidate all feed equity onto /rss.xml
+RewriteRule ^feed/?$ /rss.xml [R=301,L]
+RewriteRule ^category/([^/]+)/feed/?$ /rss.xml [R=301,L]
+
 # --- AI crawler report+serve (rctrl Step 7; search engines stay native for safety) ---
 RewriteCond %{HTTP_USER_AGENT} (GPTBot|ChatGPT-User|PerplexityBot|ClaudeBot|Claude-Web|anthropic-ai|Bytespider|CCBot|cohere-ai|Amazonbot|Meta-ExternalAgent|Applebot-Extended)
 RewriteCond %{REQUEST_URI} !^/api/ [NC]
