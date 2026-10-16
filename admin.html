@@ -471,7 +471,9 @@ function generatePost() {
   </button>
 </nav>\n';
   fullHTML += '<script src="assets/js/dark-mode.js?v=7" defer><\/script><script src="assets/js/reading-progress.js?v=2" defer><\/script>\n';
-  fullHTML += '</body>\n</html>';
+  fullHTML += '<script src="/assets/js/cookie-consent.js" defer></script>
+<script src="/assets/js/adsense-loader.js" defer></script>
+</body>\n</html>';
 
   document.getElementById('htmlOutput').value = fullHTML;
   document.getElementById('output').style.display = 'block';
