@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+<defs>
+<linearGradient id="hdr" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#2E2A72"/><stop offset="100%" stop-color="#4F46E5"/></linearGradient>
+<linearGradient id="abar" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#5BC8C3"/><stop offset="100%" stop-color="#4F46E5"/></linearGradient>
+</defs>
+<rect width="1200" height="800" fill="#FFFFFF"/>
+
+<rect x="60" y="50" width="1080" height="64" rx="12" fill="url(#hdr)"/>
+<text x="90" y="93" font-family="Segoe UI, Arial" font-size="27" font-weight="800" fill="#F3F1FF">TODAY'S TOP CD RATES - OCTOBER 2026</text>
+<text x="90" y="142" font-family="Segoe UI, Arial" font-size="17" fill="#6b7280">National banks + credit unions | verified Oct 16</text>
+<text x="475" y="178" font-family="Segoe UI, Arial" font-size="18" font-weight="700" fill="#2E2A72">TERM</text>
+<text x="740" y="178" font-family="Segoe UI, Arial" font-size="18" font-weight="700" fill="#2E2A72">APY</text>
+<text x="905" y="178" font-family="Segoe UI, Arial" font-size="18" font-weight="700" fill="#2E2A72">MINIMUM</text>
+
+<text x="90" y="235" font-family="Segoe UI, Arial" font-size="23" font-weight="700" fill="#1c1f2b">Nuvision Credit Union</text>
+<text x="475" y="235" font-family="Segoe UI, Arial" font-size="21" fill="#4b5563">7-month special</text>
+<text x="740" y="235" font-family="Segoe UI, Arial" font-size="25" font-weight="800" fill="#4F46E5">5.00%</text>
+<text x="905" y="235" font-family="Segoe UI, Arial" font-size="21" fill="#4b5563">min $1,000</text>
+<rect x="1058" y="209" width="60" height="36" rx="9" fill="rgba(139,124,240,0.14)"/>
+<text x="1072" y="234" font-family="Segoe UI, Arial" font-size="17" font-weight="700" fill="#4F46E5">5.00</text><rect x="60" y="268" width="1080" height="62" rx="10" fill="#F6F5FE"/>
+<text x="90" y="307" font-family="Segoe UI, Arial" font-size="23" font-weight="700" fill="#1c1f2b">Popular Direct</text>
+<text x="475" y="307" font-family="Segoe UI, Arial" font-size="21" fill="#4b5563">5-year</text>
+<text x="740" y="307" font-family="Segoe UI, Arial" font-size="25" font-weight="800" fill="#4F46E5">5.00%</text>
+<text x="905" y="307" font-family="Segoe UI, Arial" font-size="21" fill="#4b5563">min $10,000</text>
+<rect x="1058" y="281" width="60" height="36" rx="9" fill="rgba(139,124,240,0.14)"/>
+<text x="1072" y="306" font-family="Segoe UI, Arial" font-size="17" font-weight="700" fill="#4F46E5">5.00</text>
+<text x="90" y="379" font-family="Segoe UI, Arial" font-size="23" font-weight="700" fill="#1c1f2b">E*TRADE (Morgan Stanley)</text>
+<text x="475" y="379" font-family="Segoe UI, Arial" font-size="21" fill="#4b5563">1-year</text>
+<text x="740" y="379" font-family="Segoe UI, Arial" font-size="25" font-weight="800" fill="#4F46E5">4.75%</text>
+<text x="905" y="379" font-family="Segoe UI, Arial" font-size="21" fill="#4b5563">min $0</text>
+<rect x="1058" y="353" width="60" height="36" rx="9" fill="rgba(139,124,240,0.14)"/>
+<text x="1072" y="378" font-family="Segoe UI, Arial" font-size="17" font-weight="700" fill="#4F46E5">4.75</text><rect x="60" y="412" width="1080" height="62" rx="10" fill="#F6F5FE"/>
+<text x="90" y="451" font-family="Segoe UI, Arial" font-size="23" font-weight="700" fill="#1c1f2b">Synchrony Bank</text>
+<text x="475" y="451" font-family="Segoe UI, Arial" font-size="21" fill="#4b5563">6-month</text>
+<text x="740" y="451" font-family="Segoe UI, Arial" font-size="25" font-weight="800" fill="#4F46E5">4.50%</text>
+<text x="905" y="451" font-family="Segoe UI, Arial" font-size="21" fill="#4b5563">min $1,500</text>
+<rect x="1058" y="425" width="60" height="36" rx="9" fill="rgba(139,124,240,0.14)"/>
+<text x="1072" y="450" font-family="Segoe UI, Arial" font-size="17" font-weight="700" fill="#4F46E5">4.50</text>
+<text x="90" y="523" font-family="Segoe UI, Arial" font-size="23" font-weight="700" fill="#1c1f2b">USAlliance FCU</text>
+<text x="475" y="523" font-family="Segoe UI, Arial" font-size="21" fill="#4b5563">1-year</text>
+<text x="740" y="523" font-family="Segoe UI, Arial" font-size="25" font-weight="800" fill="#4F46E5">4.50%</text>
+<text x="905" y="523" font-family="Segoe UI, Arial" font-size="21" fill="#4b5563">min $500</text>
+<rect x="1058" y="497" width="60" height="36" rx="9" fill="rgba(139,124,240,0.14)"/>
+<text x="1072" y="522" font-family="Segoe UI, Arial" font-size="17" font-weight="700" fill="#4F46E5">4.50</text><rect x="60" y="556" width="1080" height="62" rx="10" fill="#F6F5FE"/>
+<text x="90" y="595" font-family="Segoe UI, Arial" font-size="23" font-weight="700" fill="#1c1f2b">Quorum Federal CU</text>
+<text x="475" y="595" font-family="Segoe UI, Arial" font-size="21" fill="#4b5563">1-year term</text>
+<text x="740" y="595" font-family="Segoe UI, Arial" font-size="25" font-weight="800" fill="#4F46E5">4.40%</text>
+<text x="905" y="595" font-family="Segoe UI, Arial" font-size="21" fill="#4b5563">min $100</text>
+<rect x="1058" y="569" width="60" height="36" rx="9" fill="rgba(139,124,240,0.14)"/>
+<text x="1072" y="594" font-family="Segoe UI, Arial" font-size="17" font-weight="700" fill="#4F46E5">4.40</text>
+<text x="90" y="667" font-family="Segoe UI, Arial" font-size="23" font-weight="700" fill="#1c1f2b">Capital One</text>
+<text x="475" y="667" font-family="Segoe UI, Arial" font-size="21" fill="#4b5563">11-month</text>
+<text x="740" y="667" font-family="Segoe UI, Arial" font-size="25" font-weight="800" fill="#4F46E5">4.40%</text>
+<text x="905" y="667" font-family="Segoe UI, Arial" font-size="21" fill="#4b5563">min $0</text>
+<rect x="1058" y="641" width="60" height="36" rx="9" fill="rgba(139,124,240,0.14)"/>
+<text x="1072" y="666" font-family="Segoe UI, Arial" font-size="17" font-weight="700" fill="#4F46E5">4.40</text><rect x="60" y="700" width="1080" height="62" rx="10" fill="#F6F5FE"/>
+<text x="90" y="739" font-family="Segoe UI, Arial" font-size="23" font-weight="700" fill="#1c1f2b">Ally Bank</text>
+<text x="475" y="739" font-family="Segoe UI, Arial" font-size="21" fill="#4b5563">High-yield CD</text>
+<text x="740" y="739" font-family="Segoe UI, Arial" font-size="25" font-weight="800" fill="#4F46E5">4.00%</text>
+<text x="905" y="739" font-family="Segoe UI, Arial" font-size="21" fill="#4b5563">min $0</text>
+<rect x="1058" y="713" width="60" height="36" rx="9" fill="rgba(139,124,240,0.14)"/>
+<text x="1072" y="738" font-family="Segoe UI, Arial" font-size="17" font-weight="700" fill="#4F46E5">4.00</text>
+<text x="90" y="730" font-family="Segoe UI, Arial" font-size="16" fill="#6b7280">Source: Bankrate, Investopedia, CNBC Select rate trackers - verified October 16, 2026. Rates change daily.</text>
+<text x="90" y="758" font-family="Segoe UI, Arial" font-size="16" fill="#6b7280">verityadaily.com</text>
+</svg>

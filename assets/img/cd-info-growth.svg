@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+<defs>
+<linearGradient id="hdr" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#2E2A72"/><stop offset="100%" stop-color="#4F46E5"/></linearGradient>
+<linearGradient id="abar" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#5BC8C3"/><stop offset="100%" stop-color="#4F46E5"/></linearGradient>
+</defs>
+<rect width="1200" height="800" fill="#FFFFFF"/>
+
+<rect x="60" y="50" width="1080" height="66" rx="12" fill="url(#hdr)"/>
+<text x="90" y="94" font-family="Segoe UI, Arial" font-size="26" font-weight="800" fill="#F3F1FF">WHAT $10,000 EARNS IN 1 YEAR</text>
+<line x1="200" y1="620" x2="1000" y2="620" stroke="#cbd5e1" stroke-width="2"/>
+<line x1="200" y1="620" x2="200" y2="290" stroke="#cbd5e1" stroke-width="2"/>
+<polyline points="200,620 267,620 333,620 400,620 467,620 533,620 600,620 667,620 733,620 800,620 867,620 933,619 1000,619" fill="none" stroke="#94a3b8" stroke-width="5" stroke-linecap="round" />
+<polyline points="200,620 267,596 333,571 400,546 467,522 533,497 600,472 667,447 733,422 800,396 867,371 933,346 1000,320" fill="none" stroke="#4F46E5" stroke-width="5" stroke-linecap="round" />
+<circle cx="1000" cy="320" r="9" fill="#4F46E5"/>
+<text x="780" y="296" font-family="Segoe UI, Arial" font-size="24" font-weight="800" fill="#4F46E5">top CD 5.00% = $500</text>
+<circle cx="1000" cy="619" r="9" fill="#94a3b8"/>
+<text x="640" y="667" font-family="Segoe UI, Arial" font-size="22" font-weight="700" fill="#64748b">branch giant 0.01% = $1</text>
+<text x="600" y="700" text-anchor="middle" font-family="Segoe UI, Arial" font-size="17" fill="#6b7280">Illustrative 1-year compounding at $10,000 | verityadaily.com</text>
+</svg>
