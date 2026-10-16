@@ -1,5 +1,5 @@
 /* Veritya Daily - AdSense Loader (consent-gated, single-point config)
- * HOW TO ENABLE: replace ca-pub-XXXXXXXXXXXXXXXX with your real client ID after AdSense approval,
+ * HOW TO ENABLE: replace ca-pub-4732644567808225 with your real client ID after AdSense approval,
  * set ADS_ENABLED=true. Nothing else needs touching - this file is included sitewide.
  * If ADS_ENABLED=false this file is a harmless no-op. */
 (function () {
