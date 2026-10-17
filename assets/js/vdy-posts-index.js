@@ -28,7 +28,7 @@ window.VDY_POSTS=[
   {"s":"ai-agent-platforms","t":"AI Agent Platforms (2026): Types, Pricing, How to Choose","c":"ai","d":"2026-10-13T12:30:00+05:30","h":"assets/img/hero-ai-agent-platforms.png","m":11},
   {"s":"vibe-coding-shadow-apps","t":"Vibe Coding Security Risks: When Employees Ship AI Apps","c":"cybersecurity","d":"2026-10-12T21:30:00+05:30","h":"assets/img/hero-vibe-coding-shadow-apps.png","m":10},
   {"s":"google-gmail-data-breach-warning","t":"Google Gmail Data Breach Warning: How to Check Whether It Is Real","c":"cybersecurity","d":"2026-10-12T09:00:00+05:30","h":"assets/img/gmail-hero-decision.jpg","m":12},
-  {"s":"scale-ai-layoffs","t":"Scale AI Layoffs: What Is Confirmed and What the Cuts Mean for AI Work","c":"ai","d":"2026-10-11T16:30:00+05:30","h":"assets/img/sai-hero-verification.jpg","m":13},
+  {"s":"scale-ai-layoffs","t":"Scale AI Layoffs 2026: What’s Confirmed + the Meta Cuts Confusion","c":"ai","d":"2026-10-11T16:30:00+05:30","h":"assets/img/sai-hero-verification.jpg","m":15},
   {"s":"crypto-regulation-news","t":"Crypto Regulation News: The Bills, Rules and Decisions Shaping the Market","c":"crypto","d":"2026-10-11T14:00:00+05:30","h":"assets/img/reg-hero-four-tracks.jpg","m":18},
   {"s":"where-to-buy-ripple","t":"Where to Buy Ripple (XRP): How to Buy XRP","c":"crypto","d":"2026-10-11T11:30:00+05:30","h":"assets/img/xrp-hero-distinction.jpg","m":15},
   {"s":"api-acronym-call-integration-security","t":"API Acronym, Calls & Unsecured API Keys: 2026 Developer Guide","c":"technology","d":"2026-10-11T09:00:00+05:30","h":"assets/img/api-guide-hero.jpg","m":23},
