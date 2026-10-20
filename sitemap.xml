@@ -513,4 +513,10 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://verityadaily.com/notion-vs-obsidian</loc>
+    <lastmod>2026-10-20T23:30:00+05:30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
