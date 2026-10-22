@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1348" viewBox="0 0 2400 1348">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0B1020"/><stop offset="0.55" stop-color="#0E1530"/><stop offset="1" stop-color="#101A3A"/></linearGradient>
+<radialGradient id="glowA" cx="0.5" cy="0.5" r="0.6"><stop offset="0" stop-color="#5BC8C3" stop-opacity="0.30"/><stop offset="1" stop-color="#5BC8C3" stop-opacity="0"/></radialGradient>
+<radialGradient id="glowV" cx="0.5" cy="0.5" r="0.6"><stop offset="0" stop-color="#8B7CF0" stop-opacity="0.35"/><stop offset="1" stop-color="#8B7CF0" stop-opacity="0"/></radialGradient>
+<radialGradient id="glowG" cx="0.5" cy="0.5" r="0.6"><stop offset="0" stop-color="#D9B36A" stop-opacity="0.35"/><stop offset="1" stop-color="#D9B36A" stop-opacity="0"/></radialGradient>
+<linearGradient id="glass" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.14"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0.04"/></linearGradient>
+<linearGradient id="glassA" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5BC8C3" stop-opacity="0.30"/><stop offset="1" stop-color="#5BC8C3" stop-opacity="0.06"/></linearGradient>
+<linearGradient id="glassV" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8B7CF0" stop-opacity="0.34"/><stop offset="1" stop-color="#8B7CF0" stop-opacity="0.06"/></linearGradient>
+</defs>
+<rect width="2400" height="1348" fill="url(#bg)"/>
+<ellipse cx="480" cy="260" rx="700" ry="420" fill="url(#glowV)"/>
+<ellipse cx="1950" cy="1080" rx="760" ry="440" fill="url(#glowA)"/>
+<ellipse cx="1200" cy="700" rx="520" ry="330" fill="url(#glowG)" opacity="0.25"/>
+<g transform="translate(1200,600)">
+<g transform="translate(0,60) scale(1.9)">
+<rect x="-110" y="-190" width="220" height="380" rx="34" fill="url(#glass)" stroke="#9AA7FF" stroke-opacity="0.55" stroke-width="3"/>
+<rect x="-92" y="-160" width="184" height="310" rx="22" fill="#0A0F22" stroke="#89E7E3" stroke-opacity="0.35" stroke-width="2"/>
+<rect x="-70" y="-120" width="140" height="74" rx="16" fill="url(#glassA)" stroke="#5BC8C3" stroke-opacity="0.7" stroke-width="2.5"/>
+<rect x="-70" y="-24" width="140" height="70" rx="14" fill="#FFFFFF" opacity="0.05" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="2"/>
+<circle cx="0" cy="158" r="12" fill="#89E7E3" opacity="0.8"/>
+</g>
+<ellipse cx="0" cy="480" rx="420" ry="70" fill="#000000" opacity="0.3"/>
+<g transform="translate(0,-120) scale(1.5)"><g transform="translate(0,0) scale(1.35)">
+<path d="M0,-100 C34,-84 74,-76 96,-72 C96,-4 76,64 0,110 C-76,64 -96,-4 -96,-72 C-74,-76 -34,-84 0,-100 Z" fill="url(#glass)" stroke="#D9B36A" stroke-opacity="0.85" stroke-width="4"/>
+<path d="M-30,-6 L-8,-6 L2,-24 L20,10 L34,10" fill="none" stroke="#D9B36A" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" opacity="0.95"/>
+</g></g>
+<circle cx="0" cy="-210" r="320" fill="none" stroke="#5BC8C3" stroke-opacity="0.35" stroke-width="3" stroke-dasharray="3 26"/>
+<g stroke="#5BC8C3" stroke-opacity="0.45" stroke-width="3"><line x1="0" y1="-530" x2="0" y2="-500"/><line x1="320" y1="-210" x2="290" y2="-210"/><line x1="-320" y1="-210" x2="-290" y2="-210"/><line x1="226" y1="-436" x2="205" y2="-415"/><line x1="-226" y1="-436" x2="-205" y2="-415"/></g>
+</g>
+<g transform="translate(500,320)"><circle cx="0" cy="0" r="54" fill="url(#glass)" stroke="#E86A6A" stroke-opacity="0.8" stroke-width="4"/><path d="M-40,-16 a40,40 0 0,0 80,0" fill="#0E1530" opacity="0.5"/><path d="M-22,-26 l0,22 M0,-32 l0,30 M22,-26 l0,22" stroke="#E86A6A" stroke-width="6" stroke-linecap="round"/><path d="M120,180 L210,120" stroke="#E86A6A" stroke-width="6" stroke-linecap="round" stroke-dasharray="2 22" opacity="0.8"/></g>
+<g transform="translate(1900,380)"><circle cx="0" cy="0" r="54" fill="url(#glass)" stroke="#E86A6A" stroke-opacity="0.8" stroke-width="4"/><path d="M-40,-16 a40,40 0 0,0 80,0" fill="#0E1530" opacity="0.5"/><path d="M-14,-26 L-14,0 L-22,14 M8,-26 L8,14 M22,-26 L22,2 L30,10" stroke="#E86A6A" stroke-width="6" stroke-linecap="round"/><path d="M-120,190 L-210,130" stroke="#E86A6A" stroke-width="6" stroke-linecap="round" stroke-dasharray="2 22" opacity="0.8"/></g>
+<ellipse cx="1200" cy="1180" rx="520" ry="80" fill="url(#glowA)" opacity="0.5"/></svg>
