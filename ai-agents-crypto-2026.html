@@ -162,6 +162,24 @@ details.faq-item[open] .faq-x::before{content:'\2212';}
 details.faq-item .faq-body{padding:0 18px 14px;}
 details.faq-item .faq-body p{margin:0;color:#3c4353;line-height:1.65;}
 [data-theme="dark"] details.faq-item .faq-body p{color:#c3c9d6;}
+
+/* ===== responsive hardening (post-page patterns) ===== */
+@media (max-width:640px){
+  .rnv2-grid{grid-template-columns:1fr !important;}
+  .rnv2-thumb img{aspect-ratio:16/9 !important;height:auto !important;}
+  .rnv2 h2{font-size:1.35rem;}
+  .faq-x{right:12px;top:14px;}
+  details.faq-item summary{padding-right:40px;}
+  .share-buttons{flex-wrap:wrap;gap:8px;}
+  .share-btn{padding:8px 12px;font-size:12px;}
+  .table-wrap{overflow-x:auto;}
+  .key-takeaways{padding:14px 16px;}
+  .author-bio--compact{flex-direction:column;gap:10px;}
+  .article-container mark{padding:1px 2px;}
+}
+@media (max-width:480px){
+  .rnv2-card h3{font-size:.95rem;}
+}
 </style>
 <style>
 /* scoped: stack-guide page only */
@@ -343,7 +361,6 @@ details.faq-item .faq-body p{margin:0;color:#3c4353;line-height:1.65;}
 <li>Survival recipe: scoped permissions, hardware keys, oracle data, simulation-first deployment, venture-sized exposure.</li>
 </ul></div>
 
-<h2 id="h-faq">Frequently asked questions</h2>
 <section class="faq-section">
 <h2 id="h-faq">Frequently asked questions</h2>
 <details class="faq-item" open>
@@ -433,7 +450,7 @@ details.faq-item .faq-body p{margin:0;color:#3c4353;line-height:1.65;}
 }
 </script>
 
-<section class="rnv2 read-next">
+<section class="rnv2" data-related-posts>
 <h2>Read Next</h2>
 <div class="rnv2-grid">
 <a href="crypto-news-today-2026" class="rnv2-card">
