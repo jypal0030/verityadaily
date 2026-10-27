@@ -64,17 +64,20 @@
 .tsw tbody td:first-child{font-weight:700;}
 [data-theme="dark"] .tsw tbody tr:nth-child(even){background:rgba(255,255,255,.045);}
 [data-theme="dark"] .tsw tbody tr:hover{background:rgba(79,70,229,.18);}
+
+
+/* === legacy read-next restored (2026-10-27 sizing sync) === */
 .rnv2{margin-top:44px;padding-top:26px;border-top:1px solid var(--border);}
 .rnv2 h3{font-size:1.15rem;margin:0 0 16px;}
-.rnv2-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
-@media(max-width:700px){.rnv2-grid{grid-template-columns:1fr;}}
-.rnv2-card{display:block;background:var(--surface,#fff);border:1px solid var(--border);border-radius:14px;overflow:hidden;text-decoration:none;transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease;}
-.rnv2-card:hover{transform:translateY(-3px);box-shadow:0 10px 28px rgba(79,70,229,.18);border-color:rgba(99,102,241,.55);}
-.rnv2-card img{display:block;width:100%;height:150px;object-fit:cover;margin:0;}
+.rnv2-grid.read-next-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
+@media(max-width:700px){.rnv2-grid.read-next-grid{grid-template-columns:1fr;}}
+.rnv2-card.read-next-card{display:block;background:var(--surface,#fff);border:1px solid var(--border);border-radius:14px;overflow:hidden;text-decoration:none;transition:transform .18s ease, box-shadow .18s ease;}
+.rnv2-card.read-next-card:hover{transform:translateY(-3px);box-shadow:0 10px 28px rgba(79,70,229,.18);border-color:rgba(99,102,241,.55);}
+.rnv2-card.read-next-card img{display:block;width:100%;height:200px;object-fit:cover;margin:0;}
 .rnv2-body{display:block;padding:13px 16px 15px;}
 .rnv2-kicker{display:inline-block;font-size:11px;font-weight:800;letter-spacing:.09em;color:#4F46E5;text-transform:uppercase;}
-.rnv2-title{display:block;margin-top:6px;font-size:15.5px;font-weight:700;line-height:1.45;color:var(--text,#111827);background:linear-gradient(transparent 62%, rgba(79,70,229,.20) 62%);width:fit-content;padding-bottom:2px;}
-[data-theme="dark"] .rnv2-card{background:rgba(255,255,255,.045);}
+.rnv2-title{display:block;margin-top:6px;font-size:15.5px;font-weight:700;line-height:1.45;color:var(--text,#111827);}
+[data-theme="dark"] .rnv2-card.read-next-card{background:rgba(255,255,255,.045);}
 [data-theme="dark"] .rnv2-title{color:#C7D2FE;}
 </style>
 <meta name="google-adsense-account" content="ca-pub-4732644567808225">
