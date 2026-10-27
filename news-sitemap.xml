@@ -6,7 +6,18 @@
   
   
   
-          <url>
+            <url>
+    <loc>https://verityadaily.com/cryptocurrency-news-today-live-market-updates</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Veritya Daily</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-27T10:30:00+00:00</news:publication_date>
+      <news:title>Cryptocurrency News Today: Live Market Updates</news:title>
+    </news:news>
+  </url>
+<url>
     <loc>https://verityadaily.com/how-to-choose-crypto-news-coverage-of-exchange-solvency</loc>
     <news:news>
       <news:publication>
