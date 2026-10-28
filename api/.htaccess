@@ -1,4 +1,7 @@
 # Veritya Daily /api - protect private pipeline files + Authorization passthrough
+<Files "wb-config.php">
+  Require all denied
+</Files>
 <Files "rctrl-config.php">
   Require all denied
 </Files>
