@@ -1,6 +1,6 @@
 <?php
 /**
- * wb webhook capture v1.0 - Veritya Daily
+ * wb webhook capture v1.1 - Veritya Daily (Leafpad contract: success/message/organization/resolvedPath)
  * New AI writing tool integration (events: post.created / post.updated).
  * SEPARATE from the rctrl pipeline: own log + own config, same store dir pattern.
  *
@@ -73,7 +73,7 @@ function wb_pick(array $a, array $keys)
 // ---- GET: health (no secrets) ----
 if (($_SERVER['REQUEST_METHOD'] ?? '') === 'GET') {
     header('Content-Type: application/json');
-    echo json_encode(['ok' => true, 'endpoint' => 'wb-capture', 'expects' => 'POST JSON (post.created / post.updated)', 'v' => '1.0']);
+    echo json_encode(['success' => true, 'ok' => true, 'endpoint' => 'wb-capture', 'expects' => 'POST JSON (post.created / post.updated)', 'v' => '1.1']);
     exit;
 }
 
@@ -89,14 +89,14 @@ if (!hash_equals(URL_KEY, (string)$k)) {
         FILE_APPEND | LOCK_EX);
     http_response_code(403);
     header('Content-Type: application/json');
-    echo json_encode(['ok' => false, 'error' => 'forbidden']);
+    echo json_encode(['success' => false, 'ok' => false, 'error' => 'forbidden']);
     exit;
 }
 
 if (($_SERVER['REQUEST_METHOD'] ?? '') !== 'POST') {
     http_response_code(405);
     header('Content-Type: application/json');
-    echo json_encode(['ok' => false, 'error' => 'POST only']);
+    echo json_encode(['success' => false, 'ok' => false, 'error' => 'POST only']);
     exit;
 }
 
@@ -134,8 +134,10 @@ $slug = wb_pick($art, ['slug', 'handle', 'seo_slug']);
 if ($slug === null && is_string($title) && $title !== '') {
     $slug = trim(strtolower((string)preg_replace('/[^A-Za-z0-9]+/', '-', $title)), '-');
 }
-$postId = wb_pick($art, ['id', 'post_id', 'uuid', 'documentId']);
+$postId = wb_pick($art, ['id', 'postId', 'post_id', 'uuid', 'documentId']);
 $status = wb_pick($art, ['status', 'state', 'post_status']);
+$org = wb_pick($bodyArr, ['organization', 'org']);
+$resolvedPath = wb_pick($bodyArr, ['resolvedPath', 'resolved_path', 'path']);
 
 $entry = [
     'ts' => gmdate('c'),
@@ -151,6 +153,8 @@ $entry = [
     'title' => $title,
     'slug' => $slug,
     'status' => $status,
+    'organization' => $org,
+    'resolved_path' => $resolvedPath,
     'content_type' => $_SERVER['CONTENT_TYPE'] ?? '',
     'body_bytes' => strlen((string)$raw),
     'is_valid_json' => $isValidJson,
@@ -162,11 +166,13 @@ wb_log($store, $entry);
 header('Content-Type: application/json');
 if ($badTok) {
     http_response_code(401);
-    echo json_encode(['ok' => false, 'error' => 'bad-token', 'hint' => 'check the Authentication Token saved in the integration settings']);
+    echo json_encode(['success' => false, 'ok' => false, 'error' => 'bad-token', 'hint' => 'check the Authentication Token saved in the integration settings']);
     exit;
 }
 echo json_encode([
+    'success' => true,
     'ok' => true,
+    'message' => 'Webhook received successfully',
     'endpoint' => 'wb-capture',
     'event' => $event,
     'is_test' => $isTest,
@@ -174,6 +180,8 @@ echo json_encode([
     'token_ok' => $tokOk,
     'title' => $title,
     'slug' => $slug,
+    'organization' => $org,
+    'resolvedPath' => $resolvedPath,
     'received' => gmdate('c'),
-    'v' => '1.0',
+    'v' => '1.1',
 ]);
