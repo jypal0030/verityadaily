@@ -1,6 +1,6 @@
 <?php
 /**
- * wb webhook capture v1.1 - Veritya Daily (Leafpad contract: success/message/organization/resolvedPath)
+ * wb webhook capture v1.2 - Veritya Daily (response EXACTLY matches Leafpad docs example: minimal fields, unescaped slashes)
  * New AI writing tool integration (events: post.created / post.updated).
  * SEPARATE from the rctrl pipeline: own log + own config, same store dir pattern.
  *
@@ -73,7 +73,7 @@ function wb_pick(array $a, array $keys)
 // ---- GET: health (no secrets) ----
 if (($_SERVER['REQUEST_METHOD'] ?? '') === 'GET') {
     header('Content-Type: application/json');
-    echo json_encode(['success' => true, 'ok' => true, 'endpoint' => 'wb-capture', 'expects' => 'POST JSON (post.created / post.updated)', 'v' => '1.1']);
+    echo json_encode(['success' => true, 'ok' => true, 'endpoint' => 'wb-capture', 'expects' => 'POST JSON (post.created / post.updated)', 'v' => '1.2']);
     exit;
 }
 
@@ -89,14 +89,14 @@ if (!hash_equals(URL_KEY, (string)$k)) {
         FILE_APPEND | LOCK_EX);
     http_response_code(403);
     header('Content-Type: application/json');
-    echo json_encode(['success' => false, 'ok' => false, 'error' => 'forbidden']);
+    echo json_encode(['success' => false, 'error' => 'forbidden']);
     exit;
 }
 
 if (($_SERVER['REQUEST_METHOD'] ?? '') !== 'POST') {
     http_response_code(405);
     header('Content-Type: application/json');
-    echo json_encode(['success' => false, 'ok' => false, 'error' => 'POST only']);
+    echo json_encode(['success' => false, 'error' => 'POST only']);
     exit;
 }
 
@@ -166,22 +166,13 @@ wb_log($store, $entry);
 header('Content-Type: application/json');
 if ($badTok) {
     http_response_code(401);
-    echo json_encode(['success' => false, 'ok' => false, 'error' => 'bad-token', 'hint' => 'check the Authentication Token saved in the integration settings']);
+    echo json_encode(['success' => false, 'error' => 'bad-token']);
     exit;
 }
 echo json_encode([
     'success' => true,
-    'ok' => true,
-    'message' => 'Webhook received successfully',
-    'endpoint' => 'wb-capture',
-    'event' => $event,
-    'is_test' => $isTest,
-    'mode' => $tokenCfg !== '' ? 'token' : 'capture',
-    'token_ok' => $tokOk,
-    'title' => $title,
+    'message' => 'Path revalidated successfully',
     'slug' => $slug,
     'organization' => $org,
     'resolvedPath' => $resolvedPath,
-    'received' => gmdate('c'),
-    'v' => '1.1',
-]);
+], JSON_UNESCAPED_SLASHES);
