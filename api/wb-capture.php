@@ -1,6 +1,6 @@
 <?php
 /**
- * wb webhook capture v1.2 - Veritya Daily (response EXACTLY matches Leafpad docs example: minimal fields, unescaped slashes)
+ * wb webhook capture v1.3 - Veritya Daily (docs-exact response + CORS/OPTIONS/HEAD: browser-side test verification safe)
  * New AI writing tool integration (events: post.created / post.updated).
  * SEPARATE from the rctrl pipeline: own log + own config, same store dir pattern.
  *
@@ -14,6 +14,10 @@
 declare(strict_types=1);
 
 const URL_KEY = 'e7b2c94a1d8f46b3a0c5e9d7f2b1a6c8';
+
+// CORS on every response: Leafpad's test UI may verify the endpoint from the browser
+header('Access-Control-Allow-Origin: *');
+header('Cache-Control: no-store');
 
 function wb_store_dir(): string
 {
@@ -70,10 +74,20 @@ function wb_pick(array $a, array $keys)
     return null;
 }
 
-// ---- GET: health (no secrets) ----
-if (($_SERVER['REQUEST_METHOD'] ?? '') === 'GET') {
+// ---- OPTIONS: CORS preflight ----
+if (($_SERVER['REQUEST_METHOD'] ?? '') === 'OPTIONS') {
+    header('Access-Control-Allow-Methods: GET, POST, OPTIONS');
+    header('Access-Control-Allow-Headers: Content-Type, Authorization');
+    header('Access-Control-Max-Age: 86400');
+    http_response_code(204);
+    exit;
+}
+
+// ---- GET/HEAD: health (no secrets) ----
+$wbMethod = $_SERVER['REQUEST_METHOD'] ?? '';
+if ($wbMethod === 'GET' || $wbMethod === 'HEAD') {
     header('Content-Type: application/json');
-    echo json_encode(['success' => true, 'ok' => true, 'endpoint' => 'wb-capture', 'expects' => 'POST JSON (post.created / post.updated)', 'v' => '1.2']);
+    echo json_encode(['success' => true, 'ok' => true, 'endpoint' => 'wb-capture', 'expects' => 'POST JSON (post.created / post.updated)', 'v' => '1.3']);
     exit;
 }
 
