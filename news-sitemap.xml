@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+    <loc>https://verityadaily.com/ai-news-signal-noise-2026</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Veritya Daily</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-28T22:35:54+05:30</news:publication_date>
+      <news:title>Navigating AI News in 2026: Separating Signal from Noise</news:title>
+    </news:news>
+  </url>
+<url>
     <loc>https://verityadaily.com/ai-news-guide-2026</loc>
     <news:news>
       <news:publication>
@@ -162,14 +173,6 @@
       <news:publication><news:name>Veritya Daily</news:name><news:language>en</news:language></news:publication>
       <news:publication_date>2026-10-11T16:30:00+05:30</news:publication_date>
       <news:title>Scale AI Layoffs: What Is Confirmed and What the Cuts Mean for AI Work</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://verityadaily.com/crypto-regulation-news</loc>
-    <news:news>
-      <news:publication><news:name>Veritya Daily</news:name><news:language>en</news:language></news:publication>
-      <news:publication_date>2026-10-11T14:00:00+05:30</news:publication_date>
-      <news:title>Crypto Regulation News: The Bills, Rules and Decisions Shaping the Market</news:title>
     </news:news>
   </url>
 </urlset>
