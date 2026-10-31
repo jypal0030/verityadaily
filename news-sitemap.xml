@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+    <loc>https://verityadaily.com/ai-automated-defi-2026</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Veritya Daily</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-31T19:49:39+05:30</news:publication_date>
+      <news:title>AI-Automated Defi in 2027: The Future of Finance</news:title>
+    </news:news>
+  </url>
+<url>
     <loc>https://verityadaily.com/ai-agents-decentralized-finance-2026</loc>
     <news:news>
       <news:publication>
@@ -174,14 +185,6 @@
       <news:publication><news:name>Veritya Daily</news:name><news:language>en</news:language></news:publication>
       <news:publication_date>2026-10-12T21:30:00+05:30</news:publication_date>
       <news:title>Vibe Coding Security Risks: When Employees Ship AI Apps</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://verityadaily.com/ai-agent-platforms</loc>
-    <news:news>
-      <news:publication><news:name>Veritya Daily</news:name><news:language>en</news:language></news:publication>
-      <news:publication_date>2026-10-13T12:30:00+05:30</news:publication_date>
-      <news:title>AI Agent Platforms (2026): Types, Pricing, How to Choose</news:title>
     </news:news>
   </url>
 </urlset>
