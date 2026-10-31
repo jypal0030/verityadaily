@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+    <loc>https://verityadaily.com/ai-agents-decentralized-finance-2026</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Veritya Daily</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-30T16:09:12+05:30</news:publication_date>
+      <news:title>AI Agents Revolutionize DeFi in 2027: What to Expect</news:title>
+    </news:news>
+  </url>
+<url>
     <loc>https://verityadaily.com/ai-cyber-defense-2026</loc>
     <news:news>
       <news:publication>
@@ -171,14 +182,6 @@
       <news:publication><news:name>Veritya Daily</news:name><news:language>en</news:language></news:publication>
       <news:publication_date>2026-10-13T12:30:00+05:30</news:publication_date>
       <news:title>AI Agent Platforms (2026): Types, Pricing, How to Choose</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://verityadaily.com/private-ai-zanus-guide</loc>
-    <news:news>
-      <news:publication><news:name>Veritya Daily</news:name><news:language>en</news:language></news:publication>
-      <news:publication_date>2026-10-13T14:30:00+05:30</news:publication_date>
-      <news:title>Private AI Like Zanus: How It Works, Is It Worth It (2026)</news:title>
     </news:news>
   </url>
 </urlset>
