@@ -13,6 +13,8 @@ Veritya Daily is an independent news publication covering AI, cryptocurrency, fi
 - [Affiliate Disclosure](https://verityadaily.com/affiliate-disclosure): Affiliate disclosure for Veritya Daily. FTC-compliant disclosure of affiliate relationships.
 - [Privacy Policy](https://verityadaily.com/privacy-policy): Privacy Policy for Veritya Daily. How we collect, use, and protect your data. GDPR and DPDP Act compliant.
 - [Terms of Use](https://verityadaily.com/terms): Terms of Service for Veritya Daily. Rules and guidelines for using our website.
+- [Disclaimer](https://verityadaily.com/disclaimer): Financial disclaimer for Veritya Daily. All content is for information only and is not financial advice.
+- [Cookie Policy](https://verityadaily.com/cookie-policy): Cookie Policy for Veritya Daily. What cookies we use and how to manage them.
 - [Author: Jai (Founder)](https://verityadaily.com/author): Jai is the founder and lead writer at Veritya Daily, covering AI, cryptocurrency, finance, and technology since 2018.
 
 ## Categories
@@ -36,6 +38,8 @@ Veritya Daily is an independent news publication covering AI, cryptocurrency, fi
 - [How to Check If Your Phone Is Hacked: Free Checks That Work (2026)](https://verityadaily.com/how-to-check-if-your-phone-is-hacked): Suspect your phone is hacked? Run free built-in checks in minutes: 12 warning signs, Android & iPhone settings walkthroughs, what dial codes really show, and the 8 recovery steps that work.
 - [Best Noise Cancelling Earbuds (2026): 7 Tested Picks for Every Budget](https://verityadaily.com/best-noise-cancelling-earbuds): The best noise cancelling earbuds of 2026: Bose QC Ultra 2, AirPods Pro 3, Sony XM6 vs budget winners under $100 (EarFun, Soundcore). ANC tests, battery, sleep, travel and work picks.
 - [High-Yield Savings Account Explained: Rates, Risks & Worth-It Math](https://verityadaily.com/high-yield-savings-account-explained): High-yield savings accounts explained: 3.10-5.00% APY vs 0.40% average, FDIC safety, taxes, downsides and the math on $10,000 — is a HYSA worth it in 2026?
+- [What Is Droven.io? The Honest 2026 Guide (Not a Tool)](https://verityadaily.com/about-droven-io): Droven.io is an AI knowledge platform, not software. What it offers, RPA and automation coverage, pricing-free access and who should skip it - the honest guide.
+- [Intelligent Automation in 2026: How It Works + Real Examples](https://verityadaily.com/intelligent-automation): Intelligent automation explained: AI + BPM + RPA components, real use cases, market data and a 5-step start plan - with the RPA vs IA difference clear.
 
 ## Recent Coverage
 
