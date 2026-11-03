@@ -6,6 +6,11 @@
 <IfModule mod_rewrite.c>
 RewriteEngine On
 
+# --- 0. Canonical host: www -> apex (single permanent redirect; Backlnk redirect finding) ---
+RewriteCond %{HTTP_HOST} ^www\.verityadaily\.com$ [NC]
+RewriteRule ^(.*)$ https://verityadaily.com/$1 [R=301,L]
+
+
 # --- 3. Homepage variants -> / (canonical) ---
 RewriteCond %{REQUEST_URI} ^/index\.html$ [OR]
 RewriteCond %{REQUEST_URI} ^/index\.php$ [OR]
