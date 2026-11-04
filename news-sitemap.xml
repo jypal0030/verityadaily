@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 <url>
+    <loc>https://verityadaily.com/crypto-crash-november-2026</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Veritya Daily</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-04T10:32:23+05:30</news:publication_date>
+      <news:title>Crypto Crash 2026: Reasons Behind November's Market Downturn</news:title>
+    </news:news>
+  </url>
+<url>
     <loc>https://verityadaily.com/ai-crypto-market-2026</loc>
     <news:news>
       <news:publication>
@@ -199,5 +210,4 @@
 <url><loc>https://verityadaily.com/chase-cd-rates</loc><news:news><news:publication><news:name>Veritya Daily</news:name><news:language>en</news:language></news:publication><news:publication_date>2026-10-17T10:00:00+00:00</news:publication_date><news:title>Chase CD Rates Today (Oct 2026): Honest Review</news:title></news:news></url>
 <url><loc>https://verityadaily.com/ripple-cryptocurrency-stock</loc><news:news><news:publication><news:name>Veritya Daily</news:name><news:language>en</news:language></news:publication><news:publication_date>2026-10-17T08:40:00+00:00</news:publication_date><news:title>Ripple Cryptocurrency Stock: Can You Buy It? (2026)</news:title></news:news></url>
 <url><loc>https://verityadaily.com/what-is-incognito-mode</loc><news:news><news:publication><news:name>Veritya Daily</news:name><news:language>en</news:language></news:publication><news:publication_date>2026-10-16T16:30:00+00:00</news:publication_date><news:title>What Is Incognito Mode? What It Hides (And Doesn't)</news:title></news:news></url>
-<url><loc>https://verityadaily.com/best-noise-cancelling-earbuds</loc><news:news><news:publication><news:name>Veritya Daily</news:name><news:language>en</news:language></news:publication><news:publication_date>2026-10-16T15:40:00+00:00</news:publication_date><news:title>Best Noise Cancelling Earbuds (2026): 7 Tested Picks</news:title></news:news></url>
 </urlset>
